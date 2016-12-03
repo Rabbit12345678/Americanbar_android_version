@@ -1,0 +1,609 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Cocktail Details Screen -->
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/scrollView"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/backgroundColor"
+    android:fillViewport="true"
+    android:scrollbars="vertical" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/bar_list_item_selector"
+        android:orientation="vertical" >
+
+        <RelativeLayout
+            android:id="@+id/relativeLayoutHeader"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:paddingTop="10dp" >
+
+            <ImageView
+                android:id="@+id/ivCocktailLogo"
+                android:layout_width="120dp"
+                android:layout_height="120dp"
+                android:layout_alignParentLeft="true"
+                android:layout_alignTop="@+id/tvCocktailName"
+                android:layout_centerInParent="true"
+                android:layout_marginRight="10dp"
+                android:clickable="true"
+                android:scaleType="fitXY"
+                android:src="@drawable/no_image_cocktail" />
+
+            <TextView
+                android:id="@+id/tvCocktailName"
+                style="@style/textStyleBarTitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toLeftOf="@+id/ivFullHalfMug"
+                android:layout_toRightOf="@+id/ivCocktailLogo"
+                tools:text="Cocktail Name Cocktail Name Cocktail Name Cocktail Name Cocktail Name Cocktail Name Cocktail Name Cocktail Name Cocktail Name Cocktail Name Cocktail Name Cocktail Name Cocktail Name " />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/relativeLayoutHeader1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/relativeLayoutHeader"
+            android:layout_below="@+id/relativeLayoutHeader"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:paddingTop="10dp" >
+
+            <TextView
+                android:id="@+id/tvBaseSpiritTitle"
+                style="@style/textStyleBarTitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="3dp"
+                android:text="Base Spirit :" />
+
+            <TextView
+                android:id="@+id/tvBaseSpirit"
+                style="@style/textStyleAutoSearch"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tvBaseSpiritTitle"
+                android:layout_marginTop="2dp"
+                tools:text="Base Spirit Content Base Spirit Content Base Spirit Content Base Spirit Content Base Spirit Content Base Spirit Content Base Spirit Content " />
+
+            <TextView
+                android:id="@+id/tvTypeTitle"
+                style="@style/textStyleBarTitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tvBaseSpirit"
+                android:layout_marginTop="5dp"
+                android:text="Type :" />
+
+            <TextView
+                android:id="@+id/tvType"
+                style="@style/textStyleAutoSearch"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tvTypeTitle"
+                android:layout_marginTop="2dp"
+                tools:text="Type Content Type Content Type Content Type Content Type Content Type Content Type Content Type Content " />
+
+            <TextView
+                android:id="@+id/tvServedTitle"
+                style="@style/textStyleBarTitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_below="@+id/tvType"
+                android:layout_marginTop="5dp"
+                android:text="Served :" />
+
+            <TextView
+                android:id="@+id/tvServed"
+                style="@style/textStyleAutoSearch"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tvServedTitle"
+                android:layout_marginTop="2dp"
+                tools:text="Served Content kdlfjlsdjflkdjlkfjlksdjflkjsdlfjlasdkjfklsdjklfjdklsjfkljdfklsjkl" />
+
+            <TextView
+                android:id="@+id/tvStrengthTitle"
+                style="@style/textStyleBarTitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_below="@+id/tvServed"
+                android:layout_marginTop="5dp"
+                android:text="Strength :" />
+
+            <TextView
+                android:id="@+id/tvStrength"
+                style="@style/textStyleWebsite"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tvStrengthTitle"
+                android:layout_marginTop="2dp"
+                tools:text="Strength Content kdlfjlsdjflkdjlkfjlksdjflkjsdlfjlasdkjfklsdjklfjdklsjfkljdfklsjkl" />
+
+            <TextView
+                android:id="@+id/tvDifficultyTitle"
+                style="@style/textStyleBarTitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_below="@+id/tvStrength"
+                android:layout_marginTop="5dp"
+                android:text="Difficulty :" />
+
+            <TextView
+                android:id="@+id/tvDifficulty"
+                style="@style/textStyleAutoSearch"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tvDifficultyTitle"
+                android:layout_marginTop="2dp"
+                tools:text="ABV Content kdlfjlsdjflkdjlkfjlksdjflkjsdlfjlasdkjfklsdjklfjdklsjfkljdfklsjkl" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/relativeLayoutHowToMakeIt"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/relativeLayoutHeader1"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:paddingTop="5dp" >
+
+            <TextView
+                android:id="@+id/tvHowToMakeItTitle"
+                style="@style/textStyleBarTitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:text="How to Make it :" />
+
+            <TextView
+                android:id="@+id/tvHowToMakeIt"
+                style="@style/textStyleAutoSearch"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tvHowToMakeItTitle"
+                android:layout_marginTop="2dp"
+                android:ellipsize="end"
+                android:maxLines="4"
+                tools:text="Lorem Ipsum is simply dummy text Lorem Ipsum is simply dummy text Lorem Ipsum is simply dummy text Lorem Ipsum is simply dummy text Lorem Ipsum is simply dummy text Lorem Ipsum is simply dummy text Lorem Ipsum is simply dummy text Lorem Ipsum is simply dsklfjs dfjklsdjfkls djfkljsdklfjklsdjflksdjlfjlsdkjfklsdjflkjdslfjdklsfjl" />
+
+            <RelativeLayout
+                android:id="@+id/relativeLayoutShowMoreHowToMakeIt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_below="@+id/tvHowToMakeIt"
+                android:layout_marginTop="5dp"
+                android:visibility="gone" >
+
+                <TextView
+                    android:id="@+id/tvShowMoreHowToMakeIt"
+                    style="@style/textStyleShowMore"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:gravity="right"
+                    android:text="Show More" />
+
+                <View
+                    android:layout_width="wrap_content"
+                    android:layout_height="1dp"
+                    android:layout_alignLeft="@+id/tvShowMoreHowToMakeIt"
+                    android:layout_alignParentRight="true"
+                    android:layout_below="@+id/tvShowMoreHowToMakeIt"
+                    android:background="@color/lightBrownColor" />
+            </RelativeLayout>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/relativeLayoutIngredients"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/relativeLayoutHowToMakeIt"
+            android:paddingBottom="10dp"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:paddingTop="5dp" >
+
+            <TextView
+                android:id="@+id/tvIngredientsTitle"
+                style="@style/textStyleBarTitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:text="Ingredients :" />
+
+            <TextView
+                android:id="@+id/tvIngredients"
+                style="@style/textStyleAutoSearch"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tvIngredientsTitle"
+                android:layout_marginTop="2dp"
+                android:ellipsize="end"
+                android:maxLines="4"
+                tools:text="Lorem Ipsum is simply dummy text Lorem Ipsum is simply dummy text Lorem Ipsum is simply dummy text Lorem Ipsum is simply dummy text Lorem Ipsum is simply dummy text Lorem Ipsum is simply dummy text Lorem Ipsum is simply dummy text Lorem Ipsum is simply dsklfjs dfjklsdjfkls djfkljsdklfjklsdjflksdjlfjlsdkjfklsdjflkjdslfjdklsfjl" />
+
+            <WebView
+                android:id="@+id/webFullDescription"
+                style="@style/textStyleAutoSearch"
+                android:layout_width="match_parent"
+                android:layout_height="83dp"
+                android:layout_below="@+id/tvIngredientsTitle"
+                android:layout_marginTop="2dp"
+                android:background="@android:color/transparent" />
+
+            <RelativeLayout
+                android:id="@+id/relativeLayoutShowMoreIngredients"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_below="@+id/webFullDescription"
+                android:layout_marginTop="5dp"
+                android:visibility="gone" >
+
+                <TextView
+                    android:id="@+id/tvShowMoreIngredients"
+                    style="@style/textStyleShowMore"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:gravity="right"
+                    android:text="Show More" />
+
+                <View
+                    android:layout_width="wrap_content"
+                    android:layout_height="1dp"
+                    android:layout_alignLeft="@+id/tvShowMoreIngredients"
+                    android:layout_alignParentRight="true"
+                    android:layout_below="@+id/tvShowMoreIngredients"
+                    android:background="@color/lightBrownColor" />
+            </RelativeLayout>
+        </RelativeLayout>
+
+        <View
+            android:id="@+id/viewLine1"
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:layout_below="@+id/relativeLayoutIngredients"
+            android:layout_marginBottom="1px"
+            android:layout_marginTop="5dp"
+            android:background="@color/spinner_border_color" />
+
+        <View
+            android:id="@+id/viewLine2"
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:layout_below="@+id/viewLine1"
+            android:layout_marginTop="1dp"
+            android:background="@color/spinner_border_color" />
+
+        <RelativeLayout
+            android:id="@+id/relativeLayoutShare"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/viewLine2"
+            android:padding="10dp" >
+
+            <ImageView
+                android:id="@+id/ivShareFacebook"
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:layout_marginRight="5dp"
+                android:src="@drawable/share_fb"
+                android:visibility="invisible" />
+
+            <ImageView
+                android:id="@+id/ivShareTwitter"
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="10dp"
+                android:layout_toRightOf="@+id/ivShareFacebook"
+                android:src="@drawable/share_twitter"
+                android:visibility="invisible" />
+
+            <ImageView
+                android:id="@+id/ivShareLinkedIn"
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="10dp"
+                android:layout_toRightOf="@+id/ivShareTwitter"
+                android:src="@drawable/share_linked_in"
+                android:visibility="invisible" />
+
+            <ImageView
+                android:id="@+id/ivShareGooglePlus"
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="10dp"
+                android:layout_toRightOf="@+id/ivShareLinkedIn"
+                android:src="@drawable/share_google"
+                android:visibility="invisible" />
+
+            <ImageView
+                android:id="@+id/ivShareDribble"
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="10dp"
+                android:layout_toRightOf="@+id/ivShareGooglePlus"
+                android:src="@drawable/share_dribble"
+                android:visibility="invisible" />
+
+            <ImageView
+                android:id="@+id/ivSharePinterest"
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:layout_centerVertical="true"
+                android:layout_toRightOf="@+id/ivShareDribble"
+                android:src="@drawable/share_pinterest"
+                android:visibility="invisible" />
+
+            <ImageView
+                android:id="@+id/ivShare"
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:src="@drawable/share" />
+
+            <Spinner
+                android:id="@+id/spinnerShare"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:background="@drawable/edittext_selector"
+                android:prompt="@string/txt_spinner_share_title"
+                android:spinnerMode="dialog"
+                android:visibility="invisible" />
+        </RelativeLayout>
+
+        <View
+            android:id="@+id/viewLine3"
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:layout_below="@+id/relativeLayoutShare"
+            android:layout_marginBottom="1px"
+            android:background="@color/spinner_border_color" />
+
+        <View
+            android:id="@+id/viewLine4"
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:layout_below="@+id/viewLine3"
+            android:layout_marginTop="1dp"
+            android:background="@color/spinner_border_color" />
+
+        <LinearLayout
+            android:id="@+id/linearLayoutButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/viewLine4"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:padding="10dp"
+            android:weightSum="1" >
+
+            <Button
+                android:id="@+id/btnAddToFavorite"
+                style="@style/button_style_gradient"
+                android:layout_width="@dimen/btn_fav_width"
+                android:layout_height="50dp"
+                android:layout_marginRight="5dp"
+                android:gravity="center"
+                android:text="@string/btn_add_my_cocktail" />
+
+            <Button
+                android:id="@+id/btnLikeThisCocktail"
+                style="@style/button_style_gradient"
+                android:layout_width="@dimen/btn_fav_width"
+                android:layout_height="50dp"
+                android:layout_marginLeft="5dp"
+                android:text="@string/btn_like_this_cocktail" />
+        </LinearLayout>
+
+        <View
+            android:id="@+id/viewLine5"
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:layout_below="@+id/linearLayoutButton"
+            android:layout_marginBottom="1px"
+            android:background="@color/spinner_border_color" />
+
+        <View
+            android:id="@+id/viewLine6"
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:layout_below="@+id/viewLine5"
+            android:layout_marginTop="1dp"
+            android:background="@color/spinner_border_color" />
+
+        <RelativeLayout
+            android:id="@+id/relativeLayoutTakeALookInside"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/viewLine6"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:paddingTop="15dp" >
+
+            <TextView
+                android:id="@+id/tvTakeALookInside"
+                style="@style/textStyleRememberMe"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:background="@color/lightBrownColor"
+                android:padding="10dp"
+                android:text="Picture / Video" />
+
+            <RelativeLayout
+                android:id="@+id/relativeLayoutVideo"
+                android:layout_width="@dimen/relativeLayoutVideo_width"
+                android:layout_height="@dimen/relativeLayoutVideo_height"
+                android:layout_below="@+id/tvTakeALookInside"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="10dp"
+                android:visibility="gone" >
+
+                <ImageView
+                    android:id="@+id/ivVideo"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/relativeLayoutVideo_height"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/no_image_bar" />
+
+                <com.google.android.youtube.player.YouTubeThumbnailView
+                    android:id="@+id/ivVideoThumbnail"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/relativeLayoutVideo_height"
+                    android:layout_centerHorizontal="true"
+                    android:background="@android:color/black"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/video_place_holder" />
+
+                <ImageView
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:layout_centerHorizontal="true"
+                    android:layout_centerVertical="true"
+                    android:src="@drawable/play_icon" />
+            </RelativeLayout>
+
+            <ImageView
+                android:id="@+id/ivPicture"
+                android:layout_width="@dimen/relativeLayoutVideo_width"
+                android:layout_height="@dimen/relativeLayoutVideo_height"
+                android:layout_below="@+id/tvTakeALookInside"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="10dp"
+                android:scaleType="fitXY"
+                android:src="@drawable/gallery_big_place_holder"
+                android:visibility="gone" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/relativeLayoutLeaveAComment"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/relativeLayoutTakeALookInside"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:paddingTop="15dp" >
+
+            <TextView
+                android:id="@+id/tvLeaveAComment"
+                style="@style/textStyleRememberMe"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:background="@color/lightBrownColor"
+                android:padding="10dp"
+                android:text="Leave a Comment" />
+
+            <EditText
+                android:id="@+id/etCommentTitle"
+                style="@style/edittext_style_my_profile_grey_to_lightbrown"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/editTextHeightMyProfile"
+                android:layout_below="@+id/tvLeaveAComment"
+                android:layout_marginTop="10dp"
+                android:hint="Tell us what you think!"
+                android:nextFocusLeft="@id/etCommentTitle"
+                android:nextFocusUp="@id/etCommentTitle" />
+
+            <EditText
+                android:id="@+id/etCommentDescription"
+                style="@style/edittext_multiline_style_grey_to_lightbrown"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/editTextMultilineHeightMyProfile"
+                android:layout_below="@id/etCommentTitle"
+                android:layout_marginTop="10dp"
+                android:gravity="top"
+                android:hint="Write Here"
+                android:nextFocusLeft="@id/etCommentDescription"
+                android:nextFocusUp="@id/etCommentDescription"
+                android:scrollbars="vertical" />
+
+            <Button
+                android:id="@+id/buttonPostComment"
+                style="@style/button_style_gradient"
+                android:layout_width="150dp"
+                android:layout_height="40dp"
+                android:layout_alignParentRight="true"
+                android:layout_below="@+id/etCommentDescription"
+                android:layout_marginTop="15dp"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:text="Post" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/relativeLayoutRavesAndRants"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/relativeLayoutLeaveAComment"
+            android:layout_marginTop="15dp" >
+
+            <TextView
+                android:id="@+id/tvRavesAndRants"
+                style="@style/textStyleRememberMe"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:background="@color/lightBrownColor"
+                android:padding="10dp"
+                android:text="@string/txtRantsAndRaves" />
+
+            <LinearLayout
+                android:id="@+id/hiddenLinearLayoutReviews"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tvRavesAndRants"
+                android:orientation="vertical"
+                android:visibility="gone" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/relativeLayoutViewAllRavesAndRants"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_below="@+id/relativeLayoutRavesAndRants"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="5dp"
+            android:paddingBottom="15dp" >
+
+            <TextView
+                android:id="@+id/tvViewAllRavesAndRants"
+                style="@style/textStyleShowMore"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:gravity="right"
+                android:text="View All" />
+
+            <View
+                android:layout_width="wrap_content"
+                android:layout_height="1dp"
+                android:layout_alignLeft="@+id/tvViewAllRavesAndRants"
+                android:layout_alignParentRight="true"
+                android:layout_below="@+id/tvViewAllRavesAndRants"
+                android:background="@color/lightBrownColor" />
+        </RelativeLayout>
+    </RelativeLayout>
+
+</ScrollView>

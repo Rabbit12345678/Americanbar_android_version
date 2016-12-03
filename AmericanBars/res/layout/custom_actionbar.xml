@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Main Activity Action Bar Layout -->
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="50dp"
+    android:background="@color/lightBrownColor" >
+
+    <!-- Back image Arrow -->
+
+    <ImageView
+        android:id="@+id/ivBackActionBar"
+        android:layout_width="@dimen/image_back_arrow_width_height"
+        android:layout_height="@dimen/image_back_arrow_width_height"
+        android:layout_alignParentLeft="true"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="5dp"
+        android:src="@drawable/arrow_back_action_bar" />
+
+    <!-- Action Bar Title -->
+
+    <TextView
+        android:id="@+id/tvTitleActionBar"
+        style="@style/text_title_style_action_bar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:layout_toLeftOf="@+id/ivSearchBarActionBar"
+        android:layout_toRightOf="@+id/ivBackActionBar"
+        android:gravity="center"
+        android:singleLine="true"
+        tools:text="Action Bar Title" />
+
+    <!-- Action Bar Logo ImageView -->
+
+    <ImageView
+        android:id="@+id/ivLogoActionBar"
+        style="@style/text_title_style_action_bar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:src="@drawable/actionbar_logo"
+        android:visibility="visible" />
+
+    <!-- Search Bar ImageView -->
+
+    <ImageView
+        android:id="@+id/ivSearchBarActionBar"
+        android:layout_width="25dp"
+        android:layout_height="25dp"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="5dp"
+        android:layout_toLeftOf="@+id/ivMenuActionBar"
+        android:clickable="true"
+        android:src="@drawable/menu_home_action_bar"
+        android:visibility="gone" />
+
+    <!-- Action Bar Options ImageView -->
+
+    <ImageView
+        android:id="@+id/ivMenuActionBar"
+        android:layout_width="25dp"
+        android:layout_height="25dp"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:clickable="true"
+        android:src="@drawable/menu_icon"
+        android:visibility="gone" />
+
+</RelativeLayout>

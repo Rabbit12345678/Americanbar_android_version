@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Favorite Bar and Cocktail Screen Row Layout -->
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/background_my_favorite_bar_row"
+    android:orientation="vertical"
+    android:padding="10dp" >
+
+    <ImageView
+        android:id="@+id/ivBarLogo"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignTop="@+id/tvTypeContent"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="2dp"
+        android:clickable="true"
+        android:scaleType="fitXY"
+        android:src="@drawable/no_image_bar" />
+
+    <TextView
+        android:id="@+id/tvTitleContent"
+        style="@style/textStyleAutoSearch"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toLeftOf="@+id/ivNextArrow"
+        android:layout_toRightOf="@id/ivBarLogo"
+        android:singleLine="true"
+        tools:text="Title sdkfj sdlfjkld fkljk kdjfkl dklj lkdflksdj flkljdkl fjlksdjf klsdk EOL" />
+
+    <TextView
+        android:id="@+id/tvTypeContent"
+        style="@style/textStyleAutoSearch"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_toLeftOf="@+id/ivNextArrow"
+        android:layout_toRightOf="@id/ivBarLogo"
+        android:singleLine="true"
+        tools:text="Type sdkfj sdlfjkld fkljk kdjfkl dklj lkdflksdj flkljdkl fjlksdjf klsdk EOL" />
+
+    <TextView
+        android:id="@+id/tvDateContent"
+        style="@style/textStyleAutoSearch"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/ivDeleteFavoriteBar"
+        android:layout_toLeftOf="@+id/ivDeleteFavoriteBar"
+        android:layout_toRightOf="@id/ivBarLogo"
+        android:singleLine="true"
+        tools:text="Date sdkfj sdlfjkld fkljk kdjfkl dklj lkdflksdj flkljdkl fjlksdjf klsdk EOL" />
+
+    <CheckBox
+        android:id="@+id/checkBoxMyFavoriteBar"
+        style="@style/textStyleSignUpInformation"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/ivNextArrow"
+        android:layout_alignTop="@+id/tvTitleContent"
+        android:button="@drawable/checkbox_bg_selector_white_color"
+        android:clickable="true"
+        android:focusable="false"
+        android:gravity="left" />
+
+    <ImageView
+        android:id="@+id/ivNextArrow"
+        android:layout_width="25dp"
+        android:layout_height="25dp"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:gravity="right"
+        android:src="@drawable/arrow_next" />
+
+    <ImageView
+        android:id="@+id/ivDeleteFavoriteBar"
+        android:layout_width="25dp"
+        android:layout_height="25dp"
+        android:layout_alignBottom="@+id/ivBarLogo"
+        android:layout_alignLeft="@+id/ivNextArrow"
+        android:gravity="right"
+        android:src="@drawable/delete_white" />
+
+</RelativeLayout>

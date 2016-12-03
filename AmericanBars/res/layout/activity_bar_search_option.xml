@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Find Bar Screen -->
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:custom_edit="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/scrollView"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg_bar_search"
+    android:fillViewport="true"
+    android:scrollbars="vertical" >
+
+    <RelativeLayout
+        android:id="@+id/relativeLayoutFindBar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:gravity="center"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:id="@+id/linearLayoutBarSearch"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="20dp"
+            android:gravity="center"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/tvTitleBarSearch"
+                style="@style/textStyleRememberMe"
+                android:layout_width="@dimen/editTextWidth"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="BAR SEARCH" />
+
+            <Button
+                android:id="@+id/btnSearchAroundMe"
+                style="@style/button_style"
+                android:layout_width="@dimen/editTextWidth"
+                android:layout_height="50dp"
+                android:layout_marginTop="20dp"
+                android:text="AROUND ME" />
+
+            <Button
+                android:id="@+id/btnSearchAnother"
+                style="@style/button_style"
+                android:layout_width="@dimen/editTextWidth"
+                android:layout_height="50dp"
+                android:layout_marginTop="15dp"
+                android:text="ADVANCED SEARCH" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/linearLayoutBarSearch"
+            android:layout_marginBottom="20dp"
+            android:layout_marginTop="40dp"
+            android:gravity="center"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/tvTitleHappyHours"
+                style="@style/textStyleRememberMe"
+                android:layout_width="@dimen/editTextWidth"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="EVENTS &amp; HAPPY HOURS" />
+
+            <Button
+                android:id="@+id/btnSearchHappy"
+                style="@style/button_style"
+                android:layout_width="@dimen/editTextWidth"
+                android:layout_height="50dp"
+                android:layout_marginTop="20dp"
+                android:text="AROUND ME" />
+
+            <Button
+                android:id="@+id/btnSearchAnotherLocation"
+                style="@style/button_style"
+                android:layout_width="@dimen/editTextWidth"
+                android:layout_height="50dp"
+                android:layout_marginTop="15dp"
+                android:text="ADVANCED SEARCH"
+                android:visibility="gone" />
+        </LinearLayout>
+    </RelativeLayout>
+
+</ScrollView>

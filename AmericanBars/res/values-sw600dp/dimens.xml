@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- Photo Gallery details -->
+    <dimen name="relativeLayoutBarGallery_padding">19dp</dimen>
+    <dimen name="relativeLayoutSelectedImage_margin_top">19dp</dimen>
+    <dimen name="relativeLayout_width">562dp</dimen>
+    <dimen name="relativeLayout_height">562dp</dimen>
+    <dimen name="gallerySelectedImage_width">562dp</dimen>
+    <dimen name="gallerySelectedImage_height">562dp</dimen>
+    <dimen name="gallery_name_margin_left">19dp</dimen>
+    <dimen name="gallery_name_margin_right">19dp</dimen>
+    <dimen name="share_image_margin_right">19dp</dimen>
+    <dimen name="relativeLayoutGallery_width">562dp</dimen>
+    <dimen name="relativeLayoutGallery_margin_top">19dp</dimen>
+    <dimen name="galleryLeftArrow_width">48dp</dimen>
+    <dimen name="galleryLeftArrow_height">48dp</dimen>
+    <dimen name="gallery_width">562dp</dimen>
+    <dimen name="gallery_margin_left">19dp</dimen>
+    <dimen name="gallery_margin_right">19dp</dimen>
+    <dimen name="gallery_spacing">19dp</dimen>
+
+    <!-- BeerSearchListActivity icon click -->
+
+    <dimen name="linearLayoutDrawerHeader_width">281dp</dimen>
+    <dimen name="list_slidermenu_width">281dp</dimen>
+    <dimen name="list_slidermenu_padding">24dp</dimen>
+    <dimen name="textSizeButtonGridAlphabatic">38dp</dimen>
+
+    <!-- Sign In Screen -->
+    <dimen name="editTextWidth">400dp</dimen>
+
+    <!-- Sign Up Screen -->
+    <dimen name="radiobutton_textview_marginRight">19dp</dimen>
+    <dimen name="radiobutton_marginRight">9dp</dimen>
+
+    <!-- activity_beer_details -->
+    <dimen name="relativeLayoutVideo_width">560dp</dimen>
+    <dimen name="relativeLayoutVideo_height">375dp</dimen>
+
+    <!-- Home Screen -->
+    <dimen name="textSizeDimen12">14sp</dimen>
+    <dimen name="textSizeDimen14">16sp</dimen>
+    <dimen name="textSizeDimen">20sp</dimen>
+    <dimen name="textSizeDimenTitle">22sp</dimen>
+    <dimen name="dim_5">7dp</dimen>
+    <dimen name="dim_7">11dp</dimen>
+    <dimen name="dim_12">14dp</dimen>
+    <dimen name="dim_10">12dp</dimen>
+    <dimen name="dim_70">100dp</dimen>
+
+    <!-- Beer Logo -->
+    <dimen name="beerLogo_width">120dp</dimen>
+    <dimen name="beerLogo_height">120dp</dimen>
+
+    <!-- button Width and Height -->
+    <dimen name="button_width">170dp</dimen>
+    <dimen name="button_height">60dp</dimen>
+
+    <!-- Add Album button width -->
+    <dimen name="add_album_button_width">160dp</dimen>
+
+    <!-- button width :My favourite bars -->
+    <dimen name="favourite_bars_button_width">150dp</dimen>
+
+    <!-- My Profile TextView width -->
+    <dimen name="textViewTitleMyProfileWidth">100dp</dimen>
+
+    <!-- Suggest New Beer Screen -->
+    <dimen name="tvTitleSuggestNewBeerWidth">135dp</dimen>
+
+    <!-- Suggest New Cocktail Screen -->
+    <dimen name="tvTitleSuggestNewCocktailWidth">145dp</dimen>
+    <dimen name="btn_suggest_new_width">250dp</dimen>
+
+    <!-- Bar Details - Hours We Are Open -->
+    <dimen name="day_name_width">105dp</dimen>
+    <dimen name="hour_name_width">190dp</dimen>
+
+    <!-- Media Picker Gallery -->
+    <dimen name="dim_80">150dp</dimen>
+    <dimen name="dim_20_media">36dp</dimen>
+    <dimen name="dim_80_media">150dp</dimen>
+    <dimen name="dim_5_media">8dp</dimen>
+    <dimen name="dim_2_media">3dp</dimen>
+    <dimen name="dim_10_media">18dp</dimen>
+    
+    <!-- Bar Trivia Game Screen and Quiz Screen -->
+    <dimen name="dim_50">94dp</dimen>
+    <dimen name="dim_110">206dp</dimen>
+    <dimen name="dim_140">262dp</dimen>
+    <dimen name="dim_200">375dp</dimen>
+    <dimen name="textSize_23">43sp</dimen>
+    
+    <!-- For the Special Bar Hours -->
+    <dimen name="textSize_13_all">24sp</dimen>
+    <dimen name="textSize_14_all">27sp</dimen>
+
+</resources>

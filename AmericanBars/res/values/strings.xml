@@ -1,0 +1,225 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">American Bars</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+
+    <!-- Home Screen -->
+    <!-- <string name="txt_bar_search">BAR SEARCH</string> -->
+    <string name="txt_bar_search">BAR &amp; EVENT SEARCH</string>
+    <string name="txt_beer_directory">BEER DIRECTORY</string>
+    <string name="txt_cocktail_directory">COCKTAIL RECIPES</string>
+    <string name="txt_liquor_directory">LIQUOR DIRECTORY</string>
+    <string name="txt_taxi_directory">TAXI DIRECTORY</string>
+    <string name="txt_photo_gallery">PHOTO GALLERY</string>
+    <string name="txt_dash_board">MY DASHBOARD</string>
+    <string name="txt_trivia_game">TRIVIA GAME</string>
+    <string name="txt_articles">ARTICLES</string>
+
+    <!-- Login Screen -->
+    <string name="image_logo">Logo Image</string>
+    <string name="txt_email">Email</string>
+    <string name="txt_password">Password</string>
+    <string name="btn_sign_in">SIGN IN</string>
+    <string name="txt_forgotpwd">Forgot Password</string>
+    <string name="txt_remember_me">Remember me</string>
+    <string name="btn_create_account">CREATE ACCOUNT</string>
+    <string name="btn_login_with_facebook">Login With Facebook</string>
+
+    <!-- Forgot Password Screen -->
+    <string name="btn_send">SEND</string>
+
+    <!-- Reset Password Screen -->
+    <string name="txt_reset_pwd_desc">Please enter the following details to reset the password:</string>
+    <string name="txt_verification_code">Verification Code</string>
+    <string name="txt_rpwd_sent_email">Enter Code which is sent you in the email.</string>
+    <string name="txt_new_pwd">New Password</string>
+    <string name="txt_confirm_new_pwd">Confirm New Password</string>
+    <string name="btn_reset_password">RESET PASSWORD</string>
+
+    <!-- Sign Up Screen -->
+    <!-- <string name="txt_bar_fly_nickname">Bar Fly Nickname</string> -->
+    <string name="txt_bar_fly_nickname">Username</string>
+    <string name="txt_first_name">First Name</string>
+    <string name="txt_last_name">Last Name</string>
+    <string name="txt_mobile_number">Mobile Number</string>
+    <string name="txt_confirm_password">Confirm Password</string>
+    <string name="txt_birthday">Birthday</string>
+    <string name="txt_female">Female</string>
+    <string name="txt_male">Male</string>
+    <string name="btn_sign_up">SIGN UP</string>
+    <string name="txt_sign_up_info">By checking this box, you are certifying that you are over the age of 21. The subject matter of this website is intended only for people over the age of 21 and use of this website by people under the age of 21 is not authorized.</string>
+    <string name="txt_sign_up_info_1">By clicking Sign Up, you agree to our Terms and that you have read our Data Use Policy including our Cookie Use.</string>
+
+    <!-- Change Password Screen -->
+    <string name="txt_change_pwd_desc">Please enter the following details to change the password:</string>
+    <string name="txt_old_pwd">Old Password</string>
+    <string name="btn_change_password">CHANGE PASSWORD</string>
+
+    <!-- Find Bar Screen -->
+    <string name="txt_start_typing_name">Start Typing Name</string>
+    <string name="txt_name_of_bar">Name of Bar</string>
+    <string name="txt_state">State</string>
+    <string name="txt_city">City</string>
+    <string name="txt_zip_code">ZipCode</string>
+    <string name="txt_start_your_search">START YOUR SEARCH</string>
+    <string name="txt_find_bar_title">FIND A BAR! SEARCH BY ANY\nFIELD BELOW!</string>
+    <string name="txt_search_here">Search here...</string>
+    <string name="txt_spinner_sort_title">Sort By</string>
+    <string name="txt_find_bar_title_happy_hour">FIND A HAPPY HOUR! SEARCH BY ANY FIELD BELOW!</string>
+    <string name="txt_phone">Phone</string>
+    <string name="txt_what_do_you_want">What do you want?</string>
+    <string name="error_init_failure">Initialization failure: Unable to play video</string>
+    <string name="txt_spinner_share_title">Share Via</string>
+
+    <!-- All the Details Screen -->
+    <!-- Favorite button strings -->
+    <string name="btn_add_my_bar">Add to \nMy Bar List</string>
+    <string name="btn_add_my_beer">Add to \nMy Beer List</string>
+    <string name="btn_add_my_cocktail">Add to \nMy Cocktail List</string>
+    <string name="btn_add_my_liquor">Add to \nMy Liquor List</string>
+    <!-- <string name="btn_add_to_favorite">Add To Favorite</string> -->
+    <!-- <string name="btn_remove_favorite">Remove Favorite</string> -->
+    <string name="btn_remove_favorite">Remove from List</string>
+
+    <!-- Like button strings -->
+    <string name="btn_like_this_bar">Like This Bar</string>
+    <string name="btn_already_liked">Already Liked</string>
+    <string name="btn_like_this_beer">Like This Beer</string>
+    <string name="btn_dislike_this_beer">Dislike This Beer</string>
+    <string name="btn_like_this_cocktail">Like This Cocktail</string>
+    <string name="btn_dislike_this_cocktail">Dislike This Cocktail</string>
+    <string name="btn_like_this_liquor">Like This Liquor</string>
+    <string name="btn_dislike_this_liquor">Dislike This Liquor</string>
+    
+    <string name="btn_get_directions">Get Directions</string>
+
+    <!-- Dashboard Screen -->
+    <string name="txt_my_profile">MY PROFILE</string>
+    <string name="txt_my_albums">MY ALBUMS</string>
+    <!-- <string name="txt_my_favorite_bars">MY FAVORITE BARS</string>
+    <string name="txt_my_favorite_beers">MY FAVORITE BEERS</string>
+    <string name="txt_my_favorite_cocktails">MY FAVORITE COCKTAILS</string>
+    <string name="txt_my_favorite_liquors">MY FAVORITE LIQUORS</string> -->
+    <string name="txt_my_favorite_bars">MY BAR LIST</string>
+    <string name="txt_my_favorite_beers">MY BEER LIST</string>
+    <string name="txt_my_favorite_cocktails">MY COCKTAIL LIST</string>
+    <string name="txt_my_favorite_liquors">MY LIQUOR LIST</string>
+    <string name="txt_privacy_settings">PRIVACY SETTINGS</string>
+    <string name="txt_chnage_password">CHANGE PASSWORD</string>
+    <string name="txt_log_out">LOGOOUT</string>
+    <string name="txt_home">HOME</string>
+
+    <!-- My Profile Screen -->
+    <string name="txt_bar_fly_nick_name">Bar Fly NickName</string>
+    <string name="txt_user_name">User Name</string>
+    <string name="txt_gender">Gender</string>
+    <string name="txt_about_user">About User</string>
+    <string name="txt_address">Address</string>
+    <string name="txt_address_info">(Please fill in your address information only if your want to receive American Dive Bars Newsletters and promotional items in the mail.)</string>
+    <string name="txt_zipcode">Zip Code</string>
+    <string name="txt_mobile_number_info">( Please provide your mobile phone information only if you want to receive promotional information via text from American Dive Bars and bars listed in your favorite section.)</string>
+    <string name="txt_mobile_no">Mobile No.</string>
+    <string name="btn_save">Save</string>
+    <string name="btn_cancel">Cancel</string>
+    <string name="btn_select_all">Select All</string>
+    <string name="btn_deselect_all">Deselect All</string>
+    <string name="btn_delete">Delete</string>
+    <string name="btn_add_album">Add Album</string>
+    <!--
+    <string name="btn_create_album">Create Album</string>
+	<string name="btn_edit_album">Edit Album</string>
+    -->
+    <string name="txt_spinner_status_title">Select Staus</string>
+    <string name="txt_show">Show</string>
+    <string name="txt_hide">Hide</string>
+
+    <!-- For the Singe/Multiple Media Selection -->
+    <string name="mediapicker_button_select">Select media</string>
+    <string name="mediapicker_button_done">Done</string>
+    <string name="mediapicker_button_cancel">Cancel</string>
+    <string name="mediapicker_loading_galleries">Loading albums</string>
+    <string name="mediapicker_loading_media">Loading media in album</string>
+    <string name="mediapicker_no_images">You must select at least one media file.</string>
+    <string name="mediapicker_no_galleries">You have no albums or media files on your phone.</string>
+    <string name="mediapicker_max_selected" formatted="false">You have already selected the maximum number allowed (%d).</string>
+    <string name="mediapicker_title_num" formatted="false">Album: %s (%d)</string>
+    <string name="mediapicker_title_num_max" formatted="false">Album: %s (%d / %d)</string>
+
+    <!-- Contact Us Screen -->
+    <string name="txt_contact_us_title">Looking to spend some time at the American Bars? We’d love to hear from you! Feel free to contact us at any of the links below, and we will get back to you as soon as possible.</string>
+
+    <!-- Facebook Login -->
+    <string name="cancelled">Cancelled</string>
+    <string name="permission_not_granted">Unable to perform selected action because permissions were not granted.</string>
+    <string name="ok">OK</string>
+    <string name="hello_user">Hello %1$s!</string>
+    <string name="success">Success</string>
+    <string name="successfully_posted_post">Successfully posted \'%1$s\'.\nPost ID: %2$s</string>
+    <string name="error">Error</string>
+    <string name="status_update">Updating status for %1$s at %2$s</string>
+    <string name="photo_post">Photo Post</string>
+    <string name="you_picked">You picked:</string>
+    <string name="no_friends_selected">&lt;No friends selected&gt;</string>
+    <string name="no_place_selected">&lt;No place selected&gt;</string>
+    <string name="pick_seattle_place">Pick a Seattle Place</string>
+    <string name="str_btn_draw">Draw Route</string>
+
+    <!-- Suggest New Beer Screen -->
+    <string name="txt_beer_title">Beer Title</string>
+    <string name="txt_desc">Description</string>
+    <string name="txt_type">Type</string>
+    <string name="txt_abv">ABV</string>
+    <string name="txt_brewed_by">Brewed By</string>
+    <string name="txt_city_produced">City Produced</string>
+    <string name="txt_country">Country</string>
+    <string name="txt_website">Website</string>
+
+    <!-- Suggest New Cocktail Screen -->
+    <string name="txt_cocktail_name">Cocktail Name</string>
+    <string name="txt_ingredients">Ingredients</string>
+    <string name="txt_how_to_make_it">How To Make It</string>
+    <string name="txt_base_spirit"> Base Spirit</string>
+    <string name="txt_served">Served</string>
+    <string name="txt_Preparation">Preparation</string>
+    <string name="txt_Strength">Strength</string>
+    <string name="txt_Difficulty">Difficulty</string>
+    <string name="txt_flavor_profile">Flavor Profile</string>
+
+    <!-- Suggest New Liquor Screen -->
+    <string name="txt_liquor_name">Liquor Name</string>
+    <string name="txt_proof">Proof</string>
+    <string name="txt_producer">Producer</string>
+    
+    <!-- Suggest New Bar Screen -->
+    <string name="txt_street">Street</string>
+    <string name="txt_bar_name">Bar Name</string>
+     <string name="txt_phone_number">Phone No.</string>
+
+    <!-- Full Mug Bar Details Screen -->
+    <string name="txt_no_happy_hours">This bar has not yet added any information regarding Happy Hours.</string>
+    <string name="txt_no_hours_we_are_open">This bar has not yet added any information regarding Open hours.</string>
+    <string name="txt_no_bar_gallery">This bar has not yet added any information regarding Bar Gallery.</string>
+    <string name="txt_no_bar_events">This bar has not yet added any information regarding Bar Events.</string>
+    <string name="txt_no_beers">This bar has not yet added any information regarding Beers Served.</string>
+    <string name="txt_no_cocktails_liquors">This bar has not yet added any information regarding Cocktails/Liquors Served.</string>
+    <!-- <string name="txt_no_raves_rants">This bar has not yet added any information regarding Reviews.</string> -->
+    <string name="txt_no_raves_rants">This bar does not yet have any Rants or Raves! Be the first to contribute.</string>
+    <string name="txtRantsAndRaves">Rants &amp; Raves</string>
+    
+    <string name="txt_select_day">Select Day</string>
+    
+    <!-- Bar Trivia Game -->
+    <string name="btn_bar_trivia_game">Start Trivia</string>
+
+    <!-- Facebook Application ID Key -->
+    <string name="app_id">1511977605793728</string>
+
+    <!-- My Account's Key -->
+    <string name="DEVELOPER_KEY">AIzaSyDgE_c1eMSvji_Esl81zg_1XzkWepw1bCk</string>
+
+    <!-- Client Account's Key -->
+    <!-- <string name="DEVELOPER_KEY">AIzaSyAMWPmxQUZTC2O2E5C3qE9ol5TM_PrDWJw</string> -->
+
+</resources>

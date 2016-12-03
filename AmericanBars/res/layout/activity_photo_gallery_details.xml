@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Photo Gallery Screen Details Layout -->
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/scroller"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg_login"
+    android:fillViewport="true"
+    android:scrollbars="vertical" >
+
+    <RelativeLayout
+        android:id="@+id/relativeLayoutBarGallery"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/relativeLayoutHoursWeAreOpen"
+        android:background="@color/backgroundColor"
+        android:padding="@dimen/relativeLayoutBarGallery_padding" >
+
+        <RelativeLayout
+            android:id="@+id/relativeLayoutSelectedImage"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/relativeLayoutSelectedImage_margin_top" >
+
+            <RelativeLayout
+                android:layout_width="@dimen/relativeLayout_width"
+                android:layout_height="@dimen/relativeLayout_height"
+                android:layout_centerHorizontal="true" >
+
+                <ImageView
+                    android:id="@+id/ivGallerySelectedImage"
+                    android:layout_width="@dimen/gallerySelectedImage_width"
+                    android:layout_height="@dimen/gallerySelectedImage_height"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentRight="true"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/gallery_big_place_holder" />
+
+                <RelativeLayout
+                    android:id="@+id/r1"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_alignParentBottom="true"
+                    android:alpha="0.5"
+                    android:background="@color/blackColor" >
+
+                    <TextView
+                        android:id="@+id/tvGalleryName"
+                        style="@style/textStyleBarTitle"
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:layout_marginLeft="@dimen/gallery_name_margin_left"
+                        android:layout_marginRight="@dimen/gallery_name_margin_right"
+                        android:layout_toLeftOf="@+id/ivShareImage"
+                        android:gravity="center|left"
+                        android:singleLine="true"
+                        android:text="Gallery Name sdkflj dfjklsdjfkldjfkljdslkfjklsdfjlksdjfkljsdklfjklsdjfklsdjlfkjsdklfjklsdjfklsdjfklsjkldjfkl"
+                        android:visibility="gone" />
+
+                    <ImageView
+                        android:id="@+id/ivShareImage"
+                        android:layout_width="25dp"
+                        android:layout_height="25dp"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginRight="@dimen/share_image_margin_right"
+                        android:src="@drawable/share" />
+
+                    <Spinner
+                        android:id="@+id/spinnerShare"
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:background="@drawable/edittext_selector"
+                        android:prompt="@string/txt_spinner_share_title"
+                        android:spinnerMode="dialog"
+                        android:visibility="invisible" />
+                </RelativeLayout>
+            </RelativeLayout>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/relativeLayoutGallery"
+            android:layout_width="@dimen/relativeLayoutGallery_width"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/relativeLayoutSelectedImage"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="@dimen/relativeLayoutGallery_margin_top"
+            android:orientation="horizontal" >
+
+            <ImageView
+                android:id="@+id/ivGalleryLeftArrow"
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:layout_centerVertical="true"
+                android:src="@drawable/arrow_left"
+                android:visibility="gone" />
+
+            <Gallery
+                android:id="@+id/gallery"
+                android:layout_width="@dimen/gallery_width"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/gallery_margin_left"
+                android:layout_marginRight="@dimen/gallery_margin_right"
+                android:layout_toLeftOf="@+id/ivGalleryRightArrow"
+                android:layout_toRightOf="@+id/ivGalleryLeftArrow"
+                android:spacing="@dimen/gallery_spacing" />
+
+            <ImageView
+                android:id="@+id/ivGalleryRightArrow"
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:src="@drawable/arrow_right"
+                android:visibility="gone" />
+        </RelativeLayout>
+    </RelativeLayout>
+
+</ScrollView>

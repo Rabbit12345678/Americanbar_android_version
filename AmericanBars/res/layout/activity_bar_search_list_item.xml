@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Bar Screen Row Layout -->
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/bar_list_item_selector"
+    android:orientation="vertical"
+    android:padding="10dp" >
+
+    <!-- ImageView - Bar icon -->
+
+    <ImageView
+        android:id="@+id/ivBarLogo"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignTop="@+id/tvBarAddress"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="2dp"
+        android:clickable="true"
+        android:scaleType="fitXY"
+        android:src="@drawable/no_image_bar" />
+
+    <!-- TextView - Bar Name -->
+
+    <TextView
+        android:id="@+id/tvBarName"
+        style="@style/textStyleBarTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/ivBarLogo"
+        android:layout_alignParentTop="true"
+        android:singleLine="true"
+        tools:text="Bar Name" />
+
+    <!-- TextView - Bar Address -->
+
+    <TextView
+        android:id="@+id/tvBarAddress"
+        style="@style/textStyleAutoSearch"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tvBarName"
+        android:layout_marginTop="5dp"
+        android:layout_toLeftOf="@+id/ivNextArrow"
+        android:layout_toRightOf="@+id/ivBarLogo"
+        android:singleLine="true"
+        tools:text="Bar Address"
+        android:paddingTop="5dp" />
+
+    <!-- TextView - Bar Phone Number -->
+
+    <TextView
+        android:id="@+id/tvBarPhoneNumber"
+        style="@style/textStyleAutoSearch"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tvBarAddress"
+        android:layout_marginTop="10dp"
+        android:layout_toRightOf="@+id/ivBarLogo"
+        android:singleLine="true"
+        tools:text="(123) 456-7890" />
+
+    <!-- Bar Full/Half Mug icon -->
+
+    <ImageView
+        android:id="@+id/ivFullHalfMug"
+        android:layout_width="25dp"
+        android:layout_height="25dp"
+        android:layout_alignParentRight="true"
+        android:layout_alignTop="@+id/tvBarName"
+        android:layout_marginLeft="10dp"
+        android:gravity="right"
+        android:src="@drawable/full_mug" />
+
+    <!-- Next Arrow icon -->
+
+    <ImageView
+        android:id="@+id/ivNextArrow"
+        android:layout_width="25dp"
+        android:layout_height="25dp"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="5dp"
+        android:gravity="right"
+        android:src="@drawable/arrow_next" />
+
+    <!-- Star icons -->
+
+    <ImageView
+        android:id="@+id/ivStar1"
+        android:layout_width="25dp"
+        android:layout_height="25dp"
+        android:layout_below="@+id/tvBarPhoneNumber"
+        android:layout_marginRight="1dp"
+        android:layout_marginTop="10dp"
+        android:layout_toRightOf="@+id/ivBarLogo"
+        android:gravity="right"
+        android:src="@drawable/star_white" />
+
+    <ImageView
+        android:id="@+id/ivStar2"
+        android:layout_width="25dp"
+        android:layout_height="25dp"
+        android:layout_below="@+id/tvBarPhoneNumber"
+        android:layout_marginRight="1dp"
+        android:layout_marginTop="10dp"
+        android:layout_toRightOf="@+id/ivStar1"
+        android:gravity="right"
+        android:src="@drawable/star_white" />
+
+    <ImageView
+        android:id="@+id/ivStar3"
+        android:layout_width="25dp"
+        android:layout_height="25dp"
+        android:layout_below="@+id/tvBarPhoneNumber"
+        android:layout_marginRight="1dp"
+        android:layout_marginTop="10dp"
+        android:layout_toRightOf="@+id/ivStar2"
+        android:gravity="right"
+        android:src="@drawable/star_white" />
+
+    <ImageView
+        android:id="@+id/ivStar4"
+        android:layout_width="25dp"
+        android:layout_height="25dp"
+        android:layout_below="@+id/tvBarPhoneNumber"
+        android:layout_marginRight="1dp"
+        android:layout_marginTop="10dp"
+        android:layout_toRightOf="@+id/ivStar3"
+        android:gravity="right"
+        android:src="@drawable/star_white" />
+
+    <ImageView
+        android:id="@+id/ivStar5"
+        android:layout_width="25dp"
+        android:layout_height="25dp"
+        android:layout_below="@+id/tvBarPhoneNumber"
+        android:layout_marginRight="1dp"
+        android:layout_marginTop="10dp"
+        android:layout_toRightOf="@+id/ivStar4"
+        android:gravity="right"
+        android:src="@drawable/star_white" />
+
+</RelativeLayout>

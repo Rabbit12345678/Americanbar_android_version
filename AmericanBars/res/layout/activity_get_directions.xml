@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Get Directions Screen -->
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/scrollView"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/backgroundColor"
+    android:fillViewport="true"
+    android:scrollbars="vertical" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/backgroundColor"
+        android:padding="10dp" >
+
+        <LinearLayout
+            android:id="@+id/linearLayoutStartLocation"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <TextView
+                style="@style/textStyleRememberMe"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Enter Start Location : " />
+
+            <AutoCompleteTextView
+                android:id="@+id/tvAutoComplete"
+                style="@style/edittext_style_my_profile"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/editTextHeightMyProfile"
+                android:layout_marginTop="3dp"
+                android:ems="10"
+                android:hint="Start" >
+            </AutoCompleteTextView>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/linearLayoutDetstinationLocation"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/linearLayoutStartLocation"
+            android:layout_marginTop="10dp"
+            android:orientation="vertical" >
+
+            <TextView
+                style="@style/textStyleRememberMe"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Bar Location : " />
+
+            <TextView
+                android:id="@+id/tvDestinationAddress"
+                style="@style/textStyleRememberMe"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="3dp"
+                android:text="Destination Address" />
+        </LinearLayout>
+
+        <!-- Map -->
+
+        <fragment
+            android:id="@+id/map"
+            android:name="com.google.android.gms.maps.MapFragment"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/linearLayoutDetstinationLocation"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="10dp"
+            android:background="@color/greyColor" />
+    </RelativeLayout>
+
+</ScrollView>

@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- View Pager row Screen Layout -->
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="@drawable/rounded_border"
+    android:focusable="true"
+    android:focusableInTouchMode="true" >
+
+    <RelativeLayout
+        android:id="@+id/relativeLayoutDescription"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/lightBrownColor"
+        android:padding="10dp" >
+
+        <ImageView
+            android:id="@+id/ivDescription"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:src="@drawable/description" />
+
+        <TextView
+            android:id="@+id/tvFullDescriptionTitle"
+            style="@style/textStyleBarTitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="7dp"
+            android:layout_toLeftOf="@+id/ivCloseDialog"
+            android:layout_toRightOf="@+id/ivDescription"
+            android:layout_marginRight="3dp"
+            tools:text="How to Make It Description" />
+
+        <ImageView
+            android:id="@+id/ivCloseDialog"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true"
+            android:src="@drawable/close" />
+    </RelativeLayout>
+
+    <ScrollView
+        android:id="@+id/scrollView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/relativeLayoutDescription"
+        android:fillViewport="true"
+        android:scrollbars="vertical" >
+
+        <TextView
+            android:id="@+id/tvFullDescription"
+            style="@style/textStyleAutoSearch"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="20dp"
+            tools:text="hello klsdjflksdj flkjklsdfjklsadjfkljsdklfjlksdjfklsdjfkljsdlkfjklsdfjlkdjlfkjdklsjfklsdjflkjdsklfjdkljfkldjflkjsdklfjslkdjflk" />
+    </ScrollView>
+
+</RelativeLayout>

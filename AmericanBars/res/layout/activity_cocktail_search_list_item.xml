@@ -1,0 +1,190 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Cocktail Screen Row Layout -->
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/bar_list_item_selector"
+    android:descendantFocusability="blocksDescendants"
+    android:orientation="vertical"
+    android:padding="10dp" >
+
+    <!-- ImageView - Cocktail icon -->
+
+    <ImageView
+        android:id="@+id/ivCocktailLogo"
+        android:layout_width="@dimen/beerLogo_width"
+        android:layout_height="@dimen/beerLogo_height"
+        android:layout_alignLeft="@+id/tvCocktailName"
+        android:layout_below="@+id/tvCocktailName"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="8dp"
+        android:scaleType="fitXY"
+        android:src="@drawable/no_image_cocktail" />
+
+    <!-- TextView - Cocktail Name -->
+
+    <TextView
+        android:id="@+id/tvCocktailName"
+        style="@style/textStyleBeerTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:singleLine="true"
+        tools:text="Cocktail Name" />
+
+    <!-- Relative Layout - Ingredients -->
+
+    <RelativeLayout
+        android:id="@+id/relativeLayoutIngredients"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/ivCocktailLogo"
+        android:layout_toLeftOf="@+id/ivNextArrow"
+        android:layout_toRightOf="@+id/ivCocktailLogo" >
+
+        <TextView
+            android:id="@+id/tvIngredients"
+            style="@style/textStyleAutoSearch"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:singleLine="true"
+            tools:text="Ingredients" />
+    </RelativeLayout>
+
+    <!-- Relative Layout - Type -->
+
+    <RelativeLayout
+        android:id="@+id/relativeLayoutCocktailType"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/relativeLayoutIngredients"
+        android:layout_marginTop="5dp"
+        android:layout_toLeftOf="@+id/ivNextArrow"
+        android:layout_toRightOf="@+id/ivCocktailLogo" >
+
+        <ImageView
+            android:id="@+id/tvTitleBrewedBy"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_centerVertical="true"
+            android:src="@drawable/cocktail_type" />
+
+        <TextView
+            android:id="@+id/tv1"
+            style="@style/textStyleRememberMe"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:layout_toRightOf="@+id/tvTitleBrewedBy"
+            android:text=":" />
+
+        <TextView
+            android:id="@+id/tvCocktailType"
+            style="@style/textStyleAutoSearch"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@+id/tv1"
+            android:singleLine="true"
+            tools:text="Type" />
+    </RelativeLayout>
+
+    <!-- Relative Layout - Served -->
+
+    <RelativeLayout
+        android:id="@+id/relativeLayoutServed"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/relativeLayoutCocktailType"
+        android:layout_marginTop="5dp"
+        android:layout_toLeftOf="@+id/ivNextArrow"
+        android:layout_toRightOf="@+id/ivCocktailLogo" >
+
+        <ImageView
+            android:id="@+id/tvTitleCityProduced"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_centerVertical="true"
+            android:src="@drawable/cocktail_served" />
+
+        <TextView
+            android:id="@+id/tv2"
+            style="@style/textStyleRememberMe"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:layout_toRightOf="@+id/tvTitleCityProduced"
+            android:text=":" />
+
+        <TextView
+            android:id="@+id/tvServed"
+            style="@style/textStyleAutoSearch"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@+id/tv2"
+            android:singleLine="true"
+            tools:text="Served" />
+    </RelativeLayout>
+
+    <!-- Relative Layout - Website -->
+
+    <RelativeLayout
+        android:id="@+id/relativeLayoutDifficulty"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/relativeLayoutServed"
+        android:layout_marginTop="5dp"
+        android:layout_toLeftOf="@+id/ivNextArrow"
+        android:layout_toRightOf="@+id/ivCocktailLogo" >
+
+        <ImageView
+            android:id="@+id/tvTitleWebsite"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_centerVertical="true"
+            android:src="@drawable/cocktail_difficulty" />
+
+        <TextView
+            android:id="@+id/tv3"
+            style="@style/textStyleRememberMe"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:layout_toRightOf="@+id/tvTitleWebsite"
+            android:text=":" />
+
+        <TextView
+            android:id="@+id/tvDifficulty"
+            style="@style/textStyleAutoSearch"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@+id/tv3"
+            android:singleLine="true"
+            tools:text="Difficulty" />
+    </RelativeLayout>
+
+    <!-- Next Arrow icon -->
+
+    <ImageView
+        android:id="@+id/ivNextArrow"
+        android:layout_width="25dp"
+        android:layout_height="25dp"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="5dp"
+        android:gravity="right"
+        android:src="@drawable/arrow_next" />
+
+</RelativeLayout>

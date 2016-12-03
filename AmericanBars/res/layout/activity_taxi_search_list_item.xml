@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Taxi Screen Row Layout -->
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/bar_list_item_selector"
+    android:descendantFocusability="blocksDescendants"
+    android:orientation="vertical"
+    android:padding="10dp" >
+
+    <!-- ImageView - Taxi Company icon -->
+
+    <ImageView
+        android:id="@+id/ivTaxiCompanyLogo"
+        android:layout_width="@dimen/beerLogo_width"
+        android:layout_height="@dimen/beerLogo_height"
+        android:layout_alignLeft="@+id/tvTaxiComapnyName"
+        android:layout_below="@+id/tvTaxiComapnyName"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="8dp"
+        android:scaleType="fitXY"
+        android:src="@drawable/no_image_taxi" />
+
+    <!-- TextView - Taxi Company Name -->
+
+    <TextView
+        android:id="@+id/tvTaxiComapnyName"
+        style="@style/textStyleBeerTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:singleLine="true"
+        tools:text="Taxi Company Name" />
+
+    <!-- Next Arrow icon -->
+
+    <ImageView
+        android:id="@+id/ivNextArrow"
+        android:layout_width="25dp"
+        android:layout_height="25dp"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="5dp"
+        android:gravity="right"
+        android:src="@drawable/arrow_next" />
+
+    <!-- Relative Layout - Taxi Company Description -->
+
+    <RelativeLayout
+        android:id="@+id/relativeLayoutDescription"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/ivTaxiCompanyLogo"
+        android:layout_marginBottom="10dp"
+        android:layout_toLeftOf="@+id/ivNextArrow"
+        android:layout_toRightOf="@+id/ivTaxiCompanyLogo" >
+
+        <TextView
+            android:id="@+id/tvTaxiCompanyDescription"
+            style="@style/textStyleAutoSearch"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:singleLine="true"
+            tools:text="Description"
+            android:visibility="visible" />
+    </RelativeLayout>
+
+    <!-- Relative Layout - Taxi Company Address -->
+
+    <RelativeLayout
+        android:id="@+id/relativeLayoutTaxiCompanyAddress"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/relativeLayoutDescription"
+        android:layout_toLeftOf="@+id/ivNextArrow"
+        android:layout_toRightOf="@+id/ivTaxiCompanyLogo" >
+
+        <ImageView
+            android:id="@+id/tvTitleBrewedBy"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:src="@drawable/taxi_address" />
+
+        <TextView
+            android:id="@+id/tv1"
+            style="@style/textStyleRememberMe"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:layout_toRightOf="@+id/tvTitleBrewedBy"
+            android:text=":" />
+
+        <TextView
+            android:id="@+id/tvTaxiCompanyAddress"
+            style="@style/textStyleAutoSearch"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@+id/tv1"
+            tools:text="Taxi Company Address skdjfkl dsjfkljdkslfjkldjf djklfjdkljfkl dfjkldfjklsjdlkjdlskf dkfjkldsjflksdjl" />
+    </RelativeLayout>
+
+</RelativeLayout>

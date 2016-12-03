@@ -1,0 +1,362 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Dashboard Screen Layout -->
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/backgroundColor"
+    android:fillViewport="true" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:orientation="vertical"
+        android:paddingBottom="@dimen/dim_12"
+        android:paddingLeft="@dimen/dim_7"
+        android:paddingRight="@dimen/dim_7"
+        android:paddingTop="@dimen/dim_12"
+        android:weightSum="1.0" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="0.25"
+            android:orientation="horizontal" >
+
+            <LinearLayout
+                android:id="@+id/linearLayoutMyProfile"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@drawable/layout_light_brown_selector"
+                android:gravity="center"
+                android:orientation="vertical" >
+
+                <ImageView
+                    android:layout_width="@dimen/dim_70"
+                    android:layout_height="@dimen/dim_70"
+                    android:layout_marginTop="@dimen/dim_5"
+                    android:src="@drawable/dashboard_my_profile" />
+
+                <TextView
+                    style="@style/textStyleHomePage"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/dim_5"
+                    android:layout_marginTop="@dimen/dim_10"
+                    android:gravity="center"
+                    android:lines="2"
+                    android:text="@string/txt_my_profile" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/linearLayoutMyAlbums"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@drawable/layout_dark_brown_selector"
+                android:gravity="center"
+                android:orientation="vertical" >
+
+                <ImageView
+                    android:layout_width="@dimen/dim_70"
+                    android:layout_height="@dimen/dim_70"
+                    android:layout_marginTop="@dimen/dim_5"
+                    android:src="@drawable/dashboard_my_albums" />
+
+                <TextView
+                    style="@style/textStyleHomePage"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/dim_5"
+                    android:layout_marginTop="@dimen/dim_10"
+                    android:gravity="center"
+                    android:lines="2"
+                    android:text="@string/txt_my_albums" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/linearLayoutMyFavoriteBars"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@drawable/layout_light_brown_selector"
+                android:gravity="center"
+                android:orientation="vertical" >
+
+                <ImageView
+                    android:layout_width="@dimen/dim_70"
+                    android:layout_height="@dimen/dim_70"
+                    android:layout_marginTop="@dimen/dim_5"
+                    android:src="@drawable/home_bar_search" />
+
+                <TextView
+                    style="@style/textStyleHomePage"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/dim_5"
+                    android:layout_marginTop="@dimen/dim_10"
+                    android:gravity="center"
+                    android:lines="2"
+                    android:text="@string/txt_my_favorite_bars" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="0.25"
+            android:orientation="horizontal" >
+
+            <LinearLayout
+                android:id="@+id/linearLayoutMyFavoriteBeers"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@drawable/layout_dark_brown_selector"
+                android:gravity="center"
+                android:orientation="vertical" >
+
+                <ImageView
+                    android:layout_width="@dimen/dim_70"
+                    android:layout_height="@dimen/dim_70"
+                    android:layout_marginTop="@dimen/dim_5"
+                    android:src="@drawable/home_beer_directory" />
+
+                <TextView
+                    style="@style/textStyleHomePage"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/dim_5"
+                    android:layout_marginTop="@dimen/dim_10"
+                    android:gravity="center"
+                    android:lines="2"
+                    android:text="@string/txt_my_favorite_beers" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/linearLayoutMyFavoriteCocktails"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@drawable/layout_light_brown_selector"
+                android:gravity="center"
+                android:orientation="vertical" >
+
+                <ImageView
+                    android:layout_width="@dimen/dim_70"
+                    android:layout_height="@dimen/dim_70"
+                    android:layout_marginTop="@dimen/dim_5"
+                    android:src="@drawable/home_cocktail_directory" />
+
+                <TextView
+                    style="@style/textStyleHomePage"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/dim_5"
+                    android:layout_marginTop="@dimen/dim_10"
+                    android:gravity="center"
+                    android:lines="2"
+                    android:text="@string/txt_my_favorite_cocktails" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/linearLayoutMyFavoriteLiquors"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@drawable/layout_dark_brown_selector"
+                android:gravity="center"
+                android:orientation="vertical" >
+
+                <ImageView
+                    android:layout_width="@dimen/dim_70"
+                    android:layout_height="@dimen/dim_70"
+                    android:layout_marginTop="@dimen/dim_5"
+                    android:src="@drawable/home_liquor_directory" />
+
+                <TextView
+                    style="@style/textStyleHomePage"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/dim_5"
+                    android:layout_marginTop="@dimen/dim_10"
+                    android:gravity="center"
+                    android:lines="2"
+                    android:text="@string/txt_my_favorite_liquors" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="0.25"
+            android:orientation="horizontal" >
+
+            <LinearLayout
+                android:id="@+id/linearLayoutTriviaGame"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@drawable/layout_light_brown_selector"
+                android:gravity="center"
+                android:orientation="vertical" >
+
+                <ImageView
+                    android:layout_width="@dimen/dim_70"
+                    android:layout_height="@dimen/dim_70"
+                    android:layout_marginTop="@dimen/dim_5"
+                    android:src="@drawable/home_trivia_game" />
+
+                <TextView
+                    style="@style/textStyleHomePage"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/dim_5"
+                    android:layout_marginTop="@dimen/dim_10"
+                    android:gravity="center"
+                    android:lines="2"
+                    android:text="@string/txt_trivia_game" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/linearLayoutArticles"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@drawable/layout_dark_brown_selector"
+                android:gravity="center"
+                android:orientation="vertical" >
+
+                <ImageView
+                    android:layout_width="@dimen/dim_70"
+                    android:layout_height="@dimen/dim_70"
+                    android:layout_marginTop="@dimen/dim_5"
+                    android:src="@drawable/home_articles" />
+
+                <TextView
+                    style="@style/textStyleHomePage"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/dim_5"
+                    android:layout_marginTop="@dimen/dim_10"
+                    android:gravity="center"
+                    android:lines="2"
+                    android:text="@string/txt_articles" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/linearLayoutHome"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@drawable/layout_light_brown_selector"
+                android:gravity="center"
+                android:orientation="vertical" >
+
+                <ImageView
+                    android:layout_width="@dimen/dim_70"
+                    android:layout_height="@dimen/dim_70"
+                    android:layout_marginTop="@dimen/dim_5"
+                    android:src="@drawable/dashboard_home" />
+
+                <TextView
+                    style="@style/textStyleHomePage"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/dim_5"
+                    android:layout_marginTop="@dimen/dim_10"
+                    android:gravity="center"
+                    android:lines="2"
+                    android:text="@string/txt_home" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="0.25"
+            android:orientation="horizontal" >
+
+            <LinearLayout
+                android:id="@+id/linearLayoutPrivacySettings"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@drawable/layout_dark_brown_selector"
+                android:gravity="center"
+                android:orientation="vertical" >
+
+                <ImageView
+                    android:layout_width="@dimen/dim_70"
+                    android:layout_height="@dimen/dim_70"
+                    android:layout_marginTop="@dimen/dim_5"
+                    android:src="@drawable/dashboard_privacy_settings" />
+
+                <TextView
+                    style="@style/textStyleHomePage"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/dim_5"
+                    android:layout_marginTop="@dimen/dim_10"
+                    android:gravity="center"
+                    android:lines="2"
+                    android:text="@string/txt_privacy_settings" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/linearLayoutChangePassword"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@drawable/layout_light_brown_selector"
+                android:gravity="center"
+                android:orientation="vertical" >
+
+                <ImageView
+                    android:layout_width="@dimen/dim_70"
+                    android:layout_height="@dimen/dim_70"
+                    android:layout_marginTop="@dimen/dim_5"
+                    android:src="@drawable/dashboard_change_password" />
+
+                <TextView
+                    style="@style/textStyleHomePage"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/dim_5"
+                    android:layout_marginTop="@dimen/dim_10"
+                    android:gravity="center"
+                    android:lines="2"
+                    android:text="@string/txt_chnage_password" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/linearLayoutLogOut"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@drawable/layout_dark_brown_selector"
+                android:gravity="center"
+                android:orientation="vertical" >
+
+                <ImageView
+                    android:layout_width="@dimen/dim_70"
+                    android:layout_height="@dimen/dim_70"
+                    android:layout_marginTop="@dimen/dim_5"
+                    android:src="@drawable/dashboard_log_out" />
+
+                <TextView
+                    style="@style/textStyleHomePage"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/dim_5"
+                    android:layout_marginTop="@dimen/dim_10"
+                    android:gravity="center"
+                    android:lines="2"
+                    android:text="@string/txt_log_out" />
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+</ScrollView>

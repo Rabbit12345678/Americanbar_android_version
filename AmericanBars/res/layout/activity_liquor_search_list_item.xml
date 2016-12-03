@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Liquor Screen Row Layout -->
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/bar_list_item_selector"
+    android:descendantFocusability="blocksDescendants"
+    android:orientation="vertical"
+    android:padding="10dp" >
+
+    <!-- ImageView - Liquor icon -->
+
+    <ImageView
+        android:id="@+id/ivLiquorLogo"
+        android:layout_width="@dimen/beerLogo_width"
+        android:layout_height="@dimen/beerLogo_height"
+        android:layout_alignLeft="@+id/tvLiquorName"
+        android:layout_below="@+id/tvLiquorName"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="8dp"
+        android:scaleType="fitXY"
+        android:src="@drawable/no_image_liquor" />
+
+    <!-- TextView - Liquor Name -->
+
+    <TextView
+        android:id="@+id/tvLiquorName"
+        style="@style/textStyleBeerTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:singleLine="true"
+        tools:text="Liquor Name" />
+
+    <!-- Next Arrow icon -->
+
+    <ImageView
+        android:id="@+id/ivNextArrow"
+        android:layout_width="25dp"
+        android:layout_height="25dp"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="5dp"
+        android:gravity="right"
+        android:src="@drawable/arrow_next" />
+
+    <!-- Relative Layout - Liquor Type -->
+
+    <RelativeLayout
+        android:id="@+id/relativeLayoutLiquorType"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/ivLiquorLogo"
+        android:layout_toLeftOf="@+id/ivNextArrow"
+        android:layout_toRightOf="@+id/ivLiquorLogo" >
+
+        <ImageView
+            android:id="@+id/tvTitleBeerType"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_centerVertical="true"
+            android:src="@drawable/liquor_type" />
+
+        <TextView
+            android:id="@+id/tv"
+            style="@style/textStyleRememberMe"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:layout_toRightOf="@+id/tvTitleBeerType"
+            android:text=":" />
+
+        <TextView
+            android:id="@+id/tvLiquorType"
+            style="@style/textStyleAutoSearch"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@+id/tv"
+            android:singleLine="true"
+            tools:text="Liquor Type" />
+    </RelativeLayout>
+
+    <!-- Relative Layout - ABV -->
+
+    <RelativeLayout
+        android:id="@+id/relativeLayoutABV"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/relativeLayoutLiquorType"
+        android:layout_marginTop="18dp"
+        android:layout_toLeftOf="@+id/ivNextArrow"
+        android:layout_toRightOf="@+id/ivLiquorLogo" >
+
+        <ImageView
+            android:id="@+id/tvTitleBrewedBy"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_centerVertical="true"
+            android:src="@drawable/liquor_abv" />
+
+        <TextView
+            android:id="@+id/tv1"
+            style="@style/textStyleRememberMe"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:layout_toRightOf="@+id/tvTitleBrewedBy"
+            android:text=":" />
+
+        <TextView
+            android:id="@+id/tvABV"
+            style="@style/textStyleAutoSearch"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@+id/tv1"
+            android:singleLine="true"
+            tools:text="ABV" />
+    </RelativeLayout>
+
+    <!-- Relative Layout - Producer -->
+
+    <RelativeLayout
+        android:id="@+id/relativeLayoutCityProducer"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/ivLiquorLogo"
+        android:layout_toRightOf="@+id/ivLiquorLogo" >
+
+        <ImageView
+            android:id="@+id/tvTitleCityProduced"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_centerVertical="true"
+            android:src="@drawable/liquor_producer" />
+
+        <TextView
+            android:id="@+id/tv2"
+            style="@style/textStyleRememberMe"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:layout_toRightOf="@+id/tvTitleCityProduced"
+            android:text=":" />
+
+        <TextView
+            android:id="@+id/tvProducer"
+            style="@style/textStyleAutoSearch"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@+id/tv2"
+            android:singleLine="true"
+            tools:text="Producer" />
+    </RelativeLayout>
+
+</RelativeLayout>

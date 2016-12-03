@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Add Album Image Row Layout -->
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/bar_list_item_selector"
+    android:orientation="vertical"
+    android:paddingTop="10dp" >
+
+    <RelativeLayout
+        android:id="@+id/relativeLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp" >
+
+        <ImageView
+            android:id="@+id/ivAlbumImage"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:layout_alignLeft="@+id/tvBeerName"
+            android:layout_below="@+id/tvBeerName"
+            android:scaleType="fitXY"
+            android:src="@drawable/gallery_small_place_holder" />
+
+        <EditText
+            android:id="@+id/etImageTitle"
+            style="@style/textStyleSpinner"
+            android:layout_width="match_parent"
+            android:layout_height="35dp"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="7dp"
+            android:layout_marginRight="5dp"
+            android:layout_toLeftOf="@+id/ivDeleteAlbumImage"
+            android:layout_toRightOf="@+id/ivAlbumImage"
+            android:hint="Image Title"
+            android:paddingLeft="8dp"
+            android:paddingRight="8dp"
+            android:singleLine="true" />
+
+        <ImageView
+            android:id="@+id/ivDeleteAlbumImage"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:gravity="right"
+            android:src="@drawable/delete_grey" />
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:layout_below="@+id/relativeLayout"
+        android:layout_marginTop="10dp"
+        android:background="@color/spinner_border_color" />
+
+</RelativeLayout>

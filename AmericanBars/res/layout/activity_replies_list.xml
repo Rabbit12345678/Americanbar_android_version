@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Comment Replies List Screen Layout -->
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/backgroundColor"
+    android:focusable="true"
+    android:focusableInTouchMode="true" >
+
+    <RelativeLayout
+        android:id="@+id/relativeLayoutWriteAReview"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="5dp" >
+
+        <EditText
+            android:id="@+id/etReply"
+            style="@style/edittext_multiline_style_grey_to_lightbrown"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/editTextMultilineHeightMyProfile"
+            android:gravity="top"
+            android:hint="Write Here"
+            android:nextFocusLeft="@id/etReply"
+            android:nextFocusUp="@id/etReply"
+            android:scrollbars="vertical" />
+
+        <Button
+            android:id="@+id/buttonPostReply"
+            style="@style/button_style_gradient"
+            android:layout_width="150dp"
+            android:layout_height="40dp"
+            android:layout_alignParentRight="true"
+            android:layout_below="@id/etReply"
+            android:layout_marginTop="10dp"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:text="Post" />
+    </RelativeLayout>
+
+    <View
+        android:id="@+id/viewLine"
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:layout_below="@id/relativeLayoutWriteAReview"
+        android:layout_marginTop="5dp"
+        android:background="@color/lightBrownColor" />
+
+    <com.spaculus.helpers.LoadMoreListView
+        android:id="@+id/listViewReplies"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/viewLine"
+        android:divider="@color/bar_search_divider_color"
+        android:dividerHeight="1px"
+        android:visibility="visible" />
+
+</RelativeLayout>

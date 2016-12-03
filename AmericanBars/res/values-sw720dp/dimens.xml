@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- Photo Gallery details -->
+    <dimen name="relativeLayoutBarGallery_padding">23dp</dimen>
+    <dimen name="relativeLayoutSelectedImage_margin_top">23dp</dimen>
+    <dimen name="relativeLayout_width">674dp</dimen>
+    <dimen name="relativeLayout_height">674dp</dimen>
+    <dimen name="gallerySelectedImage_width">674dp</dimen>
+    <dimen name="gallerySelectedImage_height">674dp</dimen>
+    <dimen name="gallery_name_margin_left">23dp</dimen>
+    <dimen name="gallery_name_margin_right">23dp</dimen>
+    <dimen name="share_image_margin_right">23dp</dimen>
+    <dimen name="relativeLayoutGallery_width">674dp</dimen>
+    <dimen name="relativeLayoutGallery_margin_top">23dp</dimen>
+    <dimen name="galleryLeftArrow_width">58dp</dimen>
+    <dimen name="galleryLeftArrow_height">58dp</dimen>
+    <dimen name="gallery_width">674dp</dimen>
+    <dimen name="gallery_margin_left">23dp</dimen>
+    <dimen name="gallery_margin_right">23dp</dimen>
+    <dimen name="gallery_spacing">23dp</dimen>
+
+    <!-- BeerSearchListActivity icon click -->
+
+    <dimen name="linearLayoutDrawerHeader_width">337dp</dimen>
+    <dimen name="list_slidermenu_width">337dp</dimen>
+    <dimen name="list_slidermenu_padding">29dp</dimen>
+    <dimen name="textSizeButtonGridAlphabatic">46dp</dimen>
+
+    <!-- Sign In Screen -->
+    <dimen name="editTextWidth">500dp</dimen>
+
+    <!-- Sign Up Screen -->
+    <dimen name="radiobutton_textview_marginRight">23dp</dimen>
+    <dimen name="radiobutton_marginRight">11dp</dimen>
+
+    <!-- activity_beer_details -->
+    <dimen name="relativeLayoutVideo_width">650dp</dimen>
+    <dimen name="relativeLayoutVideo_height">425dp</dimen>
+    
+    <!-- Media Picker Gallery -->
+    <dimen name="dim_80">180dp</dimen>
+    <dimen name="dim_20_media">44dp</dimen>
+    <dimen name="dim_80_media">180dp</dimen>
+    <dimen name="dim_5_media">10dp</dimen>
+    <dimen name="dim_2_media">4dp</dimen>
+    <dimen name="dim_10_media">22dp</dimen>
+    
+    <!-- Bar Trivia Game Screen and Quiz Screen -->
+    <dimen name="dim_50">112dp</dimen>
+     <dimen name="dim_110">247dp</dimen>
+    <dimen name="dim_140">315dp</dimen>
+    <dimen name="dim_200">450dp</dimen>
+    <dimen name="textSize_23">52sp</dimen>
+    
+    <!-- For the Special Bar Hours -->
+    <dimen name="textSize_13_all">29sp</dimen>
+    <dimen name="textSize_14_all">31sp</dimen>
+
+</resources>

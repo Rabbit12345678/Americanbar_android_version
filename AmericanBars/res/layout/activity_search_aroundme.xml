@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Main Activity Screen Layout -->
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/relLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/backgroundColor" >
+
+    <RelativeLayout
+        android:id="@+id/relativeLayoutHeader"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        android:background="@color/backgroundColor"
+        android:gravity="right" >
+
+        <Button
+            android:id="@+id/buttonSuggestNewBar"
+            style="@style/button_style_gradient"
+            android:layout_width="@dimen/btn_suggest_new_width"
+            android:layout_height="@dimen/btn_suggest_new_height"
+            android:layout_centerInParent="true"
+            android:text="Suggest New Bar" 
+            android:visibility="gone"/>
+
+        <ImageView
+            android:id="@+id/ivSwitch"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_alignParentRight="true"
+            android:src="@drawable/switch_listing" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/relativeLayoutMap"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/relativeLayoutHeader"
+        android:visibility="visible" >
+
+        <fragment
+            android:id="@+id/map"
+            android:name="com.google.android.gms.maps.MapFragment"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_centerHorizontal="true"
+            android:background="@color/greyColor" />
+    </RelativeLayout>
+
+    <ListView
+        android:id="@+id/listViewBars"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/relativeLayoutHeader"
+        android:divider="@color/bar_search_divider_color"
+        android:dividerHeight="1px"
+        android:footerDividersEnabled="false"
+        android:visibility="gone" />
+
+</RelativeLayout>

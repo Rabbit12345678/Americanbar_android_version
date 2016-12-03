@@ -1,0 +1,309 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Contact Us Screen -->
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/scrollView"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/backgroundColor"
+    android:fillViewport="true"
+    android:scrollbars="vertical" >
+
+    <RelativeLayout
+        android:id="@+id/relativeLayoutContactUs"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
+
+        <RelativeLayout
+            android:id="@+id/relativeLayoutHeader"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="15dp" >
+
+            <TextView
+                android:id="@+id/txtContactUsTitle"
+                style="@style/textStyleAutoSearch"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="@string/txt_contact_us_title" />
+
+            <RelativeLayout
+                android:id="@+id/relativeLayoutAddress"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/txtContactUsTitle"
+                android:layout_marginTop="30dp" >
+
+                <TextView
+                    android:id="@+id/tvAddressTitle"
+                    style="@style/textStyleRememberMe"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_toRightOf="@+id/ivAddress"
+                    android:text="Address" />
+
+                <TextView
+                    android:id="@+id/tvAddress"
+                    style="@style/textStyleAutoSearch"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/tvAddressTitle"
+                    android:layout_toLeftOf="@+id/ivShowMap"
+                    android:layout_toRightOf="@+id/ivAddress"
+                    tools:text="Address Content here.... jdklfjlsdk fkdjlfkjdlkjfkldjflkjdlkf dkjfkldjfkldklfjdkl fksdjfkljdsklfjklsd fsdjklfjdklsjfklsdjf sdkfjklsdjfkldj fklsdfkldfjkldklsfj dkljfkldjfkljd fjkdlsjfkl dsfdklfjdklsjf ksdjfkljsdklfjklsdjfkljsdfdfjklsdjfklsdklfd END" />
+
+                <ImageView
+                    android:id="@+id/ivAddress"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="15dp"
+                    android:src="@drawable/contact_us_address" />
+
+                <ImageView
+                    android:id="@+id/ivShowMap"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="10dp"
+                    android:gravity="right"
+                    android:src="@drawable/contact_us_map" />
+            </RelativeLayout>
+
+            <View
+                android:id="@+id/viewLine1"
+                android:layout_width="match_parent"
+                android:layout_height="1px"
+                android:layout_below="@+id/relativeLayoutAddress"
+                android:layout_marginBottom="15dp"
+                android:layout_marginTop="15dp"
+                android:background="@color/spinner_border_color" />
+
+            <RelativeLayout
+                android:id="@+id/relativeLayoutPhone"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/viewLine1" >
+
+                <TextView
+                    android:id="@+id/tvPhoneTitle"
+                    style="@style/textStyleRememberMe"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_toRightOf="@+id/ivPhone"
+                    android:text="Phone" />
+
+                <TextView
+                    android:id="@+id/tvPhone"
+                    style="@style/textStyleAutoSearch"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/tvPhoneTitle"
+                    android:layout_toRightOf="@+id/ivPhone"
+                    android:text="800.303.8803" />
+
+                <ImageView
+                    android:id="@+id/ivPhone"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="15dp"
+                    android:src="@drawable/contact_us_phone" />
+            </RelativeLayout>
+
+            <View
+                android:id="@+id/viewLine2"
+                android:layout_width="match_parent"
+                android:layout_height="1px"
+                android:layout_below="@+id/relativeLayoutPhone"
+                android:layout_marginBottom="15dp"
+                android:layout_marginTop="15dp"
+                android:background="@color/spinner_border_color" />
+
+            <RelativeLayout
+                android:id="@+id/relativeLayoutEmail"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/viewLine2" >
+
+                <TextView
+                    android:id="@+id/tvEmailTitle"
+                    style="@style/textStyleRememberMe"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_toRightOf="@+id/ivEmail"
+                    android:text="Email" />
+
+                <TextView
+                    android:id="@+id/tvEmail"
+                    style="@style/textStyleAutoSearch"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/tvEmailTitle"
+                    android:layout_toRightOf="@+id/ivEmail"
+                    tools:text="Email Content here.... jdklfjlsdk fkdjlfkjdlkjfkldjflkjdlkf dkjfkldjfkldklfjdkl fksdjfkljdsklfjklsd fsdjklfjdklsjfklsdjf sdkfjklsdjfkldj fklsdfkldfjkldklsfj dkljfkldjfkljd fjkdlsjfkl dsfdklfjdklsjf ksdjfkljsdklfjklsdjfkljsdfdfjklsdjfklsdklfd END" />
+
+                <ImageView
+                    android:id="@+id/ivEmail"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="15dp"
+                    android:src="@drawable/contact_us_email" />
+            </RelativeLayout>
+
+            <View
+                android:id="@+id/viewLine3"
+                android:layout_width="match_parent"
+                android:layout_height="1px"
+                android:layout_below="@+id/relativeLayoutEmail"
+                android:layout_marginBottom="15dp"
+                android:layout_marginTop="15dp"
+                android:background="@color/spinner_border_color" />
+
+            <RelativeLayout
+                android:id="@+id/relativeLayoutWebsite"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/viewLine3" >
+
+                <TextView
+                    android:id="@+id/tvWebsiteTitle"
+                    style="@style/textStyleRememberMe"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_toRightOf="@+id/ivWebsite"
+                    android:text="Website" />
+
+                <TextView
+                    android:id="@+id/tvWebsite"
+                    style="@style/textStyleAutoSearch"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/tvWebsiteTitle"
+                    android:layout_toRightOf="@+id/ivWebsite"
+                    tools:text="Website Content here.... jdklfjlsdk fkdjlfkjdlkjfkldjflkjdlkf dkjfkldjfkldklfjdkl fksdjfkljdsklfjklsd fsdjklfjdklsjfklsdjf sdkfjklsdjfkldj fklsdfkldfjkldklsfj dkljfkldjfkljd fjkdlsjfkl dsfdklfjdklsjf ksdjfkljsdklfjklsdjfkljsdfdfjklsdjfklsdklfd END" />
+
+                <ImageView
+                    android:id="@+id/ivWebsite"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="20dp"
+                    android:src="@drawable/contact_us_website" />
+            </RelativeLayout>
+
+            <View
+                android:id="@+id/viewLine4"
+                android:layout_width="match_parent"
+                android:layout_height="1px"
+                android:layout_below="@+id/relativeLayoutWebsite"
+                android:layout_marginTop="15dp"
+                android:background="@color/spinner_border_color" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/relativeLayoutContactForm"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/relativeLayoutHeader"
+            android:paddingBottom="20dp"
+            android:paddingLeft="15dp"
+            android:paddingRight="15dp" >
+
+            <TextView
+                android:id="@+id/tvContactForm"
+                style="@style/textStyleRememberMe"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:background="@color/lightBrownColor"
+                android:padding="10dp"
+                android:text="Contact Form" />
+
+            <EditText
+                android:id="@+id/etName"
+                style="@style/textStyleSpinner"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_below="@+id/tvContactForm"
+                android:layout_centerHorizontal="true"
+                android:layout_marginBottom="10dp"
+                android:layout_marginTop="20dp"
+                android:ems="10"
+                android:singleLine="true"
+                android:gravity="left|center_vertical"
+                android:hint="Name"
+                android:nextFocusLeft="@id/etName"
+                android:nextFocusUp="@id/etName"
+                android:padding="8dp" />
+
+            <EditText
+                android:singleLine="true"
+                android:id="@+id/etEmail"
+                style="@style/textStyleSpinner"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_below="@+id/etName"
+                android:layout_centerHorizontal="true"
+                android:layout_marginBottom="10dp"
+                android:layout_marginTop="5dp"
+                android:ems="10"
+                android:gravity="left|center_vertical"
+                android:hint="Email"
+                android:nextFocusLeft="@id/etEmail"
+                android:nextFocusUp="@id/etEmail"
+                android:padding="8dp" />
+
+            <EditText
+                android:singleLine="true"
+                android:id="@+id/etSubject"
+                style="@style/textStyleSpinner"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_below="@+id/etEmail"
+                android:layout_centerHorizontal="true"
+                android:layout_marginBottom="10dp"
+                android:layout_marginTop="5dp"
+                android:ems="10"
+                android:gravity="left|center_vertical"
+                android:hint="Subject"
+                android:nextFocusLeft="@id/etSubject"
+                android:nextFocusUp="@id/etSubject"
+                android:padding="8dp" />
+
+            <EditText
+                android:id="@+id/etWriteMessageHere"
+                 android:layout_marginTop="5dp"
+                style="@style/edittext_multiline_style_simple"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/editTextMultilineHeightMyProfile"
+                android:layout_below="@+id/etSubject"
+                android:gravity="top"
+                android:hint="Write Message Here..."
+                android:nextFocusLeft="@id/etWriteMessageHere"
+                android:nextFocusUp="@id/etWriteMessageHere"
+                android:scrollbars="vertical" />
+
+            <Button
+                android:id="@+id/btnSubmit"
+                style="@style/button_style_gradient"
+                android:layout_width="150dp"
+                android:layout_height="40dp"
+                android:layout_alignParentRight="true"
+                android:layout_below="@+id/etWriteMessageHere"
+                android:layout_marginTop="15dp"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:text="Submit" />
+        </RelativeLayout>
+    </RelativeLayout>
+
+</ScrollView>

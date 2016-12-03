@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <color name="backgroundColor">#2E2C26</color>
+    <color name="darkBrownColor">#8F621E</color>
+    <color name="lightBrownColor">#BB7C25</color>
+    <color name="leftNavigationDrawerColor">#4B402B</color>
+    <color name="leftNavigationDrawerDividerColor">#584d34</color>
+    <color name="whiteColor">#FFFFFF</color>
+    <color name="greyColor">#929191</color>
+    <color name="blackColor">#000000</color>
+    <color name="gradient_start_color">#d3a103</color>
+    <color name="gradient_end_color">#c57b00</color>
+    <color name="bar_search_divider_color">#3B3A35</color>
+    <color name="bar_search_state_desc_color">#797979</color>
+    <color name="dark_slate_gray">#2F4F4F</color>
+    <color name="gray_2">#AFAFAF</color>
+    <color name="gray_1">#C0C0C0</color>
+    <color name="spinner_text_color">#797979</color>
+    <color name="spinner_border_color">#3d3c37</color>
+    <color name="my_profile_caption_grey_color">#797979</color>
+    <color name="my_profile_border_grey_color">#3D3C37</color>
+    <color name="off_white_color">#E7E7E7</color>
+    <color name="light_yellowColor">#FCE98F</color>
+    <color name="transparentColor">@android:color/transparent</color>
+    <color name="answer_number_bg_color">#22201B</color>
+    <color name="answer_bg_color">#4E4A3E</color>
+    <color name="greenColor">#1E9942</color>
+    <color name="redColor">#AD1319</color>
+
+</resources>

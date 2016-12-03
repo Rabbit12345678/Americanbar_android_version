@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Bar Event Search List Screen Layout -->
+<android.support.v4.widget.DrawerLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/drawer_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/backgroundColor" >
+
+    <!-- Framelayout to display Fragments -->
+
+    <FrameLayout
+        android:id="@+id/frame_container"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+
+        <RelativeLayout
+            android:id="@+id/relativeLayoutHeaderParent"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/backgroundColor"
+            android:focusable="true"
+            android:focusableInTouchMode="true" >
+
+            <RelativeLayout
+                android:id="@+id/relativeLayoutHeader"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp" >
+
+                <TextView
+                    android:id="@+id/tvSearchTitle"
+                    style="@style/textStyleRememberMe"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="10dp"
+                    android:layout_toLeftOf="@+id/btnSearch"
+                    android:text="" />
+
+                <Button
+                    android:id="@+id/btnSearch"
+                    style="@style/textStyleSpinner"
+                    android:layout_width="wrap_content"
+                    android:layout_height="35dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignParentTop="true"
+                    android:background="@drawable/button_selector_with_border"
+                    android:drawablePadding="12dp"
+                    android:drawableRight="@drawable/arrow_drop_down"
+                    android:gravity="left|center_vertical"
+                    android:padding="5dp" />
+
+                <Spinner
+                    android:id="@+id/spinnerSearchOptions"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:background="@drawable/edittext_selector"
+                    android:prompt="@string/txt_spinner_sort_title"
+                    android:spinnerMode="dialog"
+                    android:visibility="invisible" />
+            </RelativeLayout>
+
+            <View
+                android:id="@+id/viewLine"
+                android:layout_width="match_parent"
+                android:layout_height="1px"
+                android:layout_below="@+id/relativeLayoutHeader"
+                android:layout_marginBottom="1px"
+                android:background="@color/spinner_border_color" />
+
+            <View
+                android:id="@+id/viewLine1"
+                android:layout_width="match_parent"
+                android:layout_height="1px"
+                android:layout_below="@+id/viewLine"
+                android:layout_marginTop="2dp"
+                android:background="@color/spinner_border_color" />
+
+            <RelativeLayout
+                android:id="@+id/relativeLayoutSearch"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/viewLine1"
+                android:layout_margin="10dp" >
+
+                <EditText
+                    android:id="@+id/etSearch"
+                    style="@style/textStyleSpinner"
+                    android:layout_width="match_parent"
+                    android:layout_height="35dp"
+                    android:layout_alignParentTop="true"
+                    android:layout_toLeftOf="@+id/ivSearch"
+                    android:ems="10"
+                    android:gravity="left|center_vertical"
+                    android:hint="Search Event By Name"
+                    android:nextFocusLeft="@id/etSearch"
+                    android:nextFocusUp="@id/etSearch"
+                    android:padding="5dp" />
+
+                <ImageView
+                    android:id="@+id/ivAlphabates"
+                    android:layout_width="25dp"
+                    android:layout_height="25dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:clickable="true"
+                    android:src="@drawable/alphabates" />
+
+                <ImageView
+                    android:id="@+id/ivSearch"
+                    android:layout_width="25dp"
+                    android:layout_height="25dp"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_toLeftOf="@+id/ivAlphabates"
+                    android:clickable="true"
+                    android:src="@drawable/search" />
+            </RelativeLayout>
+
+            <View
+                android:id="@+id/viewLine2"
+                android:layout_width="match_parent"
+                android:layout_height="2px"
+                android:layout_below="@+id/relativeLayoutSearch"
+                android:layout_marginBottom="1px"
+                android:background="@color/spinner_border_color" />
+
+            <View
+                android:id="@+id/viewLine3"
+                android:layout_width="match_parent"
+                android:layout_height="2px"
+                android:layout_below="@+id/viewLine2"
+                android:layout_marginTop="2dp"
+                android:background="@color/spinner_border_color" />
+
+            <com.spaculus.helpers.LoadMoreListView
+                android:id="@+id/listViewBarEvents"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_below="@+id/viewLine3"
+                android:divider="@color/bar_search_divider_color"
+                android:dividerHeight="1px"
+                android:footerDividersEnabled="false" />
+        </RelativeLayout>
+    </FrameLayout>
+
+    <!-- Listview to display slider menu -->
+
+    <LinearLayout
+        android:id="@+id/linearLayoutDrawerHeader"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="right"
+        android:orientation="vertical"
+        android:paddingTop="110dp" >
+
+        <GridView
+            android:id="@+id/list_slidermenu"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right"
+            android:alpha="0.7"
+            android:background="@color/blackColor"
+            android:clickable="false"
+            android:descendantFocusability="blocksDescendants"
+            android:focusable="false"
+            android:focusableInTouchMode="false"
+            android:numColumns="4"
+            android:padding="10dp"
+            android:visibility="visible" 
+            android:listSelector="@color/lightBrownColor"/>
+    </LinearLayout>
+
+</android.support.v4.widget.DrawerLayout>

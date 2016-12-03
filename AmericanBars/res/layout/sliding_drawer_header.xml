@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Left Menu Header Layout -->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/linearLayoutDrawerHeader"
+    android:layout_width="180dp"
+    android:layout_height="wrap_content"
+    android:background="@color/leftNavigationDrawerColor"
+    android:gravity="center"
+    android:orientation="vertical"
+    android:paddingTop="10dp" >
+
+    <com.spaculus.helpers.CircularImageView
+        android:id="@+id/ivUserProfilePicDrawerCircle"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_marginTop="10dp"
+        android:src="@drawable/no_profile_picture" />
+
+    <TextView
+        android:id="@+id/tvUsernameDrawer"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:gravity="center"
+        android:textColor="@color/whiteColor"
+        android:textSize="14sp"
+        android:textStyle="bold"
+        tools:text="User Name" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:layout_marginTop="15dp"
+        android:background="@color/leftNavigationDrawerDividerColor" />
+
+</LinearLayout>

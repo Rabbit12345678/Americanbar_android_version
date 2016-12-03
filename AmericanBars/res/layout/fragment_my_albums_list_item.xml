@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- My Favorite Bar Screen Row Layout -->
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/background_my_favorite_bar_row"
+    android:orientation="vertical"
+    android:padding="10dp" >
+
+    <CheckBox
+        android:id="@+id/checkBoxMyAlbum"
+        style="@style/textStyleSignUpInformation"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="10dp"
+        android:button="@drawable/checkbox_bg_selector_white_color"
+        android:clickable="true"
+        android:focusable="false"
+        android:gravity="left" />
+
+    <RelativeLayout
+        android:id="@+id/relativeLayoutTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@+id/checkBoxMyAlbum" >
+
+        <TextView
+            android:id="@+id/tvTitleTitle"
+            style="@style/textStyleRememberMe"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:gravity="top|left"
+            android:singleLine="true"
+            android:text="Title" />
+
+        <TextView
+            android:id="@+id/tvDateTitle"
+            style="@style/textStyleRememberMe"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tvTitleTitle"
+            android:layout_centerVertical="true"
+            android:layout_marginBottom="10dp"
+            android:layout_marginTop="10dp"
+            android:gravity="center|left"
+            android:singleLine="true"
+            android:text="Date" />
+
+        <TextView
+            android:id="@+id/tvStatusTitle"
+            style="@style/textStyleRememberMe"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_below="@+id/tvDateTitle"
+            android:gravity="bottom|left"
+            android:text="Status" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/relativeLayoutContent"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="15dp"
+        android:layout_toLeftOf="@+id/ivEditAlbum"
+        android:layout_toRightOf="@+id/relativeLayoutTitle" >
+
+        <TextView
+            android:id="@+id/tvTitleContent"
+            style="@style/textStyleAutoSearch"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:gravity="top"
+            android:singleLine="true"
+            tools:text="Title Content kfldjf lkjsdflkjdklfjlsdkfj lkdsjflkdjflkj sdlfjkldfjklsdjlkdsj EOL" />
+
+        <TextView
+            android:id="@+id/tvDateContent"
+            style="@style/textStyleAutoSearch"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tvTitleContent"
+            android:layout_centerVertical="true"
+            android:layout_marginBottom="10dp"
+            android:layout_marginTop="10dp"
+            android:gravity="center"
+            android:singleLine="true"
+            tools:text="Date Content klsjd flkjsldkfjlkdsfjlkdsjflkjfkljsdfkljklsdfj djflkdjsfljsdljf EOL" />
+
+        <TextView
+            android:id="@+id/tvStatusContent"
+            style="@style/textStyleAutoSearch"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_below="@+id/tvDateContent"
+            android:gravity="bottom"
+            android:singleLine="true"
+            tools:text="Status Content kdlfj skldfjklds fkjflkdj flkjkldjflk dlkjfkldjf ldkfjdkl fl EOL" />
+    </RelativeLayout>
+
+    <ImageView
+        android:id="@+id/ivEditAlbum"
+        android:layout_width="25dp"
+        android:layout_height="25dp"
+        android:layout_alignParentRight="true"
+        android:layout_alignTop="@+id/relativeLayoutContent"
+        android:layout_marginLeft="10dp"
+        android:gravity="right"
+        android:src="@drawable/edit_album" />
+
+    <ImageView
+        android:id="@+id/ivDeleteAlbum"
+        android:layout_width="25dp"
+        android:layout_height="25dp"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="10dp"
+        android:gravity="right|center"
+        android:src="@drawable/delete_white"
+        android:visibility="visible" />
+
+    <ImageView
+        android:id="@+id/ivViewAlbum"
+        android:layout_width="25dp"
+        android:layout_height="25dp"
+        android:layout_alignBottom="@+id/relativeLayoutContent"
+        android:layout_alignParentRight="true"
+        android:gravity="right|center"
+        android:src="@drawable/view_album"
+        android:visibility="visible" />
+
+</RelativeLayout>

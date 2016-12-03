@@ -1,0 +1,194 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Quiz Screen Layout -->
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/scrollView"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/backgroundColor"
+    android:fillViewport="true"
+    android:focusable="true"
+    android:focusableInTouchMode="true"
+    android:scrollbars="vertical" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:padding="10dp" >
+
+        <TextView
+            style="@style/textStyle_23_lightBrownColor"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="Congratulation! Your Quiz is Completed." />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:gravity="center"
+            android:orientation="horizontal" >
+
+            <LinearLayout
+                android:layout_width="@dimen/dim_140"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="7dp"
+                android:orientation="vertical" >
+
+                <TextView
+                    style="@style/textStyle_20_whiteColor"
+                    android:layout_width="@dimen/dim_140"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginBottom="10dp"
+                    android:gravity="center"
+                    android:text="Great! here is Your \nScore Summary" />
+
+                <LinearLayout
+                    android:layout_width="@dimen/dim_140"
+                    android:layout_height="@dimen/dim_110"
+                    android:background="@drawable/selector_transparent_bg_with_border"
+                    android:gravity="center"
+                    android:orientation="vertical"
+                    android:weightSum="1" >
+
+                    <TextView
+                        android:id="@+id/tvTotalScore"
+                        style="@style/textStyle_20_whiteColor_bold"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="15dp"
+                        android:layout_marginTop="15dp"
+                        android:layout_weight="0.6"
+                        android:gravity="center"
+                        tools:text="20/20" />
+
+                    <TextView
+                        style="@style/textStyle_20_whiteColor"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.4"
+                        android:background="@color/lightBrownColor"
+                        android:gravity="center"
+                        android:text="Your Score" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="@dimen/dim_140"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginLeft="7dp"
+                android:orientation="vertical" >
+
+                <TextView
+                    style="@style/textStyle_20_whiteColor"
+                    android:layout_width="@dimen/dim_140"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10dp"
+                    android:gravity="center"
+                    android:text="Check Your Total \nTime Taken" />
+
+                <LinearLayout
+                    android:layout_width="@dimen/dim_140"
+                    android:layout_height="@dimen/dim_110"
+                    android:background="@drawable/selector_transparent_bg_with_border"
+                    android:gravity="center"
+                    android:orientation="vertical"
+                    android:weightSum="1" >
+
+                    <TextView
+                        android:id="@+id/tvTotalTime"
+                        style="@style/textStyle_20_whiteColor_bold"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="15dp"
+                        android:layout_marginTop="15dp"
+                        android:layout_weight="0.6"
+                        android:gravity="center"
+                        tools:text="20" />
+
+                    <TextView
+                        style="@style/textStyle_20_whiteColor"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.4"
+                        android:background="@color/lightBrownColor"
+                        android:gravity="center"
+                        android:text="Time Taken" />
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="25dp" >
+
+            <TextView
+                style="@style/textStyle_20_whiteColor"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="Share this Quiz : " />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:weightSum="1" >
+
+                <ImageView
+                    android:id="@+id/ivFacebookShare"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginRight="10dp"
+                    android:layout_weight="0.25"
+                    android:src="@drawable/share_fb" />
+
+                <ImageView
+                    android:id="@+id/ivTwitterShare"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginRight="10dp"
+                    android:layout_weight="0.25"
+                    android:src="@drawable/share_twitter" />
+
+                <ImageView
+                    android:id="@+id/ivGooglePlusShare"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginRight="10dp"
+                    android:layout_weight="0.25"
+                    android:src="@drawable/share_google" />
+
+                <ImageView
+                    android:id="@+id/ivPinterestShare"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_weight="0.25"
+                    android:src="@drawable/share_pinterest" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/buttonTryAgain"
+            style="@style/button_style"
+            android:layout_width="@dimen/dim_200"
+            android:layout_height="@dimen/dim_50"
+            android:layout_gravity="center"
+            android:layout_marginTop="25dp"
+            android:text="Not Satisfied? Try Again!" />
+    </LinearLayout>
+
+</ScrollView>

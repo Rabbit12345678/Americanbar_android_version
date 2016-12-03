@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Bar Hours Special List Row -->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/backgroundColor"
+    android:orientation="vertical"
+    android:paddingTop="7dp" >
+
+    <LinearLayout
+        android:id="@+id/linearLayoutHeaderDayTime"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="7dp"
+        android:orientation="horizontal"
+        android:visibility="visible" >
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="left"
+            android:orientation="horizontal" >
+
+            <TextView
+                style="@style/textStyle_14_bold_lightBrownColor_all"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Day : " />
+
+            <TextView
+                android:id="@+id/tvDay"
+                style="@style/textStyle_14_bold_whiteColor_all"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                tools:text="Wednesday" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="right"
+            android:orientation="horizontal" >
+
+            <TextView
+                style="@style/textStyle_14_bold_lightBrownColor_all"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Time : " />
+
+            <TextView
+                android:id="@+id/tvTime"
+                style="@style/textStyle_14_bold_whiteColor_all"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                tools:text="10:45 PM To 12:45 PM" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="left"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:id="@+id/tvProductTitle"
+                style="@style/textStyle_13_lightBrownColor"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Beer Name : " />
+
+            <TextView
+                android:id="@+id/tvProductName"
+                style="@style/textStyle_13_whiteColor"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                tools:text="Beer Name" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="1dp"
+            android:gravity="left"
+            android:orientation="horizontal" >
+
+            <TextView
+                style="@style/textStyle_13_lightBrownColor"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Price : " />
+
+            <TextView
+                android:id="@+id/tvPrice"
+                style="@style/textStyle_13_whiteColor"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                tools:text="$ 3" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <View
+        android:id="@+id/viewLine"
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:layout_marginTop="7dp"
+        android:background="@color/spinner_border_color" />
+
+</LinearLayout>

@@ -1,0 +1,263 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Bar Trivia Game Screen Layout -->
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/scrollView"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/backgroundColor"
+    android:fillViewport="true"
+    android:focusable="true"
+    android:focusableInTouchMode="true"
+    android:scrollbars="vertical" >
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:focusable="true"
+            android:focusableInTouchMode="true"
+            android:orientation="vertical" >
+
+            <LinearLayout
+                android:id="@+id/linearLayoutTop"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="12dp"
+                android:gravity="center"
+                android:orientation="horizontal" >
+
+                <LinearLayout
+                    android:layout_width="@dimen/dim_140"
+                    android:layout_height="@dimen/dim_110"
+                    android:layout_marginRight="7dp"
+                    android:background="@drawable/selector_transparent_bg_with_border"
+                    android:gravity="center"
+                    android:orientation="vertical"
+                    android:weightSum="1" >
+
+                    <TextView
+                        android:id="@+id/tvQuestionNumber"
+                        style="@style/textStyle_20_whiteColor_bold"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="15dp"
+                        android:layout_marginTop="15dp"
+                        android:layout_weight="0.6"
+                        android:gravity="center"
+                        tools:text="20/20" />
+
+                    <TextView
+                        style="@style/textStyle_20_whiteColor"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.4"
+                        android:background="@color/lightBrownColor"
+                        android:gravity="center"
+                        android:text="Question" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="@dimen/dim_140"
+                    android:layout_height="@dimen/dim_110"
+                    android:layout_marginLeft="7dp"
+                    android:background="@drawable/selector_transparent_bg_with_border"
+                    android:gravity="center"
+                    android:orientation="vertical"
+                    android:weightSum="1" >
+
+                    <TextView
+                        android:id="@+id/tvTimer"
+                        style="@style/textStyle_20_whiteColor_bold"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="15dp"
+                        android:layout_marginTop="15dp"
+                        android:layout_weight="0.6"
+                        android:gravity="center"
+                        tools:text="20" />
+
+                    <TextView
+                        style="@style/textStyle_20_whiteColor"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.4"
+                        android:background="@color/lightBrownColor"
+                        android:gravity="center"
+                        android:text="Trivia Timer" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <View
+                android:id="@+id/viewLine"
+                android:layout_width="match_parent"
+                android:layout_height="1px"
+                android:layout_marginTop="5dp"
+                android:background="@color/lightBrownColor" />
+
+            <TextView
+                android:id="@+id/tvQuestion"
+                style="@style/textStyle_23_whiteColor"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                tools:text="Question dskf skldfjklsadfj klsdajfklsad jfklsjdklf jskldfjklsdjf lksdjfklsdjfkl sdklfjsdklfj sdklfjklsd fklsdjl" />
+
+            <View
+                android:id="@+id/viewLine1"
+                android:layout_width="match_parent"
+                android:layout_height="1px"
+                android:background="@color/lightBrownColor" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:paddingTop="5dp" >
+
+                <TextView
+                    style="@style/textStyle_20_whiteColor"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@color/answer_number_bg_color"
+                    android:paddingBottom="10dp"
+                    android:paddingLeft="20dp"
+                    android:paddingRight="20dp"
+                    android:paddingTop="10dp"
+                    android:text="1" />
+
+                <Button
+                    android:id="@+id/buttonAnserOption1"
+                    style="@style/button_style_answer"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/dim_40"
+                    tools:text="Answer Option 1 sdkfj lskdfj klsd fjklsdj fkljsdk lfjkl sdjfl ksdjfkljs dklf jl ksdfjlksdf j kldsjfklsdjfkljsdklf jkljkljlj EOL" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp" >
+
+                <TextView
+                    style="@style/textStyle_20_whiteColor"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@color/answer_number_bg_color"
+                    android:paddingBottom="10dp"
+                    android:paddingLeft="20dp"
+                    android:paddingRight="20dp"
+                    android:paddingTop="10dp"
+                    android:text="2" />
+
+                <Button
+                    android:id="@+id/buttonAnserOption2"
+                    style="@style/button_style_answer"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/dim_40"
+                    tools:text="Answer Option 2" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp" >
+
+                <TextView
+                    style="@style/textStyle_20_whiteColor"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@color/answer_number_bg_color"
+                    android:paddingBottom="10dp"
+                    android:paddingLeft="20dp"
+                    android:paddingRight="20dp"
+                    android:paddingTop="10dp"
+                    android:text="3" />
+
+                <Button
+                    android:id="@+id/buttonAnserOption3"
+                    style="@style/button_style_answer"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/dim_40"
+                    tools:text="Answer Option 3" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp" >
+
+                <TextView
+                    style="@style/textStyle_20_whiteColor"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@color/answer_number_bg_color"
+                    android:paddingBottom="10dp"
+                    android:paddingLeft="20dp"
+                    android:paddingRight="20dp"
+                    android:paddingTop="10dp"
+                    android:text="4" />
+
+                <Button
+                    android:id="@+id/buttonAnserOption4"
+                    style="@style/button_style_answer"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/dim_40"
+                    tools:text="Answer Option 4" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:layout_marginTop="10dp"
+                android:gravity="center"
+                android:orientation="horizontal"
+                android:weightSum="1" >
+
+                <Button
+                    android:id="@+id/buttonQuitGame"
+                    style="@style/button_style"
+                    android:layout_width="0dp"
+                    android:layout_height="50dp"
+                    android:layout_marginRight="7dp"
+                    android:layout_weight="0.33"
+                    android:text="Quit Game" />
+
+                <Button
+                    android:id="@+id/buttonStartNewGame"
+                    style="@style/button_style"
+                    android:layout_width="0dp"
+                    android:layout_height="50dp"
+                    android:layout_marginRight="7dp"
+                    android:layout_weight="0.33"
+                    android:text="Start New\nGame" />
+
+                <Button
+                    android:id="@+id/buttonNext"
+                    style="@style/button_style"
+                    android:layout_width="0dp"
+                    android:layout_height="50dp"
+                    android:layout_weight="0.33"
+                    android:text="Next" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <ProgressBar
+            android:id="@+id/progressBar"
+            android:layout_width="45dp"
+            android:layout_height="45dp"
+            android:layout_gravity="center"
+            android:visibility="gone" />
+    </FrameLayout>
+
+</ScrollView>

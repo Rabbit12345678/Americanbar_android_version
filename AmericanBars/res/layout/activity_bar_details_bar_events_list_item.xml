@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/relativeLayoutBarEvent"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/bar_list_item_selector"
+    android:paddingTop="10dp" >
+
+    <RelativeLayout
+        android:id="@+id/relativeLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp" >
+
+        <ImageView
+            android:id="@+id/ivBarEventLogo"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:layout_marginRight="10dp"
+            android:scaleType="fitXY"
+            android:src="@drawable/no_image_bar_event" />
+
+        <ImageView
+            android:id="@+id/ivNextArrow"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="5dp"
+            android:gravity="right"
+            android:src="@drawable/arrow_next" />
+
+        <TextView
+            android:id="@+id/tvBarEventDesc"
+            style="@style/textStyle12Normal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/tvBarEventName"
+            android:layout_below="@+id/tvBarEventName"
+            android:layout_marginTop="3dp"
+            android:layout_toLeftOf="@+id/ivNextArrow"
+            android:ellipsize="end"
+            android:maxLines="2"
+            tools:text="Lorem Ipsum is ksdjklf jsdkfjklsdjflj sdlkfjdklfjkldsjflkdjlfkjdlkfjkldjflkdjflsdjfkldjfkldsfljdslfjldjfldjflsdjl" />
+
+        <TextView
+            android:id="@+id/tvBarEventDateTime"
+            style="@style/textStyle12Normal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/tvBarEventDesc"
+            android:layout_below="@+id/tvBarEventDesc"
+            android:layout_marginTop="3dp"
+            android:layout_toLeftOf="@+id/ivNextArrow"
+            android:singleLine="true"
+            tools:text="2015-07-10 19:00:00" />
+
+        <TextView
+            android:id="@+id/tvBarEventName"
+            style="@style/textStyleHomePage"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/ivBarEventLogo"
+            android:layout_toRightOf="@+id/ivBarEventLogo"
+            android:singleLine="true"
+            tools:text="Bar Event Name kfsdjf klsdjfkljsdkfljdsklfjklsdjfklsdjfkldklfjsdlfjsdklj" />
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:layout_below="@+id/relativeLayout"
+        android:layout_marginTop="10dp"
+        android:background="@color/spinner_border_color" />
+
+</RelativeLayout>

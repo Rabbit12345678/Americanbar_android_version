@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/sliding_drawer_list_item_bg_selector" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp" >
+
+        <RelativeLayout
+            android:id="@+id/relativeLayoutImage"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" >
+
+            <ImageView
+                android:id="@+id/imageView"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_centerHorizontal="true"
+                android:src="@drawable/gallery_small_place_holder_01" />
+
+            <com.spaculus.helpers.CircularImageView
+                android:id="@+id/imageView1"
+                android:layout_width="70dp"
+                android:layout_height="70dp"
+                android:layout_centerHorizontal="true"
+                android:src="@drawable/no_profile_picture"
+                android:visibility="gone" />
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/tvTitle"
+            style="@style/sliding_drawer_list_item_style"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/relativeLayoutImage"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="5dp"
+            tools:text="hellosdfjsdklfjlsdjflkjsadlkfjl" />
+
+        <TextView
+            android:id="@+id/tvCounter"
+            style="@style/sliding_drawer_list_item_style"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:visibility="gone"
+            tools:text="100" />
+    </RelativeLayout>
+
+</LinearLayout>

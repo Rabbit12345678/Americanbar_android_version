@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/backgroundColor"
+    android:paddingTop="12dp" >
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:id="@+id/tvDayName"
+            style="@style/textStyleRememberMe"
+            android:layout_width="@dimen/day_name_width"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_marginRight="10dp"
+            android:focusable="false"
+            android:focusableInTouchMode="false"
+            android:gravity="right"
+           tools:text="Monday" />
+
+        <TextView
+            android:id="@+id/tvDayTime"
+            style="@style/textStyleAutoSearch"
+            android:layout_width="@dimen/hour_name_width"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:focusable="false"
+            android:focusableInTouchMode="false"
+            tools:text="02:00 pm - 01:30 am" />
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:layout_below="@+id/linearLayout"
+        android:layout_marginTop="12dp"
+        android:background="@color/spinner_border_color" />
+
+</RelativeLayout>

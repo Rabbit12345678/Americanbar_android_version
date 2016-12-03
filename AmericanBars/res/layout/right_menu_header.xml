@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/sliding_drawer_list_item_bg_selector"
+    android:padding="10dp" >
+
+    <com.spaculus.helpers.CircularImageView
+        android:id="@+id/imageView1"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:layout_centerHorizontal="true"
+        android:src="@drawable/no_profile_picture" />
+ 
+
+    <TextView
+        android:id="@+id/tvTitle"
+        style="@style/sliding_drawer_list_item_style"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/imageView1"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="15dp"
+        tools:text="hellosdfjsdklfjlsdjflkjsadlkfjl" />
+
+    <TextView
+        android:id="@+id/tvCounter"
+        style="@style/sliding_drawer_list_item_style"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:visibility="gone"
+        tools:text="100" />
+
+</RelativeLayout>

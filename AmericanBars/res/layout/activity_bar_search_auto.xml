@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Auto Bar Search Screen -->
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/relativeLayoutFindBar"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="10dp"
+    android:background="@color/lightBrownColor"
+    android:orientation="vertical"
+    android:padding="10dp" >
+
+    <TextView
+        android:id="@+id/tvCancel"
+        style="@style/textStyleRememberMe"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:text="Cancel" />
+
+    <TextView
+        android:id="@+id/tvSelectBar"
+        style="@style/textStyleRememberMe"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/tvCancel"
+        android:layout_alignBottom="@+id/tvCancel"
+        android:layout_centerHorizontal="true"
+        android:text="Select Bar" />
+
+    <TextView
+        android:id="@+id/tvDone"
+        style="@style/textStyleRememberMe"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:text="Done" />
+
+    <!-- EditText Start Typing Name -->
+
+    <EditText
+        android:id="@+id/etSearchHere"
+        style="@style/edittext_style"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/editTextHeightSignUp"
+        android:layout_below="@+id/tvCancel"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="15dp"
+        android:ems="10"
+        android:hint="@string/txt_search_here" >
+
+        <requestFocus />
+    </EditText>
+
+    <ListView
+        android:id="@+id/listViewBars"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/etSearchHere"
+        android:layout_below="@+id/etSearchHere"
+        android:layout_marginTop="10dp"
+        android:divider="@android:color/transparent"
+        android:dividerHeight="2dp"
+        android:footerDividersEnabled="false"
+        android:visibility="gone" />
+
+</RelativeLayout>

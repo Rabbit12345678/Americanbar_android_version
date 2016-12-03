@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Favorite Bar and Cocktail Screen Row Layout -->
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/background_my_favorite_bar_row"
+    android:orientation="vertical"
+    android:padding="10dp" >
+
+    <ImageView
+        android:id="@+id/ivArticleImage"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_marginRight="10dp"
+        android:scaleType="fitXY"
+        android:src="@drawable/no_article" />
+
+    <TextView
+        android:id="@+id/tvArticleTitle"
+        style="@style/textStyleBrownNormal_18"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/ivArticleImage"
+        android:layout_toLeftOf="@+id/ivNextArrow"
+        android:layout_toRightOf="@+id/ivArticleImage"
+        android:ellipsize="end"
+        android:maxLines="2"
+        tools:text="Article Title dkfjl sdflkjsdfkl sdklfj skljfklas dfjkldsjf klsd EOL" />
+
+    <TextView
+        android:id="@+id/tvArticleDescription"
+        style="@style/textStyleAutoSearch"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/ivArticleImage"
+        android:layout_below="@+id/tvArticleTitle"
+        android:layout_marginTop="3dp"
+        android:layout_toLeftOf="@+id/ivNextArrow"
+        android:layout_toRightOf="@+id/ivArticleImage"
+        android:ellipsize="end"
+        android:maxLines="3"
+        tools:text="Article Description dkfjl sdflkjsdfkl sdklfj skljfklas dfjkldsjf klsd EOL" />
+
+    <ImageView
+        android:id="@+id/ivNextArrow"
+        android:layout_width="25dp"
+        android:layout_height="25dp"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:gravity="right"
+        android:src="@drawable/arrow_next" />
+
+</RelativeLayout>

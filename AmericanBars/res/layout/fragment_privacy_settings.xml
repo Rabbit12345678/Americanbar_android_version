@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Privacy Settings Activity Screen Layout -->
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/backgroundColor" >
+
+    <ListView
+        android:id="@+id/listViewPrivacySettings"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:divider="@android:color/transparent"
+        android:dividerHeight="1px" />
+
+    <LinearLayout
+        android:id="@+id/linearLayoutButtons"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/listViewPrivacySettings"
+        android:layout_marginBottom="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="20dp"
+        android:gravity="center"
+        android:orientation="horizontal" 
+        android:visibility="gone">
+
+        <Button
+            android:id="@+id/btnSave"
+            style="@style/button_style_gradient"
+            android:layout_width="120dp"
+            android:layout_height="35dp"
+            android:layout_marginRight="5dp"
+            android:text="@string/btn_save" />
+
+        <Button
+            android:id="@+id/btnCancel"
+            style="@style/button_style_gradient"
+            android:layout_width="120dp"
+            android:layout_height="35dp"
+            android:layout_marginLeft="5dp"
+            android:text="@string/btn_cancel" />
+    </LinearLayout>
+
+</RelativeLayout>

@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Bar Search List Screen Layout -->
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/backgroundColor"
+    android:focusable="true"
+    android:focusableInTouchMode="true" >
+
+    <RelativeLayout
+        android:id="@+id/relativeLayoutHeader"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp" >
+
+        <Button
+            android:id="@+id/btnSearch"
+            style="@style/textStyleSpinner"
+            android:layout_width="wrap_content"
+            android:layout_height="35dp"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true"
+            android:drawablePadding="12dp"
+            android:drawableRight="@drawable/arrow_drop_down"
+            android:gravity="left|center"
+            android:padding="5dp" />
+
+        <Spinner
+            android:id="@+id/spinnerSearchOptions"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:background="@drawable/edittext_selector"
+            android:prompt="@string/txt_spinner_sort_title"
+            android:spinnerMode="dialog"
+            android:visibility="invisible" />
+
+        <TextView
+            android:id="@+id/tvSearchTitle"
+            style="@style/textStyleRememberMe"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="10dp"
+            android:layout_toLeftOf="@+id/btnSearch"
+            tools:text="Bar Name" />
+    </RelativeLayout>
+
+    <View
+        android:id="@+id/viewLine"
+        android:layout_width="match_parent"
+        android:layout_height="2px"
+        android:layout_below="@+id/relativeLayoutHeader"
+        android:layout_marginBottom="1px"
+        android:background="@color/spinner_border_color" />
+
+    <View
+        android:id="@+id/viewLine1"
+        android:layout_width="match_parent"
+        android:layout_height="2px"
+        android:layout_below="@+id/viewLine"
+        android:layout_marginTop="2dp"
+        android:background="@color/spinner_border_color" />
+
+    <com.spaculus.helpers.LoadMoreListView
+        android:id="@+id/listViewBars"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/viewLine1"
+        android:divider="@color/bar_search_divider_color"
+        android:dividerHeight="1px"
+        android:footerDividersEnabled="false" />
+
+    <Button
+        android:id="@+id/buttonSuggestNewBar"
+        style="@style/button_style_gradient"
+        android:layout_width="@dimen/btn_suggest_new_width"
+        android:layout_height="@dimen/btn_suggest_new_height"
+        android:layout_below="@+id/viewLine1"
+        android:layout_centerInParent="true"
+        android:layout_margin="10dp"
+        android:text="Suggest New Bar"
+        android:visibility="gone" />
+
+</RelativeLayout>

@@ -1,0 +1,296 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Suggest New Beer Screen -->
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:custom_edit="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/scroller"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/backgroundColor"
+    android:fillViewport="true"
+    android:scrollbars="vertical" >
+
+    <RelativeLayout
+        android:id="@+id/relativeLayoutSuggestNewBeer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:id="@+id/relativeLayoutContent"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingBottom="15dp"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:paddingTop="15dp" >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal" >
+
+                <TextView
+                    style="@style/textStyleMyProfileTitle_whiteColor"
+                    android:layout_width="@dimen/tvTitleSuggestNewBeerWidth"
+                    android:layout_height="wrap_content"
+                    android:gravity="right"
+                    android:text="@string/txt_beer_title" />
+
+                <EditText
+                    android:id="@+id/etBeerTitle"
+                    style="@style/edittext_style_suggest_screen"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/editTextHeightMyProfile"
+                    android:layout_marginLeft="@dimen/dim_7"
+                    android:hint="@string/txt_beer_title"
+                    android:nextFocusLeft="@id/etBeerTitle"
+                    android:nextFocusUp="@id/etBeerTitle" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:orientation="horizontal" >
+
+                <TextView
+                    style="@style/textStyleMyProfileTitle_whiteColor"
+                    android:layout_width="@dimen/tvTitleSuggestNewBeerWidth"
+                    android:layout_height="wrap_content"
+                    android:gravity="right"
+                    android:text="@string/txt_desc" />
+
+                <EditText
+                    android:id="@+id/etDescription"
+                    style="@style/edittext_multiline_style_suggest_screen"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/editTextMultilineHeightMyProfile"
+                    android:layout_marginLeft="@dimen/dim_7"
+                    android:gravity="top"
+                    android:hint="@string/txt_desc"
+                    android:nextFocusLeft="@id/etDescription"
+                    android:nextFocusUp="@id/etDescription"
+                    android:scrollbars="vertical" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:orientation="horizontal" >
+
+                <TextView
+                    style="@style/textStyleMyProfileTitle_whiteColor"
+                    android:layout_width="@dimen/tvTitleSuggestNewBeerWidth"
+                    android:layout_height="wrap_content"
+                    android:gravity="right"
+                    android:text="@string/txt_type" />
+
+                <EditText
+                    android:id="@+id/etType"
+                    style="@style/edittext_style_suggest_screen"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/editTextHeightMyProfile"
+                    android:layout_marginLeft="@dimen/dim_7"
+                    android:hint="@string/txt_type"
+                    android:nextFocusLeft="@id/etType"
+                    android:nextFocusUp="@id/etType" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:orientation="horizontal" >
+
+                <TextView
+                    style="@style/textStyleMyProfileTitle_whiteColor"
+                    android:layout_width="@dimen/tvTitleSuggestNewBeerWidth"
+                    android:layout_height="wrap_content"
+                    android:gravity="right"
+                    android:text="@string/txt_abv" />
+
+                <EditText
+                    android:id="@+id/etABV"
+                    style="@style/edittext_style_suggest_screen"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/editTextHeightMyProfile"
+                    android:layout_marginLeft="@dimen/dim_7"
+                    android:hint="@string/txt_abv"
+                    android:nextFocusLeft="@id/etABV"
+                    android:nextFocusUp="@id/etABV" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:orientation="horizontal" >
+
+                <TextView
+                    style="@style/textStyleMyProfileTitle_whiteColor"
+                    android:layout_width="@dimen/tvTitleSuggestNewBeerWidth"
+                    android:layout_height="wrap_content"
+                    android:gravity="right"
+                    android:text="@string/txt_brewed_by" />
+
+                <EditText
+                    android:id="@+id/etBrewedBy"
+                    style="@style/edittext_style_suggest_screen"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/editTextHeightMyProfile"
+                    android:layout_marginLeft="@dimen/dim_7"
+                    android:hint="@string/txt_brewed_by"
+                    android:nextFocusLeft="@id/etBrewedBy"
+                    android:nextFocusUp="@id/etBrewedBy" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:orientation="horizontal" >
+
+                <TextView
+                    style="@style/textStyleMyProfileTitle_whiteColor"
+                    android:layout_width="@dimen/tvTitleSuggestNewBeerWidth"
+                    android:layout_height="wrap_content"
+                    android:gravity="right"
+                    android:text="@string/txt_city_produced" />
+
+                <EditText
+                    android:id="@+id/etCityProduced"
+                    style="@style/edittext_style_suggest_screen"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/editTextHeightMyProfile"
+                    android:layout_marginLeft="@dimen/dim_7"
+                    android:hint="@string/txt_city_produced"
+                    android:nextFocusLeft="@id/etCityProduced"
+                    android:nextFocusUp="@id/etCityProduced" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:orientation="horizontal" >
+
+                <TextView
+                    style="@style/textStyleMyProfileTitle_whiteColor"
+                    android:layout_width="@dimen/tvTitleSuggestNewBeerWidth"
+                    android:layout_height="wrap_content"
+                    android:gravity="right"
+                    android:text="@string/txt_state" />
+
+                <EditText
+                    android:id="@+id/etState"
+                    style="@style/edittext_style_suggest_screen"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/editTextHeightMyProfile"
+                    android:layout_marginLeft="@dimen/dim_7"
+                    android:hint="@string/txt_state"
+                    android:nextFocusLeft="@id/etState"
+                    android:nextFocusUp="@id/etState" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:orientation="horizontal" >
+
+                <TextView
+                    style="@style/textStyleMyProfileTitle_whiteColor"
+                    android:layout_width="@dimen/tvTitleSuggestNewBeerWidth"
+                    android:layout_height="wrap_content"
+                    android:gravity="right"
+                    android:text="@string/txt_country" />
+
+                <EditText
+                    android:id="@+id/etCountry"
+                    style="@style/edittext_style_suggest_screen"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/editTextHeightMyProfile"
+                    android:layout_marginLeft="@dimen/dim_7"
+                    android:hint="@string/txt_country"
+                    android:nextFocusLeft="@id/etCountry"
+                    android:nextFocusUp="@id/etCountry" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:orientation="horizontal" >
+
+                <TextView
+                    style="@style/textStyleMyProfileTitle_whiteColor"
+                    android:layout_width="@dimen/tvTitleSuggestNewBeerWidth"
+                    android:layout_height="wrap_content"
+                    android:gravity="right"
+                    android:text="@string/txt_website" />
+
+                <EditText
+                    android:id="@+id/etWebsite"
+                    style="@style/edittext_style_suggest_screen"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/editTextHeightMyProfile"
+                    android:layout_marginLeft="@dimen/dim_7"
+                    android:hint="@string/txt_website"
+                    android:nextFocusLeft="@id/etWebsite"
+                    android:nextFocusUp="@id/etWebsite" />
+            </LinearLayout>
+
+            <RelativeLayout
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_gravity="center"
+                android:layout_marginTop="15dp"
+                android:gravity="center" >
+
+                <com.spaculus.helpers.CircularImageView
+                    android:id="@+id/ivBeerImage"
+                    android:layout_width="120dp"
+                    android:layout_height="120dp"
+                    android:src="@drawable/no_image_beer" />
+
+                <ImageView
+                    android:id="@+id/ivAddBeerImage"
+                    android:layout_width="25dp"
+                    android:layout_height="25dp"
+                    android:layout_alignParentBottom="true"
+                    android:layout_alignParentRight="true"
+                    android:src="@drawable/plus" />
+            </RelativeLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:gravity="center"
+                android:orientation="horizontal" >
+
+                <Button
+                    android:id="@+id/btnSave"
+                    style="@style/button_style_gradient"
+                    android:layout_width="120dp"
+                    android:layout_height="35dp"
+                    android:layout_marginRight="5dp"
+                    android:text="@string/btn_save" />
+
+                <Button
+                    android:id="@+id/btnCancel"
+                    style="@style/button_style_gradient"
+                    android:layout_width="120dp"
+                    android:layout_height="35dp"
+                    android:layout_marginLeft="5dp"
+                    android:text="@string/btn_cancel" />
+            </LinearLayout>
+        </LinearLayout>
+    </RelativeLayout>
+
+</ScrollView>

@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Bar Trivia Game Screen Layout -->
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <ImageView
+        android:id="@+id/ivBarTriviaGame"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:src="@drawable/gallery_big_place_holder" />
+
+    <Button
+        android:id="@+id/buttonStartTrivia"
+        style="@style/button_style_gradient"
+        android:layout_width="@dimen/btn_fav_width"
+        android:layout_height="50dp"
+        android:layout_centerInParent="true"
+        android:text="@string/btn_bar_trivia_game" />
+
+</RelativeLayout>

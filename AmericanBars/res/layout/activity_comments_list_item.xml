@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/bar_list_item_selector"
+    android:paddingTop="10dp" >
+
+    <RelativeLayout
+        android:id="@+id/relativeLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp" >
+
+        <ImageView
+            android:id="@+id/ivProfilePicture"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:layout_alignParentLeft="true"
+            android:layout_alignTop="@+id/tvBarAddress"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="2dp"
+            android:clickable="true"
+            android:scaleType="fitXY"
+            android:src="@drawable/no_profile_picture" />
+
+        <TextView
+            android:id="@+id/tvName"
+            style="@style/textStyleBrownNormal_16"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="5dp"
+            android:layout_toRightOf="@+id/ivProfilePicture"
+            android:ellipsize="end"
+            android:maxLines="2"
+            tools:text="Name A Real Austin Institution! A Real Austin Institution! A Real Austin Institution! A Real Austin Institution! A Real Austin Institution! A Real Austin Institution! A Real Austin Institution! A Real Austin Institution! A Real Austin Institution! A Real Austin Institution! A Real Austin Institution! A Real Austin Institution! " />
+
+        <TextView
+            android:id="@+id/tvCommentTitle"
+            style="@style/textStyleAutoSearch"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/tvCommentTitle"
+            android:layout_below="@+id/tvName"
+            android:layout_marginTop="3dp"
+            android:layout_toRightOf="@+id/ivProfilePicture"
+            android:ellipsize="end"
+            android:maxLines="2"
+            tools:text="Comment Title Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum " />
+
+        <TextView
+            android:id="@+id/tvCommentDescription"
+            style="@style/textStyleAutoSearch"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/tvCommentTitle"
+            android:layout_below="@+id/tvCommentTitle"
+            android:layout_marginTop="3dp"
+            android:layout_toRightOf="@+id/ivProfilePicture"
+            android:ellipsize="end"
+            android:maxLines="5"
+            tools:text="Comment Description Comment Description Comment Description Comment Description Comment Description Comment Description Comment Description Comment Description Comment Description Comment Description Comment Description Comment Description Comment Description " />
+
+        <TextView
+            android:id="@+id/tvCommentDateTime"
+            style="@style/textStyleAutoSearch"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/tvCommentTitle"
+            android:layout_below="@+id/tvCommentDescription"
+            android:layout_marginRight="5dp"
+            android:layout_marginTop="3dp"
+            android:layout_toRightOf="@+id/ivProfilePicture"
+            android:ellipsize="end"
+            android:maxLines="2"
+            tools:text="Date-Time" />
+
+        <LinearLayout
+            android:id="@+id/linearLayoutBottom"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/tvCommentTitle"
+            android:layout_below="@+id/tvCommentDateTime"
+            android:layout_marginTop="10dp"
+            android:gravity="center_vertical"
+            android:orientation="horizontal" >
+
+            <LinearLayout
+                android:id="@+id/linearLayoutLikeComment"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center" >
+
+                <ImageView
+                    android:id="@+id/ivLikeComment"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_marginRight="10dp"
+                    android:src="@drawable/thumb_up" />
+
+                <TextView
+                    android:id="@+id/tvLikeCommentCounter"
+                    style="@style/textStyleAutoSearch"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="5dp"
+                    tools:text="0" />
+
+                <TextView
+                    android:id="@+id/tvLikeText"
+                    style="@style/textStyleAutoSearch"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Like" />
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/tvReply"
+                style="@style/textStyleReply"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="25dp"
+                android:text="Reply" />
+        </LinearLayout>
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:layout_below="@+id/relativeLayout"
+        android:layout_marginTop="10dp"
+        android:background="@color/spinner_border_color" />
+
+</RelativeLayout>

@@ -1,0 +1,213 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Suggest New Beer Screen -->
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:custom_edit="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/scroller"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/backgroundColor"
+    android:fillViewport="true"
+    android:scrollbars="vertical" >
+
+    <RelativeLayout
+        android:id="@+id/relativeLayoutSuggestNewBar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/tvHeaderText"
+            style="@style/textStyleMyProfileTitle_whiteColor"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            android:text="We need your help!\n\nAmerican Bars is on a mission to find every small and independently owned bar in America. We are a crowd sourcing website that needs you help to seek out every local watering hole we can find. So, if you can’t find a small bar or pub in our database, please take the time to go to our suggest a bar form and let us know about it. If we list the bar, we will give you credit as the person who helped." />
+
+        <LinearLayout
+            android:id="@+id/relativeLayoutContent"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tvHeaderText"
+            android:orientation="vertical"
+            android:paddingBottom="15dp"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:paddingTop="15dp" >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal" >
+
+                <TextView
+                    style="@style/textStyleMyProfileTitle_whiteColor"
+                    android:layout_width="@dimen/tvTitleSuggestNewBarWidth"
+                    android:layout_height="wrap_content"
+                    android:gravity="right"
+                    android:text="@string/txt_bar_name" />
+
+                <EditText
+                    android:id="@+id/etBarName"
+                    style="@style/edittext_style_suggest_screen"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/editTextHeightMyProfile"
+                    android:layout_marginLeft="@dimen/dim_7"
+                    android:hint="@string/txt_bar_name"
+                    android:nextFocusLeft="@id/etBarName"
+                    android:nextFocusUp="@id/etBarName" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:orientation="horizontal" >
+
+                <TextView
+                    style="@style/textStyleMyProfileTitle_whiteColor"
+                    android:layout_width="@dimen/tvTitleSuggestNewBarWidth"
+                    android:layout_height="wrap_content"
+                    android:gravity="right"
+                    android:text="@string/txt_street" />
+
+                <EditText
+                    android:id="@+id/etAddress"
+                    style="@style/edittext_multiline_style_suggest_screen"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/editTextMultilineHeightMyProfile"
+                    android:layout_marginLeft="@dimen/dim_7"
+                    android:gravity="top"
+                    android:hint="@string/txt_address"
+                    android:nextFocusLeft="@id/etAddress"
+                    android:nextFocusUp="@id/etAddress"
+                    android:scrollbars="vertical" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:orientation="horizontal" >
+
+                <TextView
+                    style="@style/textStyleMyProfileTitle_whiteColor"
+                    android:layout_width="@dimen/tvTitleSuggestNewBarWidth"
+                    android:layout_height="wrap_content"
+                    android:gravity="right"
+                    android:text="@string/txt_city" />
+
+                <EditText
+                    android:id="@+id/etCity"
+                    style="@style/edittext_style_suggest_screen"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/editTextHeightMyProfile"
+                    android:layout_marginLeft="@dimen/dim_7"
+                    android:hint="@string/txt_city"
+                    android:nextFocusLeft="@id/etCity"
+                    android:nextFocusUp="@id/etCity" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:orientation="horizontal" >
+
+                <TextView
+                    style="@style/textStyleMyProfileTitle_whiteColor"
+                    android:layout_width="@dimen/tvTitleSuggestNewBarWidth"
+                    android:layout_height="wrap_content"
+                    android:gravity="right"
+                    android:text="@string/txt_state" />
+
+                <EditText
+                    android:id="@+id/etState"
+                    style="@style/edittext_style_suggest_screen"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/editTextHeightMyProfile"
+                    android:layout_marginLeft="@dimen/dim_7"
+                    android:hint="@string/txt_state"
+                    android:nextFocusLeft="@id/etState"
+                    android:nextFocusUp="@id/etState" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:orientation="horizontal" >
+
+                <TextView
+                    style="@style/textStyleMyProfileTitle_whiteColor"
+                    android:layout_width="@dimen/tvTitleSuggestNewBarWidth"
+                    android:layout_height="wrap_content"
+                    android:gravity="right"
+                    android:text="@string/txt_phone_number" />
+
+                <br.com.sapereaude.maskedEditText.MaskedEditText
+                    android:id="@+id/etPhoneNumber"
+                    style="@style/edittext_style_suggest_screen"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/editTextHeightMyProfile"
+                    android:layout_marginLeft="@dimen/dim_7"
+                    android:inputType="number"
+                    android:nextFocusLeft="@id/etPhoneNumber"
+                    android:nextFocusUp="@id/etPhoneNumber"
+                    custom_edit:mask="(###) ###-####" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:orientation="horizontal" >
+
+                <TextView
+                    style="@style/textStyleMyProfileTitle_whiteColor"
+                    android:layout_width="@dimen/tvTitleSuggestNewBarWidth"
+                    android:layout_height="wrap_content"
+                    android:gravity="right"
+                    android:text="@string/txt_zipcode" />
+
+                <EditText
+                    android:id="@+id/etZipCode"
+                    style="@style/edittext_style_suggest_screen"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/editTextHeightMyProfile"
+                    android:layout_marginLeft="@dimen/dim_7"
+                    android:hint="@string/txt_zipcode"
+                    android:inputType="number"
+                    android:nextFocusLeft="@id/etZipCode"
+                    android:nextFocusUp="@id/etZipCode" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:gravity="center"
+                android:orientation="horizontal" >
+
+                <Button
+                    android:id="@+id/btnSave"
+                    style="@style/button_style_gradient"
+                    android:layout_width="120dp"
+                    android:layout_height="35dp"
+                    android:layout_marginRight="5dp"
+                    android:text="@string/btn_save" />
+
+                <Button
+                    android:id="@+id/btnCancel"
+                    style="@style/button_style_gradient"
+                    android:layout_width="120dp"
+                    android:layout_height="35dp"
+                    android:layout_marginLeft="5dp"
+                    android:text="@string/btn_cancel" />
+            </LinearLayout>
+        </LinearLayout>
+    </RelativeLayout>
+
+</ScrollView>

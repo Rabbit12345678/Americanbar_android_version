@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- View Pager row Screen Layout -->
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/rounded_border"
+    android:focusable="true"
+    android:focusableInTouchMode="true" >
+
+    <RelativeLayout
+        android:id="@+id/relativeLayoutDescription"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/lightBrownColor"
+        android:padding="10dp" >
+
+        <ImageView
+            android:id="@+id/ivDescription"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:src="@drawable/description" />
+
+        <TextView
+            android:id="@+id/tvTitle"
+            style="@style/textStyleBarTitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ellipsize="end"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="7dp"
+            android:layout_marginRight="3dp"
+            android:layout_toLeftOf="@+id/ivCloseDialog"
+            android:layout_toRightOf="@+id/ivDescription"
+            android:text="How to Make It Description" />
+
+        <ImageView
+            android:id="@+id/ivCloseDialog"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true"
+            android:visibility="gone"
+            android:src="@drawable/close" />
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/tvFullDescription"
+        android:layout_below="@+id/relativeLayoutDescription"
+        style="@style/textStyleAutoSearch"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="20dp"
+        tools:text="hello klsdjflksdj flkjklsdfjklsadjfkljsdklfjlksdjfklsdjfkljsdlkfjklsdfjlkdjlfkjdklsjfklsdjflkjdsklfjdkljfkldjflkjsdklfjslkdjflk" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tvFullDescription"
+        android:orientation="horizontal" >
+
+        <Button
+            android:id="@+id/btnOk"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/dim_10"
+            android:layout_marginLeft="@dimen/dim_10"
+            android:layout_marginRight="@dimen/dim_10"
+            android:layout_weight="1"
+            android:text="OK" />
+
+        <Button
+            android:id="@+id/btnCancel"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/dim_10"
+            android:layout_marginRight="@dimen/dim_10"
+            android:layout_weight="1"
+            android:text="CANCEL" />
+
+    </LinearLayout>
+
+</RelativeLayout>

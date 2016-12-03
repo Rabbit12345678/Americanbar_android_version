@@ -1,0 +1,211 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Beer Screen Row Layout -->
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/bar_list_item_selector"
+    android:descendantFocusability="blocksDescendants"
+    android:orientation="vertical"
+    android:padding="10dp" >
+
+    <!-- TextView - Beer Name -->
+
+    <TextView
+        android:id="@+id/tvBeerName"
+        style="@style/textStyleBeerTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:singleLine="true"
+        tools:text="Beer Name" />
+
+    <!-- ImageView - Beer icon -->
+
+    <ImageView
+        android:id="@+id/ivBeerLogo"
+        android:layout_width="@dimen/beerLogo_width"
+        android:layout_height="@dimen/beerLogo_height"
+        android:layout_alignLeft="@+id/tvBeerName"
+        android:layout_below="@+id/tvBeerName"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="8dp"
+        android:scaleType="fitXY"
+        android:src="@drawable/no_image_beer" />
+
+    <!-- Relative Layout - Beer Type -->
+
+    <RelativeLayout
+        android:id="@+id/relativeLayoutBeerType"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/ivBeerLogo"
+        android:layout_toLeftOf="@+id/ivNextArrow"
+        android:layout_toRightOf="@+id/ivBeerLogo" >
+
+        <ImageView
+            android:id="@+id/tvTitleBeerType"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_centerVertical="true"
+            android:src="@drawable/beer_type" />
+
+        <TextView
+            android:id="@+id/tv"
+            style="@style/textStyleRememberMe"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:layout_toRightOf="@+id/tvTitleBeerType"
+            android:text=":" />
+
+        <TextView
+            android:id="@+id/tvBeerType"
+            style="@style/textStyleAutoSearch"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@+id/tv"
+            android:singleLine="true"
+            tools:text="Beer Type" />
+    </RelativeLayout>
+
+    <!-- Relative Layout - Brewed By -->
+
+    <RelativeLayout
+        android:id="@+id/relativeLayoutBrewedBy"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/relativeLayoutBeerType"
+        android:layout_marginTop="5dp"
+        android:layout_toLeftOf="@+id/ivNextArrow"
+        android:layout_toRightOf="@+id/ivBeerLogo" >
+
+        <ImageView
+            android:id="@+id/tvTitleBrewedBy"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_centerVertical="true"
+            android:src="@drawable/beer_brewed_by" />
+
+        <TextView
+            android:id="@+id/tv1"
+            style="@style/textStyleRememberMe"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:layout_toRightOf="@+id/tvTitleBrewedBy"
+            android:text=":" />
+
+        <TextView
+            android:id="@+id/tvBrewedBy"
+            style="@style/textStyleAutoSearch"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@+id/tv1"
+            android:singleLine="true"
+            tools:text="Brewed By" />
+    </RelativeLayout>
+
+    <!-- Relative Layout - City Produced -->
+
+    <RelativeLayout
+        android:id="@+id/relativeLayoutCityProduced"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/relativeLayoutBrewedBy"
+        android:layout_marginTop="5dp"
+        android:layout_toLeftOf="@+id/ivNextArrow"
+        android:layout_toRightOf="@+id/ivBeerLogo" >
+
+        <ImageView
+            android:id="@+id/tvTitleCityProduced"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_centerVertical="true"
+            android:src="@drawable/beer_city_produced" />
+
+        <TextView
+            android:id="@+id/tv2"
+            style="@style/textStyleRememberMe"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:layout_toRightOf="@+id/tvTitleCityProduced"
+            android:text=":" />
+
+        <TextView
+            android:id="@+id/tvCityProduced"
+            style="@style/textStyleAutoSearch"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@+id/tv2"
+            android:singleLine="true"
+            tools:text="City Produced" />
+    </RelativeLayout>
+
+    <!-- Relative Layout - Website -->
+
+    <RelativeLayout
+        android:id="@+id/relativeLayoutWebsite"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/relativeLayoutCityProduced"
+        android:layout_marginTop="5dp"
+        android:layout_toLeftOf="@+id/ivNextArrow"
+        android:layout_toRightOf="@+id/ivBeerLogo" >
+
+        <ImageView
+            android:id="@+id/tvTitleWebsite"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_centerVertical="true"
+            android:src="@drawable/beer_website" />
+
+        <TextView
+            android:id="@+id/tv3"
+            style="@style/textStyleRememberMe"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:layout_toRightOf="@+id/tvTitleWebsite"
+            android:text=":" />
+
+        <TextView
+            android:id="@+id/tvWebsite"
+            style="@style/textStyleWebsite"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@+id/tv3"
+            android:autoLink="web"
+            android:focusable="false"
+            android:focusableInTouchMode="false"
+            android:singleLine="true"
+            tools:text="Website" />
+    </RelativeLayout>
+
+    <!-- Next Arrow icon -->
+
+    <ImageView
+        android:id="@+id/ivNextArrow"
+        android:layout_width="25dp"
+        android:layout_height="25dp"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="5dp"
+        android:gravity="right"
+        android:src="@drawable/arrow_next" />
+
+</RelativeLayout>

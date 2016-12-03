@@ -1,0 +1,450 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.spaculus.americanbars"
+    android:versionCode="6"
+    android:versionName="3.0.2" >
+
+    <uses-sdk
+        android:minSdkVersion="14"
+        android:targetSdkVersion="21" />
+    
+    <supports-screens
+        android:anyDensity="true"
+        android:largeScreens="true"
+        android:normalScreens="true"
+        android:smallScreens="true"
+        android:xlargeScreens="true" />
+
+    <!-- To access the Internet -->
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <!-- Following permissions to get the device id. -->
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.GET_TASKS" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <!-- Permission to do a call -->
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+
+   <uses-feature
+        android:glEsVersion="0x00020000"
+        android:required="true" />
+
+    <!--
+     The following two permissions are not required to use
+     Google Maps Android API v2, but are recommended.
+    -->
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    
+    <permission
+        android:name="com.spaculus.americanbars.permission.C2D_MESSAGE"
+        android:protectionLevel="signature" />
+
+    <uses-permission android:name="com.google.android.c2dm.permission.RECEIVE" />
+    <uses-permission android:name="com.spaculus.americanbars.permission.C2D_MESSAGE" />
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/app_icon"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+        <meta-data
+            android:name="com.google.android.gms.version"
+            android:value="@integer/google_play_services_version" />
+        
+        <receiver
+            android:name="com.google.android.gms.gcm.GcmReceiver"
+            android:exported="true"
+            android:permission="com.google.android.c2dm.permission.SEND" >
+            <intent-filter>
+                <action android:name="com.google.android.c2dm.intent.RECEIVE" />
+                <action android:name="com.google.android.c2dm.intent.REGISTRATION" />
+
+                <category android:name="com.spaculus.americanbars" />
+            </intent-filter>
+        </receiver>
+        
+        <service android:name="com.spaculus.americanbars.RegistrationIntentService" />
+        <service
+            android:name="com.spaculus.americanbars.MyGcmListenerService"
+            android:exported="false" >
+            <intent-filter>
+                <action android:name="com.google.android.c2dm.intent.RECEIVE" />
+            </intent-filter>
+        </service>
+        <service
+            android:name="com.spaculus.americanbars.MyInstanceIDListenerService"
+            android:exported="false" >
+            <intent-filter>
+                <action android:name="com.google.android.gms.iid.InstanceID" />
+            </intent-filter>
+        </service>
+        
+        <activity
+            android:name="com.spaculus.americanbars.PushNotificationDialog"
+            android:configChanges="keyboard|keyboardHidden|orientation|screenSize"
+            android:label="@string/app_name"
+            android:theme="@android:style/Theme.Dialog" >
+        </activity>
+        <!-- Splash Screen Activity -->
+        <activity
+            android:name="com.spaculus.americanbars.SplashScreenActivity"
+            android:label="@string/app_name"
+            android:theme="@style/SplashScreen" 
+            android:configChanges="keyboard|keyboardHidden|orientation|screenSize">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        
+        <!-- Main Screen Activity -->
+        <activity
+            android:name="com.spaculus.americanbars.MainActivity"
+            android:label="@string/app_name"           
+            android:icon="@drawable/logo"
+            android:configChanges="keyboard|keyboardHidden|orientation|screenSize"
+            android:theme="@style/HomeScreen">
+        </activity>
+        
+        <!-- Play upload issue -->
+        <!-- android:icon="@android:color/transparent" -->
+		
+		<!-- Forgot Password Screen Activity -->
+        <activity
+            android:name="com.spaculus.americanbars.ForgotPasswordActivity"
+            android:configChanges="keyboard|keyboardHidden|orientation|screenSize"
+            android:label="@string/app_name">
+        </activity>
+
+        <!-- Reset Password Screen Activity -->
+        <activity
+            android:name="com.spaculus.americanbars.ResetPasswordActivity"
+            android:configChanges="keyboard|keyboardHidden|orientation|screenSize"
+            android:label="@string/app_name">
+        </activity>
+        
+        <!-- Transcation Activity -->
+        <activity
+            android:name="com.spaculus.americanbars.TransactionActivity"
+            android:configChanges="keyboard|keyboardHidden|orientation|screenSize"
+            android:label="@string/app_name">
+        </activity>
+        
+        <!-- Bar Search Activity -->
+        <activity
+            android:name="com.spaculus.americanbars.BarSearchActivity"
+            android:configChanges="keyboard|keyboardHidden|orientation|screenSize"
+            android:label="@string/app_name">
+        </activity>
+        
+        <!-- Bar Search Auto Activity -->
+        <activity
+            android:name="com.spaculus.americanbars.BarSearchAutoActivity"
+            android:configChanges="keyboard|keyboardHidden|orientation|screenSize"
+            android:label="@string/app_name"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar"
+            android:windowSoftInputMode="stateVisible">    
+        </activity>
+        
+        <!-- Alpha View Activity - To show blank alpha view activity -->
+        <activity
+            android:name="com.spaculus.americanbars.AlphaViewActivity"
+            android:configChanges="keyboard|keyboardHidden|orientation|screenSize"
+            android:label="@string/app_name"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar">
+         </activity>
+            
+         <!-- Bar Search Activity -->
+        <activity
+            android:name="com.spaculus.americanbars.BarSearchListActivity"
+            android:configChanges="keyboard|keyboardHidden|orientation|screenSize"
+            android:label="@string/app_name">
+        </activity>
+        
+        <!-- Beer Search List Activity -->
+        <activity
+            android:name="com.spaculus.americanbars.BeerSearchListActivity"
+            android:configChanges="keyboard|keyboardHidden|orientation|screenSize"
+            android:label="@string/app_name">
+        </activity>
+        
+        <!-- Cocktail Search List Activity -->
+        <activity
+            android:name="com.spaculus.americanbars.CocktailSearchListActivity"
+            android:configChanges="keyboard|keyboardHidden|orientation|screenSize"
+            android:label="@string/app_name">
+        </activity>
+        
+        <!-- Liquor Search List Activity -->
+        <activity
+            android:name="com.spaculus.americanbars.LiquorSearchListActivity"
+            android:configChanges="keyboard|keyboardHidden|orientation|screenSize"
+            android:label="@string/app_name">
+        </activity>
+        
+        <!-- Taxi Search List Activity -->
+        <activity
+            android:name="com.spaculus.americanbars.TaxiSearchListActivity"
+            android:configChanges="keyboard|keyboardHidden|orientation|screenSize"
+            android:label="@string/app_name">
+        </activity>
+        
+        <!-- Full Mug Bar Details Activity -->
+        <activity
+            android:name="com.spaculus.americanbars.FullMugBarDetailsActivity"
+            android:configChanges="keyboard|keyboardHidden|orientation|screenSize"
+            android:label="@string/app_name">
+        </activity>
+        
+        <!-- Zoom ImageView Activity -->
+        <activity
+            android:name="com.spaculus.americanbars.ZoomImageViewURL"
+            android:configChanges="keyboard|keyboardHidden|orientation|screenSize"
+            android:label="@string/app_name">
+        </activity>
+            
+        <!-- Youtube Video Play Activity -->
+        <activity
+            android:name="com.spaculus.americanbars.YouTubeVideoPlayActivity"
+            android:configChanges="keyboard|keyboardHidden|orientation|screenSize"
+            android:label="@string/app_name">
+        </activity>
+        
+        <!-- Bar Event Details Activity -->
+        <activity
+            android:name="com.spaculus.americanbars.EventDetailsActivity"
+            android:configChanges="keyboard|keyboardHidden|orientation|screenSize"
+            android:label="@string/app_name">
+        </activity>
+        
+        <!-- Half Mug Bar Details Activity -->
+        <activity
+            android:name="com.spaculus.americanbars.HalfMugBarDetailsActivity"
+            android:configChanges="keyboard|keyboardHidden|orientation|screenSize"
+            android:label="@string/app_name">
+        </activity>
+        
+        <!-- Bar Events Search List Activity -->
+        <activity
+            android:name="com.spaculus.americanbars.BarEventSearchListActivity"
+            android:configChanges="keyboard|keyboardHidden|orientation|screenSize"
+            android:label="@string/app_name">
+        </activity>
+        
+        <!-- Beer Details Activity -->
+        <activity
+            android:name="com.spaculus.americanbars.BeerDetailsActivity"
+            android:configChanges="keyboard|keyboardHidden|orientation|screenSize"
+            android:label="@string/app_name">
+        </activity>
+        
+        <!-- Cocktail Details Activity -->
+        <activity
+            android:name="com.spaculus.americanbars.CocktailDetailsActivity"
+            android:configChanges="keyboard|keyboardHidden|orientation|screenSize"
+            android:label="@string/app_name">
+        </activity>
+        
+        <!-- Liquor Details Activity -->
+        <activity
+            android:name="com.spaculus.americanbars.LiquorDetailsActivity"
+            android:configChanges="keyboard|keyboardHidden|orientation|screenSize"
+            android:label="@string/app_name">
+        </activity>
+        
+        <!-- Taxi Details Activity -->
+        <activity
+            android:name="com.spaculus.americanbars.TaxiDetailsActivity"
+            android:configChanges="keyboard|keyboardHidden|orientation|screenSize"
+            android:label="@string/app_name">
+        </activity>
+        
+        <!-- Photo Gallery Activity -->
+        <activity
+            android:name="com.spaculus.americanbars.PhotoGalleryActivity"
+            android:configChanges="keyboard|keyboardHidden|orientation|screenSize"
+            android:label="@string/app_name">
+        </activity>
+        
+        <!-- Photo Gallery Details Activity -->
+        <activity
+            android:name="com.spaculus.americanbars.PhotoGalleryDetailsActivity"
+            android:configChanges="keyboard|keyboardHidden|orientation|screenSize"
+            android:label="@string/app_name">
+        </activity>
+        
+        <!-- Media Picker Activity -->
+         <activity
+            android:name="com.spaculus.mediapicker.MediaPickerActivity"
+            android:configChanges="keyboard|keyboardHidden|orientation|screenSize"
+            android:icon="@drawable/logo"
+            android:label="@string/app_name">
+        </activity>
+        
+        <!-- My Profile Activity -->
+        <activity
+            android:name="com.spaculus.americanbars.MyProfileActivity"
+            android:configChanges="keyboard|keyboardHidden|orientation|screenSize"
+            android:label="@string/app_name">
+        </activity>
+        
+        <!-- Add Album Activity -->
+        <activity
+            android:name="com.spaculus.americanbars.AddAlbumActivity"
+            android:configChanges="keyboard|keyboardHidden|orientation|screenSize"
+            android:label="@string/app_name">
+        </activity>
+        
+         <!-- Contact Us View Map Activity -->
+        <activity
+            android:name="com.spaculus.americanbars.ContactUsViewMapActivity"
+            android:configChanges="keyboard|keyboardHidden|orientation|screenSize"
+            android:label="@string/app_name">
+        </activity>
+        
+        <activity
+            android:name="com.spaculus.americanbars.BarSearchOptionActivity"
+            android:configChanges="keyboard|keyboardHidden|orientation|screenSize"
+            android:label="@string/app_name">
+        </activity>
+        
+        <activity
+            android:name="com.spaculus.americanbars.BarSearchHappyHoursActivity"
+            android:configChanges="keyboard|keyboardHidden|orientation|screenSize"
+            android:label="@string/app_name">
+        </activity>
+        
+        <activity
+            android:name="com.spaculus.americanbars.BarSearchHappyHoursGPSActivity"
+            android:configChanges="keyboard|keyboardHidden|orientation|screenSize"
+            android:label="@string/app_name">
+        </activity>
+        
+        <activity
+            android:name="com.spaculus.americanbars.BarSearchAroundMeActivity"
+            android:configChanges="keyboard|keyboardHidden|orientation|screenSize"
+            android:label="@string/app_name">
+        </activity>
+        
+        <!-- Login Activity -->
+        <activity
+            android:name="com.spaculus.americanbars.LoginActivity"
+            android:configChanges="keyboard|keyboardHidden|orientation|screenSize"
+            android:label="@string/app_name">
+        </activity>
+        
+        <!-- Suggest New Beer Activity -->
+        <activity
+            android:name="com.spaculus.americanbars.SuggestNewBeerActivity"
+            android:configChanges="keyboard|keyboardHidden|orientation|screenSize"
+            android:label="@string/app_name">
+        </activity>
+        
+        <!-- Suggest New Cocktail Activity -->
+        <activity
+            android:name="com.spaculus.americanbars.SuggestNewCocktailActivity"
+            android:configChanges="keyboard|keyboardHidden|orientation|screenSize"
+            android:label="@string/app_name">
+        </activity>
+        
+        <!-- Suggest New Liquor Activity -->
+        <activity
+            android:name="com.spaculus.americanbars.SuggestNewLiquorActivity"
+            android:configChanges="keyboard|keyboardHidden|orientation|screenSize"
+            android:label="@string/app_name">
+        </activity>
+        
+        <!-- Suggest New Bar Activity -->
+        <activity
+            android:name="com.spaculus.americanbars.SuggestNewBarActivity"
+            android:configChanges="keyboard|keyboardHidden|orientation|screenSize"
+            android:label="@string/app_name">
+        </activity>
+        
+        <!-- Album Details Activity -->
+        <activity
+            android:name="com.spaculus.americanbars.ArticleDetailsActivity"
+            android:configChanges="keyboard|keyboardHidden|orientation|screenSize"
+            android:label="@string/app_name">
+        </activity>
+        
+        <!-- Bar Reviews List Activity -->
+        <activity
+            android:name="com.spaculus.americanbars.BarReviewsListActivity"
+            android:configChanges="keyboard|keyboardHidden|orientation|screenSize"
+            android:label="@string/app_name">
+        </activity>
+        
+        <!-- Comments Activity -->
+        <activity
+            android:name="com.spaculus.americanbars.BeerCommentsListActivity"
+            android:configChanges="keyboard|keyboardHidden|orientation|screenSize"
+            android:label="@string/app_name">
+        </activity>
+        <activity
+            android:name="com.spaculus.americanbars.CocktailCommentsListActivity"
+            android:configChanges="keyboard|keyboardHidden|orientation|screenSize"
+            android:label="@string/app_name">
+        </activity>
+        <activity
+            android:name="com.spaculus.americanbars.LiquorCommentsListActivity"
+            android:configChanges="keyboard|keyboardHidden|orientation|screenSize"
+            android:label="@string/app_name">
+        </activity>
+        
+        <!-- Comment Replies Activity -->
+        <activity
+            android:name="com.spaculus.americanbars.BeerCommentRepliesActivity"
+            android:configChanges="keyboard|keyboardHidden|orientation|screenSize"
+            android:label="@string/app_name">
+        </activity>
+        <activity
+            android:name="com.spaculus.americanbars.CocktailCommentRepliesActivity"
+            android:configChanges="keyboard|keyboardHidden|orientation|screenSize"
+            android:label="@string/app_name">
+        </activity>
+        <activity
+            android:name="com.spaculus.americanbars.LiquorCommentRepliesActivity"
+            android:configChanges="keyboard|keyboardHidden|orientation|screenSize"
+            android:label="@string/app_name">
+        </activity>
+        
+        <!-- Bar Trivia Game Activity -->
+        <activity
+            android:name="com.spaculus.americanbars.BarTriviaGameActivity"
+            android:configChanges="keyboard|keyboardHidden|orientation|screenSize"
+            android:label="@string/app_name">
+        </activity>
+        
+        <!-- Quiz Activity -->
+        <activity
+            android:name="com.spaculus.americanbars.QuizActivity"
+            android:configChanges="keyboard|keyboardHidden|orientation|screenSize"
+            android:label="@string/app_name">
+        </activity>
+       
+        <!-- For the Google Maps -->
+       <meta-data
+            android:name="com.google.android.gms.version"
+            android:value="@integer/google_play_services_version" />
+        <meta-data
+            android:name="com.google.android.maps.v2.API_KEY"
+            android:value="@string/DEVELOPER_KEY" />
+        
+         <!-- For the Facebook Login -->
+        <activity
+            android:name="com.facebook.FacebookActivity"
+            android:label="@string/app_name"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+
+        <meta-data
+            android:name="com.facebook.sdk.ApplicationId"
+            android:value="@string/app_id" />
+        <!-- For the Facebook Login -->
+     
+    </application>
+
+</manifest>

@@ -1,0 +1,430 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Sign Up Screen -->
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:custom_edit="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/scrollView"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg_login"
+    android:fillViewport="true"
+    android:scrollbars="vertical" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" >
+
+            <RelativeLayout
+                android:id="@+id/relativeLayoutSignUp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:focusable="true"
+                android:focusableInTouchMode="true"
+                android:orientation="vertical"
+                android:padding="20dp" >
+
+                <!-- EditText Bar Fly Nickname -->
+
+                <EditText
+                    android:id="@+id/etBarFlyNickname"
+                    style="@style/edittext_style"
+                    android:layout_width="@dimen/editTextWidth"
+                    android:layout_height="@dimen/editTextHeightSignUp"
+                    android:layout_below="@+id/ivLogo"
+                    android:layout_centerHorizontal="true"
+                    android:drawableLeft="@drawable/name"
+                    android:drawablePadding="@dimen/drawblePaddingDimen"
+                    android:hint="@string/txt_bar_fly_nickname"
+                    android:nextFocusLeft="@id/etBarFlyNickname"
+                    android:nextFocusUp="@id/etBarFlyNickname" />
+
+                <!-- View LineBar Fly Nickname -->
+
+                <View
+                    android:id="@+id/viewLineBarFlyNickname"
+                    android:layout_width="@dimen/editTextWidth"
+                    android:layout_height="1px"
+                    android:layout_below="@+id/etBarFlyNickname"
+                    android:layout_centerHorizontal="true"
+                    android:background="@color/greyColor" />
+
+                <!-- EditText First Name -->
+
+                <EditText
+                    android:id="@+id/etFirstName"
+                    style="@style/edittext_style"
+                    android:layout_width="@dimen/editTextWidth"
+                    android:layout_height="@dimen/editTextHeightSignUp"
+                    android:layout_below="@+id/viewLineBarFlyNickname"
+                    android:layout_centerHorizontal="true"
+                    android:drawableLeft="@drawable/name"
+                    android:drawablePadding="@dimen/drawblePaddingDimen"
+                    android:hint="@string/txt_first_name"
+                    android:nextFocusLeft="@id/etFirstName"
+                    android:nextFocusUp="@id/etFirstName" />
+
+                <!-- View Line -->
+
+                <View
+                    android:id="@+id/viewLineFirstName"
+                    android:layout_width="@dimen/editTextWidth"
+                    android:layout_height="1px"
+                    android:layout_below="@+id/etFirstName"
+                    android:layout_centerHorizontal="true"
+                    android:background="@color/greyColor" />
+
+                <!-- EditText Last Name -->
+
+                <EditText
+                    android:id="@+id/etLastName"
+                    style="@style/edittext_style"
+                    android:layout_width="@dimen/editTextWidth"
+                    android:layout_height="@dimen/editTextHeightSignUp"
+                    android:layout_below="@+id/viewLineFirstName"
+                    android:layout_centerHorizontal="true"
+                    android:drawableLeft="@drawable/name"
+                    android:drawablePadding="@dimen/drawblePaddingDimen"
+                    android:hint="@string/txt_last_name"
+                    android:nextFocusLeft="@id/etLastName"
+                    android:nextFocusUp="@id/etLastName" />
+
+                <!-- View Line Last Name -->
+
+                <View
+                    android:id="@+id/viewLineLastName"
+                    android:layout_width="@dimen/editTextWidth"
+                    android:layout_height="1px"
+                    android:layout_below="@+id/etLastName"
+                    android:layout_centerHorizontal="true"
+                    android:background="@color/greyColor" />
+
+                <!-- EditText Email -->
+
+                <EditText
+                    android:id="@+id/etEmail"
+                    style="@style/edittext_style"
+                    android:layout_width="@dimen/editTextWidth"
+                    android:layout_height="@dimen/editTextHeightSignUp"
+                    android:layout_below="@+id/viewLineLastName"
+                    android:layout_centerHorizontal="true"
+                    android:drawableLeft="@drawable/email"
+                    android:drawablePadding="@dimen/drawblePaddingDimen"
+                    android:hint="@string/txt_email"
+                    android:nextFocusLeft="@id/etEmail"
+                    android:nextFocusUp="@id/etEmail" />
+
+                <!-- View Line Email -->
+
+                <View
+                    android:id="@+id/viewLineEmail"
+                    android:layout_width="@dimen/editTextWidth"
+                    android:layout_height="1px"
+                    android:layout_below="@+id/etEmail"
+                    android:layout_centerHorizontal="true"
+                    android:background="@color/greyColor" />
+
+                <!-- Linear Layout Mobile -->
+
+                <LinearLayout
+                    android:id="@+id/linearLayoutMobile"
+                    android:layout_width="@dimen/editTextWidth"
+                    android:layout_height="@dimen/editTextHeightSignUp"
+                    android:layout_below="@+id/viewLineEmail"
+                    android:layout_centerHorizontal="true"
+                    android:background="@color/whiteColor"
+                    android:gravity="center"
+                    android:orientation="horizontal" >
+
+                    <!-- EditText Mobile -->
+
+                    <br.com.sapereaude.maskedEditText.MaskedEditText
+                        android:id="@+id/etMobileNumber"
+                        style="@style/edittext_style"
+                        android:layout_width="270dp"
+                        android:layout_height="@dimen/editTextHeightSignUp"
+                        android:layout_weight="1"
+                        android:drawableLeft="@drawable/mobile_number"
+                        android:drawablePadding="@dimen/drawblePaddingDimen"
+                        android:hint="@string/txt_mobile_number"
+                        android:inputType="number"
+                        android:nextFocusLeft="@id/etMobileNumber"
+                        android:nextFocusUp="@id/etMobileNumber"
+                        custom_edit:mask="(###) ###-####" />
+
+                    <ImageView
+                        android:id="@+id/ivMobileNumberInfo"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="@dimen/drawblePaddingDimen"
+                        android:src="@drawable/mobile_info" />
+                </LinearLayout>
+
+                <!-- View Line Mobile -->
+
+                <View
+                    android:id="@+id/viewLineMobile"
+                    android:layout_width="@dimen/editTextWidth"
+                    android:layout_height="1px"
+                    android:layout_below="@+id/linearLayoutMobile"
+                    android:layout_centerHorizontal="true"
+                    android:background="@color/greyColor" />
+
+                <!-- EditText Password -->
+
+                <EditText
+                    android:id="@+id/etPassword"
+                    style="@style/edittext_style"
+                    android:layout_width="@dimen/editTextWidth"
+                    android:layout_height="@dimen/editTextHeightSignUp"
+                    android:layout_below="@+id/viewLineMobile"
+                    android:layout_centerHorizontal="true"
+                    android:drawableLeft="@drawable/password"
+                    android:drawablePadding="@dimen/drawblePaddingDimen"
+                    android:hint="@string/txt_password"
+                    android:inputType="textPassword"
+                    android:nextFocusLeft="@id/etPassword"
+                    android:nextFocusUp="@id/etPassword"
+                    android:visibility="visible" />
+
+                <!-- View Line Password -->
+
+                <View
+                    android:id="@+id/viewLinePassword"
+                    android:layout_width="@dimen/editTextWidth"
+                    android:layout_height="1px"
+                    android:layout_below="@+id/etPassword"
+                    android:layout_centerHorizontal="true"
+                    android:background="@color/greyColor" />
+
+                <!-- EditText Confirm Password -->
+
+                <EditText
+                    android:id="@+id/etConfirmPassword"
+                    style="@style/edittext_style"
+                    android:layout_width="@dimen/editTextWidth"
+                    android:layout_height="@dimen/editTextHeightSignUp"
+                    android:layout_below="@+id/viewLinePassword"
+                    android:layout_centerHorizontal="true"
+                    android:drawableLeft="@drawable/password"
+                    android:drawablePadding="@dimen/drawblePaddingDimen"
+                    android:hint="@string/txt_confirm_password"
+                    android:inputType="textPassword"
+                    android:nextFocusLeft="@id/etConfirmPassword"
+                    android:nextFocusUp="@id/etConfirmPassword"
+                    android:visibility="visible" />
+
+                <!-- View Line Confirm Password -->
+
+                <View
+                    android:id="@+id/viewLineConfirmPassword"
+                    android:layout_width="@dimen/editTextWidth"
+                    android:layout_height="1px"
+                    android:layout_below="@+id/etConfirmPassword"
+                    android:layout_centerHorizontal="true"
+                    android:background="@color/greyColor" />
+
+                <!-- Linear Layout Birthday -->
+
+                <LinearLayout
+                    android:id="@+id/linearLayoutBirthday"
+                    android:layout_width="@dimen/editTextWidth"
+                    android:layout_height="@dimen/editTextHeightSignUp"
+                    android:layout_below="@+id/viewLineConfirmPassword"
+                    android:layout_centerHorizontal="true"
+                    android:background="@color/whiteColor"
+                    android:gravity="center"
+                    android:orientation="horizontal" >
+
+                    <!-- Button Birthday -->
+
+                    <Button
+                        android:id="@+id/btnBirthday"
+                        style="@style/edittext_style_birthday"
+                        android:layout_width="270dp"
+                        android:layout_height="@dimen/editTextHeightSignUp"
+                        android:layout_weight="1"
+                        android:drawableLeft="@drawable/birthday"
+                        android:drawablePadding="@dimen/drawblePaddingDimen"
+                        android:gravity="left|center"
+                        android:hint="@string/txt_birthday"
+                        android:text="@string/txt_birthday" />
+
+                    <ImageView
+                        android:id="@+id/ivBirthdayInfo"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="@dimen/drawblePaddingDimen"
+                        android:src="@drawable/date_picker" />
+                </LinearLayout>
+
+                <!-- View Line Birthday -->
+
+                <View
+                    android:id="@+id/viewLineBirthday"
+                    android:layout_width="@dimen/editTextWidth"
+                    android:layout_height="1px"
+                    android:layout_below="@+id/linearLayoutBirthday"
+                    android:layout_centerHorizontal="true"
+                    android:background="@color/greyColor" />
+
+                <!-- Linear Layout Gender -->
+
+                <LinearLayout
+                    android:id="@+id/linearLayoutGender"
+                    android:layout_width="@dimen/editTextWidth"
+                    android:layout_height="@dimen/editTextHeightSignUp"
+                    android:layout_below="@+id/viewLineBirthday"
+                    android:layout_centerHorizontal="true"
+                    android:background="@color/whiteColor"
+                    android:gravity="center"
+                    android:orientation="horizontal" >
+
+                    <ImageView
+                        android:id="@+id/ivGenderInfo"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="@dimen/drawblePaddingDimen"
+                        android:src="@drawable/gender" />
+
+                    <RadioGroup
+                        android:id="@+id/radioGroupGender"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal" >
+
+                        <RadioButton
+                            android:id="@+id/radioButtonMale"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginRight="@dimen/radiobutton_marginRight"
+                            android:button="@drawable/radio_button_bg_selector" />
+
+                        <TextView
+                            style="@style/radio_button_text_style"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginRight="@dimen/radiobutton_textview_marginRight"
+                            android:text="@string/txt_male" />
+
+                        <RadioButton
+                            android:id="@+id/radioButtonFemale"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginRight="@dimen/radiobutton_marginRight"
+                            android:button="@drawable/radio_button_bg_selector" />
+
+                        <TextView
+                            style="@style/radio_button_text_style"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginRight="@dimen/radiobutton_textview_marginRight"
+                            android:text="@string/txt_female" />
+                    </RadioGroup>
+                </LinearLayout>
+
+                <!-- View Line Gender -->
+
+                <View
+                    android:id="@+id/viewLineGender"
+                    android:layout_width="@dimen/editTextWidth"
+                    android:layout_height="1px"
+                    android:layout_below="@+id/linearLayoutGender"
+                    android:layout_centerHorizontal="true"
+                    android:background="@color/greyColor" />
+
+                <!-- Linear Layout Information -->
+
+                <LinearLayout
+                    android:id="@+id/linearLayoutInfo"
+                    android:layout_width="@dimen/editTextWidth"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/viewLineGender"
+                    android:layout_centerHorizontal="true"
+                    android:background="@color/whiteColor"
+                    android:orientation="horizontal" >
+
+                    <CheckBox
+                        android:id="@+id/checkBoxInformation"
+                        style="@style/textStyleSignUpInformation"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignLeft="@+id/btnSignIn"
+                        android:layout_below="@+id/btnSignIn"
+                        android:layout_margin="10dp"
+                        android:button="@drawable/checkbox_bg_selector_grey_color"
+                        android:clickable="true"
+                        android:focusable="false"
+                        android:gravity="left"
+                        android:paddingLeft="10dp"
+                        android:text="@string/txt_sign_up_info" />
+                </LinearLayout>
+
+                <!-- View Line Information -->
+
+                <View
+                    android:id="@+id/viewLineInfo"
+                    android:layout_width="@dimen/editTextWidth"
+                    android:layout_height="1px"
+                    android:layout_below="@+id/linearLayoutInfo"
+                    android:layout_centerHorizontal="true"
+                    android:background="@color/greyColor" />
+
+                <TextView
+                    android:id="@+id/tvInfo"
+                    style="@style/textStyleSignUpInformation"
+                    android:layout_width="@dimen/editTextWidth"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/viewLineInfo"
+                    android:layout_centerHorizontal="true"
+                    android:background="@color/whiteColor"
+                    android:padding="10dp"
+                    android:text="@string/txt_sign_up_info_1" />
+
+                <!-- Button Sign In -->
+
+                <Button
+                    android:id="@+id/btnSignUp"
+                    style="@style/button_style"
+                    android:layout_width="@dimen/editTextWidth"
+                    android:layout_height="50dp"
+                    android:layout_below="@+id/tvInfo"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginBottom="35dp"
+                    android:text="@string/btn_sign_up" />
+            </RelativeLayout>
+        </FrameLayout>
+
+        <LinearLayout
+            android:id="@+id/linearLayoutTooltip"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="255dp"
+            android:orientation="vertical"
+            android:visibility="gone" >
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="right"
+                android:layout_marginRight="9dp"
+                android:src="@drawable/arrow_up_tooltip" />
+
+            <TextView
+                style="@style/textStyleRememberMe"
+                android:layout_width="280dp"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_marginLeft="10dp"
+                android:background="@drawable/light_brown_color_rounded_corners"
+                android:padding="10dp"
+                android:text="This is not a required field. Please provide your mobile phone information only if you want to receive promotional information via text from American Bars and bars listed in your favorite section." />
+        </LinearLayout>
+    </RelativeLayout>
+
+</ScrollView>

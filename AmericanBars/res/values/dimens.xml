@@ -1,0 +1,145 @@
+<resources>
+
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+
+    <!-- Home Screen -->
+    <dimen name="textSizeDimen12">12sp</dimen>
+    <dimen name="textSizeDimen14">14sp</dimen>
+    <dimen name="textSizeDimen">16sp</dimen>
+    <dimen name="drawblePaddingDimen">16sp</dimen>
+    <dimen name="textSizeDimenTitle">18sp</dimen>
+    <dimen name="textSizeButtonGridAlphabatic">20dp</dimen>
+    <dimen name="editTextHeightLogin">60dp</dimen>
+    <dimen name="editTextHeightSignUp">50dp</dimen>
+    <dimen name="editTextWidth">300dp</dimen>
+    <dimen name="editTextWidthMyProfile">200dp</dimen>
+    <dimen name="editTextHeightMyProfile">35dp</dimen>
+    <dimen name="editTextMultilineHeightMyProfile">100dp</dimen>
+    <dimen name="textViewTitleMyProfileWidth1">57dp</dimen>
+    <dimen name="dim_5">5dp</dimen>
+    <dimen name="dim_7">7dp</dimen>
+    <dimen name="dim_12">12dp</dimen>
+    <dimen name="dim_10">10dp</dimen>
+    <dimen name="dim_70">70dp</dimen>
+
+    <!-- Dimensions for the Payment Type Accepted images -->
+    <dimen name="dim_35">35dp</dimen>
+    <dimen name="dim_68">68dp</dimen>
+
+    <!-- Photo Gallery GridView item's size -->
+    <dimen name="grid_view_image_width">300dp</dimen>
+    <dimen name="grid_view_image_height">300dp</dimen>
+    <dimen name="grid_view_image_width_tablet">500dp</dimen>
+    <dimen name="grid_view_image_height_tablet">300dp</dimen>
+
+    <!-- Share icon width and height -->
+    <dimen name="share_icon_width_height">35dp</dimen>
+
+    <!-- Photo Gallery details -->
+    <dimen name="relativeLayoutBarGallery_padding">10dp</dimen>
+    <dimen name="relativeLayoutSelectedImage_margin_top">10dp</dimen>
+    <dimen name="relativeLayout_width">300dp</dimen>
+    <dimen name="relativeLayout_height">300dp</dimen>
+    <dimen name="gallerySelectedImage_width">300dp</dimen>
+    <dimen name="gallerySelectedImage_height">300dp</dimen>
+    <dimen name="gallery_name_margin_left">10dp</dimen>
+    <dimen name="gallery_name_margin_right">10dp</dimen>
+    <dimen name="share_image_margin_right">10dp</dimen>
+    <dimen name="relativeLayoutGallery_width">300dp</dimen>
+    <dimen name="relativeLayoutGallery_margin_top">10dp</dimen>
+    <dimen name="gallery_width">300dp</dimen>
+    <dimen name="gallery_margin_left">10dp</dimen>
+    <dimen name="gallery_margin_right">10dp</dimen>
+    <dimen name="gallery_spacing">10dp</dimen>
+
+    <!-- BeerSearchListActivity icon click -->
+
+    <dimen name="linearLayoutDrawerHeader_width">150dp</dimen>
+    <dimen name="list_slidermenu_width">150dp</dimen>
+    <dimen name="list_slidermenu_padding">10dp</dimen>
+
+    <!-- Sign Up Screen -->
+    <dimen name="radiobutton_textview_marginRight">10dp</dimen>
+    <dimen name="radiobutton_marginRight">5dp</dimen>
+
+    <!-- activity_beer_details -->
+    <dimen name="relativeLayoutVideo_width">300dp</dimen>
+    <dimen name="relativeLayoutVideo_height">200dp</dimen>
+
+    <!-- Beer Logo -->
+    <dimen name="beerLogo_width">100dp</dimen>
+    <dimen name="beerLogo_height">100dp</dimen>
+
+    <!-- button Width and Height :My Albums -->
+    <dimen name="button_width">95dp</dimen>
+    <dimen name="button_height">40dp</dimen>
+
+    <!-- button Width and Height :Beer Details -->
+    <dimen name="beer_button_width">95dp</dimen>
+    <dimen name="beer_button_height">40dp</dimen>
+
+    <!-- Add Album button width -->
+    <dimen name="add_album_button_width">120dp</dimen>
+
+    <!-- button width :My favourite bars -->
+    <dimen name="favourite_bars_button_width">100dp</dimen>
+
+    <!-- My Profile TextView width -->
+    <dimen name="textViewTitleMyProfileWidth">82dp</dimen>
+
+    <!-- Suggest New Beer Screen -->
+    <dimen name="tvTitleSuggestNewBeerWidth">105dp</dimen>
+
+    <!-- Suggest New Cocktail Screen -->
+    <dimen name="tvTitleSuggestNewCocktailWidth">115dp</dimen>
+    <dimen name="btn_suggest_new_width">180dp</dimen>
+    <dimen name="btn_suggest_new_height">50dp</dimen>
+
+    <!-- Suggest New Bar Screen -->
+    <dimen name="tvTitleSuggestNewBarWidth">80dp</dimen>
+
+    <!-- Write A Review TextView width -->
+    <dimen name="textViewWriteAReviewWidth">100dp</dimen>
+
+    <!-- Reply Comment TextView width -->
+    <dimen name="textViewReplyCommentWidth">120dp</dimen>
+
+    <!-- Action Bar - Back button Arrow size -->
+    <dimen name="image_back_arrow_width_height">30dp</dimen>
+
+    <!-- Bar Details - Hours We Are Open -->
+    <dimen name="day_name_width">85dp</dimen>
+    <dimen name="hour_name_width">160dp</dimen>
+
+    <!-- Media Picker Gallery -->
+    <dimen name="dim_80">90dp</dimen>
+    <dimen name="dim_20_media">20dp</dimen>
+    <dimen name="dim_80_media">80dp</dimen>
+    <dimen name="dim_5_media">5dp</dimen>
+    <dimen name="dim_2_media">2dp</dimen>
+    <dimen name="dim_10_media">10dp</dimen>
+
+    <!-- Details Screen -->
+    <dimen name="btn_fav_padding">3dp</dimen>
+    <dimen name="btn_fav_margin">3dp</dimen>
+    <dimen name="btn_fav_width">150dp</dimen>
+    <dimen name="dim_40">40dp</dimen>
+    
+    <!-- Bar Trivia Game Screen and Quiz Screen -->
+    <dimen name="dim_50">50dp</dimen>
+    <dimen name="dim_110">110dp</dimen>
+    <dimen name="dim_140">140dp</dimen>
+    <dimen name="dim_200">200dp</dimen>
+    <dimen name="textSize_14">15sp</dimen>
+    <dimen name="textSize_16">16sp</dimen>
+    <dimen name="textSize_18">17sp</dimen>
+    <dimen name="textSize_20">20sp</dimen>
+    <dimen name="textSize_23">23sp</dimen>
+    
+    <!-- For the Special Bar Hours -->
+    <dimen name="textSize_13_all">13sp</dimen>
+    <dimen name="textSize_14_all">14sp</dimen>
+    
+</resources>

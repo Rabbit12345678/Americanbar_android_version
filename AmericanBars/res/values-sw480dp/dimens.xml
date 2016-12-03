@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- Photo Gallery details -->
+    <dimen name="relativeLayoutBarGallery_padding">15dp</dimen>
+    <dimen name="relativeLayoutSelectedImage_margin_top">15dp</dimen>
+    <dimen name="relativeLayout_width">450dp</dimen>
+    <dimen name="relativeLayout_height">450dp</dimen>
+    <dimen name="gallerySelectedImage_width">450dp</dimen>
+    <dimen name="gallerySelectedImage_height">450dp</dimen>
+    <dimen name="gallery_name_margin_left">15dp</dimen>
+    <dimen name="gallery_name_margin_right">15dp</dimen>
+    <dimen name="share_image_margin_right">15dp</dimen>
+    <dimen name="relativeLayoutGallery_width">450dp</dimen>
+    <dimen name="relativeLayoutGallery_margin_top">15dp</dimen>
+    <dimen name="galleryLeftArrow_width">38dp</dimen>
+    <dimen name="galleryLeftArrow_height">38dp</dimen>
+    <dimen name="gallery_width">450dp</dimen>
+    <dimen name="gallery_margin_left">15dp</dimen>
+    <dimen name="gallery_margin_right">15dp</dimen>
+    <dimen name="gallery_spacing">15dp</dimen>
+
+    <!-- BeerSearchListActivity icon click -->
+
+    <dimen name="linearLayoutDrawerHeader_width">225dp</dimen>
+    <dimen name="list_slidermenu_width">225dp</dimen>
+    <dimen name="list_slidermenu_padding">15dp</dimen>
+    <dimen name="textSizeButtonGridAlphabatic">30dp</dimen>
+
+    <!-- Sign In Screen -->
+    <dimen name="editTextWidth">300dp</dimen>
+
+    <!-- Sign Up Screen -->
+    <dimen name="radiobutton_textview_marginRight">15dp</dimen>
+    <dimen name="radiobutton_marginRight">7dp</dimen>
+
+    <!-- activity_beer_details -->
+    <dimen name="relativeLayoutVideo_width">450dp</dimen>
+    <dimen name="relativeLayoutVideo_height">300dp</dimen>
+
+    <!-- Media Picker Gallery -->
+    <dimen name="dim_80">135dp</dimen>
+    <dimen name="dim_20_media">30dp</dimen>
+    <dimen name="dim_80_media">120dp</dimen>
+    <dimen name="dim_5_media">7dp</dimen>
+    <dimen name="dim_2_media">3dp</dimen>
+    <dimen name="dim_10_media">15dp</dimen>
+    
+     <!-- For the Special Bar Hours -->
+    <dimen name="textSize_13_all">19sp</dimen>
+    <dimen name="textSize_14_all">21sp</dimen>
+
+</resources>

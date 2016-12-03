@@ -1,0 +1,242 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Home Screen Layout -->
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/backgroundColor"
+    android:fillViewport="true" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:orientation="vertical"
+        android:paddingBottom="@dimen/dim_12"
+        android:paddingLeft="@dimen/dim_7"
+        android:paddingRight="@dimen/dim_7"
+        android:paddingTop="@dimen/dim_12"
+        android:weightSum="1.0" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="0.25"
+            android:orientation="horizontal" >
+
+            <LinearLayout
+                android:id="@+id/linearLayoutBarSearch"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@drawable/layout_light_brown_selector"
+                android:gravity="center"
+                android:orientation="vertical" >
+
+                <ImageView
+                    android:layout_width="@dimen/dim_70"
+                    android:layout_height="@dimen/dim_70"
+                    android:layout_marginTop="@dimen/dim_5"
+                    android:src="@drawable/home_bar_search" />
+
+                <TextView
+                    style="@style/textStyleHomePage"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/dim_5"
+                    android:layout_marginTop="@dimen/dim_10"
+                    android:text="@string/txt_bar_search" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/linearLayoutBeerDirectory"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@drawable/layout_dark_brown_selector"
+                android:gravity="center"
+                android:orientation="vertical" >
+
+                <ImageView
+                    android:layout_width="@dimen/dim_70"
+                    android:layout_height="@dimen/dim_70"
+                    android:layout_marginTop="@dimen/dim_5"
+                    android:src="@drawable/home_beer_directory" />
+
+                <TextView
+                    style="@style/textStyleHomePage"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/dim_5"
+                    android:layout_marginTop="@dimen/dim_10"
+                    android:text="@string/txt_beer_directory" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="0.25"
+            android:orientation="horizontal" >
+
+            <LinearLayout
+                android:id="@+id/linearLayoutCocktailDirectory"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@drawable/layout_dark_brown_selector"
+                android:gravity="center"
+                android:orientation="vertical" >
+
+                <ImageView
+                    android:layout_width="@dimen/dim_70"
+                    android:layout_height="@dimen/dim_70"
+                    android:layout_marginTop="@dimen/dim_5"
+                    android:src="@drawable/home_cocktail_directory" />
+
+                <TextView
+                    style="@style/textStyleHomePage"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/dim_5"
+                    android:layout_marginTop="@dimen/dim_10"
+                    android:text="@string/txt_cocktail_directory" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/linearLayoutLiquorDirectory"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@drawable/layout_light_brown_selector"
+                android:gravity="center"
+                android:orientation="vertical" >
+
+                <ImageView
+                    android:layout_width="@dimen/dim_70"
+                    android:layout_height="@dimen/dim_70"
+                    android:layout_marginTop="@dimen/dim_5"
+                    android:src="@drawable/home_liquor_directory" />
+
+                <TextView
+                    style="@style/textStyleHomePage"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/dim_5"
+                    android:layout_marginTop="@dimen/dim_10"
+                    android:text="@string/txt_liquor_directory" />
+            </LinearLayout>
+        </LinearLayout>
+        
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="0.25"
+            android:orientation="horizontal" >
+
+            <LinearLayout
+                android:id="@+id/linearLayoutTriviaGame"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@drawable/layout_light_brown_selector"
+                android:gravity="center"
+                android:orientation="vertical" >
+
+                <ImageView
+                    android:layout_width="@dimen/dim_70"
+                    android:layout_height="@dimen/dim_70"
+                    android:layout_marginTop="@dimen/dim_5"
+                    android:src="@drawable/home_trivia_game" />
+
+                <TextView
+                    style="@style/textStyleHomePage"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/dim_5"
+                    android:layout_marginTop="@dimen/dim_10"
+                    android:text="@string/txt_trivia_game" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/linearLayoutArticles"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@drawable/layout_dark_brown_selector"
+                android:gravity="center"
+                android:orientation="vertical" >
+
+                <ImageView
+                    android:layout_width="@dimen/dim_70"
+                    android:layout_height="@dimen/dim_70"
+                    android:layout_marginTop="@dimen/dim_5"
+                    android:src="@drawable/home_articles" />
+
+                <TextView
+                    style="@style/textStyleHomePage"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/dim_5"
+                    android:layout_marginTop="@dimen/dim_10"
+                    android:text="@string/txt_articles" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="0.25"
+            android:orientation="horizontal" >
+
+            <LinearLayout
+                android:id="@+id/linearLayoutTaxiDirectory"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@drawable/layout_dark_brown_selector"
+                android:gravity="center"
+                android:orientation="vertical" >
+
+                <ImageView
+                    android:layout_width="@dimen/dim_70"
+                    android:layout_height="@dimen/dim_70"
+                    android:layout_marginTop="@dimen/dim_5"
+                    android:src="@drawable/home_taxi_directory" />
+
+                <TextView
+                    style="@style/textStyleHomePage"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/dim_5"
+                    android:layout_marginTop="@dimen/dim_10"
+                    android:text="@string/txt_taxi_directory" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/linearLayoutPhotoGallery"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@drawable/layout_light_brown_selector"
+                android:gravity="center"
+                android:orientation="vertical" >
+
+                <ImageView
+                    android:layout_width="@dimen/dim_70"
+                    android:layout_height="@dimen/dim_70"
+                    android:layout_marginTop="@dimen/dim_5"
+                    android:src="@drawable/home_my_dash_board" />
+
+                <TextView
+                    style="@style/textStyleHomePage"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/dim_5"
+                    android:layout_marginTop="@dimen/dim_10"
+                    android:text="@string/txt_dash_board" />
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+</ScrollView>

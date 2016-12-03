@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="@color/whiteColor"
+    android:orientation="horizontal" >
+
+    <ImageView
+        android:id="@+id/ivBarLogo"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_alignParentLeft="true"
+        android:layout_marginRight="5dp"
+        android:src="@drawable/gallery_small_place_holder_01" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="5dp"
+        android:layout_toLeftOf="@+id/ivNextArrow"
+        android:layout_toRightOf="@+id/ivBarLogo"
+        android:background="@color/whiteColor"
+        android:gravity="center|left"
+        android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/tvBarName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:singleLine="true"
+            tools:text="Name name dkfjasdkl fjklsdjfkljsdklfjsdklfjklsdjfklsdj f EOL dkjflk sdjfkljdklfjklsdjfkljdklfjkldjfkljdkl fEOOL"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/tvBarAddress"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:singleLine="true"
+            tools:text="Address  jkljlkeOL kdjsfklajdlfkjskldfjlksdjfklsdjfklj sdfjklsdjfkl sdjfklsdjfkljdlskj lkEOL" />
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/ivNextArrow"
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:src="@drawable/nextarrow" />
+
+</RelativeLayout>

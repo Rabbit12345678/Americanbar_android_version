@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Find Bar Screen -->
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:custom_edit="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/scrollView"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg_bar_search"
+    android:fillViewport="true"
+    android:scrollbars="vertical" >
+
+    <RelativeLayout
+        android:id="@+id/relativeLayoutFindBar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:orientation="vertical"
+        android:padding="20dp" >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tvTitle"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="30dp" >
+
+            <Button
+                android:id="@+id/btnStartTypingName"
+                style="@style/edittext_style"
+                android:layout_width="@dimen/editTextWidth"
+                android:layout_height="@dimen/editTextHeightSignUp"
+                android:layout_centerHorizontal="true"
+                android:drawableLeft="@drawable/name"
+                android:drawablePadding="@dimen/drawblePaddingDimen"
+                android:gravity="left|center"
+                android:visibility="gone"
+                android:hint="@string/txt_start_typing_name"
+                android:nextFocusLeft="@id/btnStartTypingName"
+                android:nextFocusUp="@id/btnStartTypingName" />
+
+            <View
+                android:id="@+id/view1"
+                android:layout_width="@dimen/editTextWidth"
+                android:layout_height="1px"
+                android:layout_below="@+id/btnStartTypingName"
+                android:layout_centerHorizontal="true"
+                android:background="@color/greyColor" />
+
+            <EditText
+                android:id="@+id/btDay"
+                style="@style/edittext_style"
+                android:layout_width="@dimen/editTextWidth"
+                android:layout_height="@dimen/editTextHeightSignUp"
+                android:layout_below="@+id/view1"
+                android:layout_centerHorizontal="true"
+                android:drawablePadding="@dimen/drawblePaddingDimen"
+                android:drawableRight="@drawable/arrow_drop_down"
+                android:editable="false"
+                android:hint="Monday"
+                android:nextFocusLeft="@id/btDay"
+                android:nextFocusUp="@id/btDay" />
+
+            <Spinner
+                android:id="@+id/spinner"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:spinnerMode="dialog"
+                android:layout_below="@+id/btDay"
+                android:visibility="invisible" />
+
+            <Button
+                android:id="@+id/btnSearch"
+                style="@style/button_style"
+                android:layout_width="@dimen/editTextWidth"
+                android:layout_height="50dp"
+                android:layout_below="@+id/btDay"
+                android:layout_centerHorizontal="true"
+                android:text="FIND AROUND ME" />
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/tvTitle"
+            style="@style/textStyleRememberMe"
+            android:layout_width="@dimen/editTextWidth"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:gravity="center"
+            android:text="@string/txt_find_bar_title_happy_hour" />
+    </RelativeLayout>
+
+</ScrollView>

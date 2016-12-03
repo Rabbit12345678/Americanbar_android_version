@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/relativeLayoutBarReview"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/bar_list_item_selector"
+    android:paddingTop="10dp" >
+
+    <RelativeLayout
+        android:id="@+id/relativeLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp" >
+
+        <RelativeLayout
+            android:id="@+id/relatvieLayoutRaveTitle1"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content" >
+
+            <TextView
+                android:id="@+id/tvRaveTitle"
+                style="@style/textStyleHomePage"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_marginRight="5dp"
+                android:layout_toLeftOf="@+id/tvRaveFormattedDate"
+                android:ellipsize="end"
+                android:maxLines="2"
+                tools:text="A Real Austin Institution! " />
+
+            <TextView
+                android:id="@+id/tvRaveFormattedDate"
+                style="@style/textStyle12Normal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                tools:text="1 Month Ago" />
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/tvRaveDesc"
+            style="@style/textStyle12Normal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/relatvieLayoutRaveTitle1"
+            android:layout_below="@+id/relatvieLayoutRaveTitle1"
+            android:layout_marginTop="3dp"
+            android:ellipsize="end"
+            android:maxLines="5"
+            tools:text="Lorem Ipsum" />
+
+        <TextView
+            android:id="@+id/tvRaveDateTime"
+            style="@style/textStyle12Normal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/tvRaveDesc"
+            android:layout_below="@+id/tvRaveDesc"
+            android:layout_marginTop="3dp"
+            android:singleLine="true"
+            tools:text="2015-07-10 19:00:00" />
+
+        <RelativeLayout
+            android:id="@+id/relatvieLayoutUsername"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tvRaveDateTime"
+            android:layout_marginTop="3dp" >
+
+            <TextView
+                android:id="@+id/tvRaveUserName"
+                style="@style/textStyle12Normal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_marginRight="5dp"
+                android:layout_toLeftOf="@+id/relativeLayoutRaveStars"
+                android:singleLine="true"
+                tools:text="Brian Smith" />
+
+            <RelativeLayout
+                android:id="@+id/relativeLayoutRaveStars"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true" >
+
+                <ImageView
+                    android:id="@+id/ivStarRave1"
+                    android:layout_width="15dp"
+                    android:layout_height="15dp"
+                    android:layout_marginRight="1dp"
+                    android:src="@drawable/star_white" />
+
+                <ImageView
+                    android:id="@+id/ivStarRave2"
+                    android:layout_width="15dp"
+                    android:layout_height="15dp"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="1dp"
+                    android:layout_toRightOf="@+id/ivStarRave1"
+                    android:src="@drawable/star_white" />
+
+                <ImageView
+                    android:id="@+id/ivStarRave3"
+                    android:layout_width="15dp"
+                    android:layout_height="15dp"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="1dp"
+                    android:layout_toRightOf="@+id/ivStarRave2"
+                    android:src="@drawable/star_white" />
+
+                <ImageView
+                    android:id="@+id/ivStarRave4"
+                    android:layout_width="15dp"
+                    android:layout_height="15dp"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="1dp"
+                    android:layout_toRightOf="@+id/ivStarRave3"
+                    android:src="@drawable/star_white" />
+
+                <ImageView
+                    android:id="@+id/ivStarRave5"
+                    android:layout_width="15dp"
+                    android:layout_height="15dp"
+                    android:layout_centerVertical="true"
+                    android:layout_toRightOf="@+id/ivStarRave4"
+                    android:src="@drawable/star_white" />
+            </RelativeLayout>
+        </RelativeLayout>
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:layout_below="@+id/relativeLayout"
+        android:layout_marginTop="10dp"
+        android:background="@color/spinner_border_color" />
+
+</RelativeLayout>

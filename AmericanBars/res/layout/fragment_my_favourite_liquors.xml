@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- My Favorite Liquors List Screen Layout -->
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/mainRele"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/backgroundColor"
+    android:focusable="true"
+    android:focusableInTouchMode="true" >
+
+    <RelativeLayout
+        android:id="@+id/relativeLayoutHeader"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp" >
+
+        <EditText
+            android:id="@+id/etSearch"
+            style="@style/textStyleSpinner"
+            android:layout_width="match_parent"
+            android:layout_height="35dp"
+            android:layout_alignParentTop="true"
+            android:layout_toLeftOf="@+id/ivSearch"
+            android:ems="10"
+            android:gravity="left|center_vertical"
+            android:hint="Search My List"
+            android:imeOptions="actionSearch"
+            android:nextFocusLeft="@id/etSearch"
+            android:nextFocusUp="@id/etSearch"
+            android:padding="5dp"
+            android:singleLine="true" />
+
+        <ImageView
+            android:id="@+id/ivRefresh"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:clickable="true"
+            android:src="@drawable/reset" />
+
+        <ImageView
+            android:id="@+id/ivSearch"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_toLeftOf="@+id/ivRefresh"
+            android:clickable="true"
+            android:src="@drawable/search" />
+    </RelativeLayout>
+
+    <View
+        android:id="@+id/viewLine"
+        android:layout_width="match_parent"
+        android:layout_height="2px"
+        android:layout_below="@+id/relativeLayoutHeader"
+        android:layout_marginBottom="1px"
+        android:background="@color/spinner_border_color" />
+
+    <View
+        android:id="@+id/viewLine1"
+        android:layout_width="match_parent"
+        android:layout_height="2px"
+        android:layout_below="@+id/viewLine"
+        android:layout_marginTop="2dp"
+        android:background="@color/spinner_border_color" />
+
+    <RelativeLayout
+        android:id="@+id/relativeLayoutSearch"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/viewLine1"
+        android:layout_margin="10dp" >
+
+        <Button
+            android:id="@+id/btnSelectAll"
+            style="@style/button_style_gradient"
+            android:layout_width="@dimen/favourite_bars_button_width"
+            android:layout_height="40dp"
+            android:layout_alignParentLeft="true"
+            android:text="@string/btn_select_all" />
+
+        <Button
+            android:id="@+id/btnDelete"
+            style="@style/button_style_gradient"
+            android:layout_width="@dimen/favourite_bars_button_width"
+            android:layout_height="40dp"
+            android:layout_alignParentRight="true"
+            android:text="@string/btn_delete" />
+    </RelativeLayout>
+
+    <View
+        android:id="@+id/viewLine2"
+        android:layout_width="match_parent"
+        android:layout_height="2px"
+        android:layout_below="@+id/relativeLayoutSearch"
+        android:layout_marginBottom="1px"
+        android:background="@color/spinner_border_color" />
+
+    <View
+        android:id="@+id/viewLine3"
+        android:layout_width="match_parent"
+        android:layout_height="2px"
+        android:layout_below="@+id/viewLine2"
+        android:layout_marginTop="2dp"
+        android:background="@color/spinner_border_color" />
+
+    <com.spaculus.helpers.LoadMoreListView
+        android:id="@+id/listViewMyFavoriteLiquors"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/viewLine3"
+        android:layout_margin="10dp"
+        android:divider="@android:color/transparent"
+        android:dividerHeight="10dp"
+        android:footerDividersEnabled="false" />
+
+</RelativeLayout>

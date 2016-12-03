@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Find Bar Screen -->
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:custom_edit="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/scrollView"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg_bar_search"
+    android:fillViewport="true"
+    android:scrollbars="vertical" >
+
+    <RelativeLayout
+        android:id="@+id/relativeLayoutFindBar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:orientation="vertical"
+        android:padding="20dp" >
+
+        <RelativeLayout
+            android:id="@+id/relativeLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tvTitle"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="30dp" >
+
+            <!-- EditText Start Typing Name -->
+
+            <Button
+                android:id="@+id/btnStartTypingName"
+                style="@style/edittext_style"
+                android:layout_width="@dimen/editTextWidth"
+                android:layout_height="@dimen/editTextHeightSignUp"
+                android:layout_centerHorizontal="true"
+                android:drawableLeft="@drawable/name"
+                android:drawablePadding="@dimen/drawblePaddingDimen"
+                android:gravity="left|center"
+                android:hint="@string/txt_name_of_bar"
+                android:nextFocusLeft="@id/btnStartTypingName"
+                android:nextFocusUp="@id/btnStartTypingName" />
+
+            <!-- View Line Start Typing Name -->
+
+            <View
+                android:id="@+id/viewLineBarFlyNickname"
+                android:layout_width="@dimen/editTextWidth"
+                android:layout_height="1px"
+                android:layout_below="@+id/btnStartTypingName"
+                android:layout_centerHorizontal="true"
+                android:background="@color/greyColor" />
+
+            <!-- EditText State -->
+
+            <EditText
+                android:id="@+id/etState"
+                style="@style/edittext_style"
+                android:layout_width="@dimen/editTextWidth"
+                android:layout_height="@dimen/editTextHeightSignUp"
+                android:layout_below="@+id/viewLineBarFlyNickname"
+                android:layout_centerHorizontal="true"
+                android:drawableLeft="@drawable/city_state"
+                android:drawablePadding="@dimen/drawblePaddingDimen"
+                android:hint="@string/txt_state"
+                android:nextFocusLeft="@id/etState"
+                android:nextFocusUp="@id/etState" />
+
+            <!-- View Line State -->
+
+            <View
+                android:id="@+id/viewLineFirstName"
+                android:layout_width="@dimen/editTextWidth"
+                android:layout_height="1px"
+                android:layout_below="@+id/etState"
+                android:layout_centerHorizontal="true"
+                android:background="@color/greyColor" />
+
+            <!-- EditText City -->
+
+            <EditText
+                android:id="@+id/etCity"
+                style="@style/edittext_style"
+                android:layout_width="@dimen/editTextWidth"
+                android:layout_height="@dimen/editTextHeightSignUp"
+                android:layout_below="@+id/viewLineFirstName"
+                android:layout_centerHorizontal="true"
+                android:drawableLeft="@drawable/city_state"
+                android:drawablePadding="@dimen/drawblePaddingDimen"
+                android:hint="@string/txt_city"
+                android:nextFocusLeft="@id/etCity"
+                android:nextFocusUp="@id/etCity" />
+
+            <!-- View Line City -->
+
+            <View
+                android:id="@+id/viewLineLastName"
+                android:layout_width="@dimen/editTextWidth"
+                android:layout_height="1px"
+                android:layout_below="@+id/etCity"
+                android:layout_centerHorizontal="true"
+                android:background="@color/greyColor" />
+
+            <!-- EditText ZipCode -->
+
+            <EditText
+                android:id="@+id/etZipCode"
+                style="@style/edittext_style"
+                android:layout_width="@dimen/editTextWidth"
+                android:layout_height="@dimen/editTextHeightSignUp"
+                android:layout_below="@+id/viewLineLastName"
+                android:layout_centerHorizontal="true"
+                android:drawableLeft="@drawable/zip_code"
+                android:drawablePadding="@dimen/drawblePaddingDimen"
+                android:hint="@string/txt_zip_code"
+                android:inputType="number"
+                android:maxLength="5"
+                android:nextFocusLeft="@id/etZipCode"
+                android:nextFocusUp="@id/etZipCode" />
+
+            <!-- Button Start Your Search -->
+
+            <Button
+                android:id="@+id/btnStartYourSearch"
+                style="@style/button_style"
+                android:layout_width="@dimen/editTextWidth"
+                android:layout_height="50dp"
+                android:layout_alignLeft="@+id/etZipCode"
+                android:layout_below="@+id/etZipCode"
+                android:text="@string/txt_start_your_search" />
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/tvTitle"
+            style="@style/textStyleRememberMe"
+            android:layout_width="@dimen/editTextWidth"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:gravity="center"
+            android:text="@string/txt_find_bar_title" />
+    </RelativeLayout>
+
+</ScrollView>

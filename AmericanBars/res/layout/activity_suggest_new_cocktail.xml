@@ -1,0 +1,322 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Suggest New Cocktail Screen -->
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:custom_edit="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/scroller"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/backgroundColor"
+    android:fillViewport="true"
+    android:scrollbars="vertical" >
+
+    <RelativeLayout
+        android:id="@+id/relativeLayoutSuggestNewCocktail"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:id="@+id/relativeLayoutContent"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingBottom="15dp"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:paddingTop="15dp" >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal" >
+
+                <TextView
+                    style="@style/textStyleMyProfileTitle_whiteColor"
+                    android:layout_width="@dimen/tvTitleSuggestNewCocktailWidth"
+                    android:layout_height="wrap_content"
+                    android:gravity="right"
+                    android:text="@string/txt_cocktail_name" />
+
+                <EditText
+                    android:id="@+id/etCocktailName"
+                    style="@style/edittext_style_suggest_screen"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/editTextHeightMyProfile"
+                    android:layout_marginLeft="@dimen/dim_7"
+                    android:hint="@string/txt_cocktail_name"
+                    android:nextFocusLeft="@id/etCocktailName"
+                    android:nextFocusUp="@id/etCocktailName" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:orientation="horizontal" >
+
+                <TextView
+                    style="@style/textStyleMyProfileTitle_whiteColor"
+                    android:layout_width="@dimen/tvTitleSuggestNewCocktailWidth"
+                    android:layout_height="wrap_content"
+                    android:gravity="right"
+                    android:text="@string/txt_ingredients" />
+
+                <EditText
+                    android:id="@+id/etIngredients"
+                    style="@style/edittext_multiline_style_suggest_screen"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/editTextMultilineHeightMyProfile"
+                    android:layout_marginLeft="@dimen/dim_7"
+                    android:gravity="top"
+                    android:hint="@string/txt_ingredients"
+                    android:nextFocusLeft="@id/etIngredients"
+                    android:nextFocusUp="@id/etIngredients"
+                    android:scrollbars="vertical" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:orientation="horizontal" >
+
+                <TextView
+                    style="@style/textStyleMyProfileTitle_whiteColor"
+                    android:layout_width="@dimen/tvTitleSuggestNewCocktailWidth"
+                    android:layout_height="wrap_content"
+                    android:gravity="right"
+                    android:text="@string/txt_how_to_make_it" />
+
+                <EditText
+                    android:id="@+id/etHowToMakeIt"
+                    style="@style/edittext_multiline_style_suggest_screen"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/editTextMultilineHeightMyProfile"
+                    android:layout_marginLeft="@dimen/dim_7"
+                    android:gravity="top"
+                    android:hint="@string/txt_how_to_make_it"
+                    android:nextFocusLeft="@id/etHowToMakeIt"
+                    android:nextFocusUp="@id/etHowToMakeIt"
+                    android:scrollbars="vertical" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:orientation="horizontal" >
+
+                <TextView
+                    style="@style/textStyleMyProfileTitle_whiteColor"
+                    android:layout_width="@dimen/tvTitleSuggestNewCocktailWidth"
+                    android:layout_height="wrap_content"
+                    android:gravity="right"
+                    android:text="@string/txt_base_spirit" />
+
+                <EditText
+                    android:id="@+id/etBaseSpirit"
+                    style="@style/edittext_style_suggest_screen"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/editTextHeightMyProfile"
+                    android:layout_marginLeft="@dimen/dim_7"
+                    android:hint="@string/txt_base_spirit"
+                    android:nextFocusLeft="@id/etBaseSpirit"
+                    android:nextFocusUp="@id/etBaseSpirit" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:orientation="horizontal" >
+
+                <TextView
+                    style="@style/textStyleMyProfileTitle_whiteColor"
+                    android:layout_width="@dimen/tvTitleSuggestNewCocktailWidth"
+                    android:layout_height="wrap_content"
+                    android:gravity="right"
+                    android:text="@string/txt_type" />
+
+                <EditText
+                    android:id="@+id/etType"
+                    style="@style/edittext_style_suggest_screen"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/editTextHeightMyProfile"
+                    android:layout_marginLeft="@dimen/dim_7"
+                    android:hint="@string/txt_type"
+                    android:nextFocusLeft="@id/etType"
+                    android:nextFocusUp="@id/etType" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:orientation="horizontal" >
+
+                <TextView
+                    style="@style/textStyleMyProfileTitle_whiteColor"
+                    android:layout_width="@dimen/tvTitleSuggestNewCocktailWidth"
+                    android:layout_height="wrap_content"
+                    android:gravity="right"
+                    android:text="@string/txt_served" />
+
+                <EditText
+                    android:id="@+id/etServed"
+                    style="@style/edittext_style_suggest_screen"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/editTextHeightMyProfile"
+                    android:layout_marginLeft="@dimen/dim_7"
+                    android:hint="@string/txt_served"
+                    android:nextFocusLeft="@id/etServed"
+                    android:nextFocusUp="@id/etServed" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:orientation="horizontal" >
+
+                <TextView
+                    style="@style/textStyleMyProfileTitle_whiteColor"
+                    android:layout_width="@dimen/tvTitleSuggestNewCocktailWidth"
+                    android:layout_height="wrap_content"
+                    android:gravity="right"
+                    android:text="@string/txt_Preparation" />
+
+                <EditText
+                    android:id="@+id/etPreparation"
+                    style="@style/edittext_style_suggest_screen"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/editTextHeightMyProfile"
+                    android:layout_marginLeft="@dimen/dim_7"
+                    android:hint="@string/txt_Preparation"
+                    android:nextFocusLeft="@id/etPreparation"
+                    android:nextFocusUp="@id/etPreparation" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:orientation="horizontal" >
+
+                <TextView
+                    style="@style/textStyleMyProfileTitle_whiteColor"
+                    android:layout_width="@dimen/tvTitleSuggestNewCocktailWidth"
+                    android:layout_height="wrap_content"
+                    android:gravity="right"
+                    android:text="@string/txt_Strength" />
+
+                <EditText
+                    android:id="@+id/etStrength"
+                    style="@style/edittext_style_suggest_screen"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/editTextHeightMyProfile"
+                    android:layout_marginLeft="@dimen/dim_7"
+                    android:hint="@string/txt_Strength"
+                    android:nextFocusLeft="@id/etStrength"
+                    android:nextFocusUp="@id/etStrength" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:orientation="horizontal" >
+
+                <TextView
+                    style="@style/textStyleMyProfileTitle_whiteColor"
+                    android:layout_width="@dimen/tvTitleSuggestNewCocktailWidth"
+                    android:layout_height="wrap_content"
+                    android:gravity="right"
+                    android:text="@string/txt_Difficulty" />
+
+                <EditText
+                    android:id="@+id/etDifficulty"
+                    style="@style/edittext_style_suggest_screen"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/editTextHeightMyProfile"
+                    android:layout_marginLeft="@dimen/dim_7"
+                    android:hint="@string/txt_Difficulty"
+                    android:nextFocusLeft="@id/etDifficulty"
+                    android:nextFocusUp="@id/etDifficulty" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:orientation="horizontal" >
+
+                <TextView
+                    style="@style/textStyleMyProfileTitle_whiteColor"
+                    android:layout_width="@dimen/tvTitleSuggestNewCocktailWidth"
+                    android:layout_height="wrap_content"
+                    android:gravity="right"
+                    android:text="@string/txt_flavor_profile" />
+
+                <EditText
+                    android:id="@+id/etFlavorProfile"
+                    style="@style/edittext_style_suggest_screen"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/editTextHeightMyProfile"
+                    android:layout_marginLeft="@dimen/dim_7"
+                    android:hint="@string/txt_flavor_profile"
+                    android:nextFocusLeft="@id/etFlavorProfile"
+                    android:nextFocusUp="@id/etFlavorProfile" />
+            </LinearLayout>
+
+            <RelativeLayout
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_gravity="center"
+                android:layout_marginTop="15dp"
+                android:gravity="center" >
+
+                <com.spaculus.helpers.CircularImageView
+                    android:id="@+id/ivCocktailImage"
+                    android:layout_width="120dp"
+                    android:layout_height="120dp"
+                    android:src="@drawable/no_image_cocktail" />
+
+                <ImageView
+                    android:id="@+id/ivAddCocktailImage"
+                    android:layout_width="25dp"
+                    android:layout_height="25dp"
+                    android:layout_alignParentBottom="true"
+                    android:layout_alignParentRight="true"
+                    android:src="@drawable/plus" />
+            </RelativeLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:gravity="center"
+                android:orientation="horizontal" >
+
+                <Button
+                    android:id="@+id/btnSave"
+                    style="@style/button_style_gradient"
+                    android:layout_width="120dp"
+                    android:layout_height="35dp"
+                    android:layout_marginRight="5dp"
+                    android:text="@string/btn_save" />
+
+                <Button
+                    android:id="@+id/btnCancel"
+                    style="@style/button_style_gradient"
+                    android:layout_width="120dp"
+                    android:layout_height="35dp"
+                    android:layout_marginLeft="5dp"
+                    android:text="@string/btn_cancel" />
+            </LinearLayout>
+        </LinearLayout>
+    </RelativeLayout>
+
+</ScrollView>

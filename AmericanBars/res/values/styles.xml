@@ -1,0 +1,487 @@
+<resources xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <!--
+        Base application theme, dependent on API level. This theme is replaced
+        by AppBaseTheme from res/values-vXX/styles.xml on newer devices.
+    -->
+    <style name="AppBaseTheme" parent="android:Theme.Light">
+        <!--
+            Theme customizations available in newer API levels can go in
+            res/values-vXX/styles.xml, while customizations related to
+            backward-compatibility can go here.
+        -->
+    </style>
+
+    <!-- Application theme. -->
+    <style name="AppTheme" parent="AppBaseTheme">
+
+        <!-- All customizations that are NOT specific to a particular API-level can go here. -->
+        <item name="android:popupMenuStyle">@style/PopupMenu</item>
+    </style>
+
+    <style name="PopupMenu" parent="@android:style/Widget.PopupMenu">
+        <item name="android:popupBackground">@color/lightBrownColor</item>
+    </style>
+
+    <!-- Splash Screen Theme -->
+    <!-- Because of black screen issue -->
+    <style name="SplashScreen">
+        <item name="android:padding">0dp</item>
+        <item name="android:windowBackground">@android:color/black</item>
+        <item name="android:windowFrame">@null</item>
+    </style>
+
+    <style name="HomeScreen">
+        <item name="android:windowBackground">@android:color/black</item>
+        <item name="android:windowFrame">@null</item>
+    </style>
+
+    <!-- Action Bar Title Style -->
+    <style name="text_title_style_action_bar">
+        <item name="android:textSize">@dimen/textSizeDimen</item>
+        <item name="android:textColor">@color/whiteColor</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <!-- Left Menu Sliding Drawer -->
+    <style name="sliding_drawer_list_item_style">
+        <item name="android:textColor">@drawable/sliding_drawer_list_item_text_selector</item>
+        <item name="android:textSize">@dimen/textSizeDimen14</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <!-- Home Page Buttons -->
+    <style name="textStyleHomePage">
+        <item name="android:textSize">@dimen/textSizeDimen14</item>
+        <item name="android:textColor">@color/whiteColor</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <!-- Forgot Password Text Style -->
+    <style name="textStyleForgotPassword">
+        <item name="android:textSize">@dimen/textSizeDimen</item>
+        <item name="android:textColor">@drawable/forgot_password_text_selector</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <!-- Remember Me Text Style -->
+    <style name="textStyleRememberMe">
+        <item name="android:textSize">@dimen/textSizeDimen</item>
+        <item name="android:textColor">@color/whiteColor</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <!-- EditText Style -->
+    <style name="edittext_style">
+        <item name="android:background">@color/whiteColor</item>
+        <item name="android:ems">10</item>
+        <item name="android:textColorHint">@color/greyColor</item>
+        <item name="android:textColor">@color/blackColor</item>
+        <item name="android:textSize">@dimen/textSizeDimen14</item>
+        <item name="android:paddingLeft">8dp</item>
+        <item name="android:paddingRight">8dp</item>
+        <item name="android:singleLine">true</item>
+    </style>
+
+    <!-- For the Full Mug Bar Details Screen -->
+    <style name="edittext_style1">
+        <item name="android:background">@color/backgroundColor</item>
+        <item name="android:ems">10</item>
+        <item name="android:textColorHint">@color/greyColor</item>
+        <item name="android:textColor">@color/whiteColor</item>
+        <item name="android:textSize">@dimen/textSizeDimen</item>
+        <item name="android:paddingLeft">8dp</item>
+        <item name="android:paddingRight">8dp</item>
+    </style>
+
+    <!-- For the My Profile Screen -->
+    <style name="edittext_style_my_profile">
+        <item name="android:background">@drawable/edittext_my_profile_selector</item>
+        <item name="android:ems">10</item>
+        <item name="android:textColorHint">@color/my_profile_caption_grey_color</item>
+        <item name="android:textColor">@color/my_profile_caption_grey_color</item>
+        <item name="android:textSize">@dimen/textSizeDimen</item>
+        <item name="android:paddingLeft">8dp</item>
+        <item name="android:paddingRight">8dp</item>
+        <item name="android:singleLine">true</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:ellipsize">end</item>
+    </style>
+
+    <style name="edittext_style_suggest_screen">
+        <item name="android:background">@drawable/edittext_my_profile_selector</item>
+        <item name="android:ems">10</item>
+        <item name="android:textColorHint">@color/my_profile_caption_grey_color</item>
+        <item name="android:textColor">@color/whiteColor</item>
+        <item name="android:textSize">@dimen/textSizeDimen</item>
+        <item name="android:paddingLeft">8dp</item>
+        <item name="android:paddingRight">8dp</item>
+        <item name="android:singleLine">true</item>
+        <item name="android:textStyle">normal</item>
+        <item name="android:ellipsize">end</item>
+    </style>
+    
+    
+    <style name="edittext_multiline_style">
+        <item name="android:background">@drawable/edittext_my_profile_selector</item>
+        <item name="android:ems">10</item>
+        <item name="android:textColorHint">@color/my_profile_caption_grey_color</item>
+        <item name="android:textColor">@color/my_profile_caption_grey_color</item>
+        <item name="android:textSize">@dimen/textSizeDimen</item>
+        <item name="android:paddingLeft">8dp</item>
+        <item name="android:paddingRight">8dp</item>
+        <item name="android:paddingTop">8dp</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:ellipsize">end</item>
+    </style>
+    
+    <style name="edittext_multiline_style_suggest_screen">
+        <item name="android:background">@drawable/edittext_my_profile_selector</item>
+        <item name="android:ems">10</item>
+        <item name="android:textColorHint">@color/my_profile_caption_grey_color</item>
+        <item name="android:textColor">@color/whiteColor</item>
+        <item name="android:textSize">@dimen/textSizeDimen</item>
+        <item name="android:paddingLeft">8dp</item>
+        <item name="android:paddingRight">8dp</item>
+        <item name="android:paddingTop">8dp</item>
+        <item name="android:textStyle">normal</item>
+        <item name="android:ellipsize">end</item>
+    </style>
+
+    <style name="edittext_multiline_style_simple">
+        <item name="android:background">@drawable/button_selector_with_border</item>
+        <item name="android:ems">10</item>
+        <item name="android:textColorHint">@color/my_profile_caption_grey_color</item>
+        <item name="android:textColor">@color/my_profile_caption_grey_color</item>
+        <item name="android:textSize">@dimen/textSizeDimen</item>
+        <item name="android:paddingLeft">8dp</item>
+        <item name="android:paddingRight">8dp</item>
+        <item name="android:paddingTop">8dp</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:ellipsize">end</item>
+    </style>
+
+    <style name="edittext_style_my_profile_grey_to_lightbrown">
+        <item name="android:background">@drawable/edittext_selector_grey_to_lightbrown_color</item>
+        <item name="android:ems">10</item>
+        <item name="android:textColorHint">@color/my_profile_caption_grey_color</item>
+        <item name="android:textColor">@color/my_profile_caption_grey_color</item>
+        <item name="android:textSize">@dimen/textSizeDimen</item>
+        <item name="android:paddingLeft">8dp</item>
+        <item name="android:paddingRight">8dp</item>
+        <item name="android:singleLine">true</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:ellipsize">end</item>
+    </style>
+
+    <style name="edittext_multiline_style_grey_to_lightbrown">
+        <item name="android:background">@drawable/edittext_selector_grey_to_lightbrown_color</item>
+        <item name="android:ems">10</item>
+        <item name="android:textColorHint">@color/my_profile_caption_grey_color</item>
+        <item name="android:textColor">@color/my_profile_caption_grey_color</item>
+        <item name="android:textSize">@dimen/textSizeDimen</item>
+        <item name="android:paddingLeft">8dp</item>
+        <item name="android:paddingRight">8dp</item>
+        <item name="android:paddingTop">8dp</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:ellipsize">end</item>
+    </style>
+
+    <!-- Button Style -->
+    <style name="button_style">
+        <item name="android:background">@drawable/button_selector</item>
+        <item name="android:textSize">@dimen/textSizeDimen</item>
+        <item name="android:textColor">@color/whiteColor</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:alpha">0.9</item>
+    </style>
+
+    <!-- Button Style Gradient -->
+    <style name="button_style_gradient">
+        <item name="android:background">@drawable/button_selector_gradient</item>
+        <item name="android:textSize">@dimen/textSizeDimen</item>
+        <item name="android:textColor">@color/whiteColor</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:alpha">0.9</item>
+    </style>
+
+    <!-- Facebook Button Style -->
+    <style name="button_style_facebook">
+        <item name="android:textSize">@dimen/textSizeDimen</item>
+        <item name="android:textColor">@color/whiteColor</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <!-- Radio butto Style -->
+    <style name="radio_button_text_style">
+        <item name="android:textColor">@color/greyColor</item>
+        <item name="android:textSize">@dimen/textSizeDimen</item>
+    </style>
+
+    <!-- Sign Up Information Text Style -->
+    <style name="textStyleSignUpInformation">
+        <item name="android:textSize">@dimen/textSizeDimen</item>
+        <item name="android:textColor">@color/greyColor</item>
+    </style>
+
+    <!-- Bar Search Screen -->
+    <!-- Auto Bar Search Text Style -->
+    <style name="textStyleAutoSearch">
+        <item name="android:textSize">@dimen/textSizeDimen</item>
+        <item name="android:textColor">@color/whiteColor</item>
+    </style>
+
+    <!-- For the Bar Auto Search Screen, for the Address field -->
+    <style name="textStyleAutoSearchItalic">
+        <item name="android:textSize">@dimen/textSizeDimen</item>
+        <item name="android:textColor">@color/off_white_color</item>
+        <item name="android:textStyle">italic</item>
+    </style>
+
+    <!-- Bar Title Text Style -->
+    <style name="textStyleBarTitle">
+        <item name="android:textSize">@dimen/textSizeDimenTitle</item>
+        <item name="android:textColor">@color/whiteColor</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <!-- Beer Title Text Style -->
+    <style name="textStyleBeerTitle">
+        <item name="android:textSize">@dimen/textSizeDimenTitle</item>
+        <item name="android:textColor">@color/light_yellowColor</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <!-- Spinner Text Style -->
+    <style name="textStyleSpinner">
+        <item name="android:textSize">@dimen/textSizeDimen</item>
+        <item name="android:textColor">@color/spinner_text_color</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:background">@drawable/button_selector_with_border</item>
+    </style>
+
+    <!-- Website Text Style -->
+    <style name="textStyleWebsite">
+        <item name="android:textSize">@dimen/textSizeDimen</item>
+        <item name="android:textColor">@drawable/forgot_password_text_selector</item>
+        <item name="android:textStyle">normal</item>
+        <item name="android:textColorLink">@drawable/forgot_password_text_selector</item>
+    </style>
+
+    <!-- Alphabetic Grid Text Style -->
+    <style name="buttonStyleGridAlphabatic">
+        <item name="android:background">@color/blackColor</item>
+        <item name="android:textSize">@dimen/textSizeDimenTitle</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <!-- Full Mug Bar Details Screen -->
+    <!-- Show More Text Style -->
+    <style name="textStyleShowMore">
+        <item name="android:textSize">@dimen/textSizeDimen14</item>
+        <item name="android:textColor">@drawable/text_selector_lightbrown_white</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <!-- Auto Bar Search Text Style -->
+    <style name="textStyle12Normal">
+        <item name="android:textSize">@dimen/textSizeDimen12</item>
+        <item name="android:textColor">@color/whiteColor</item>
+        <item name="android:textStyle">normal</item>
+    </style>
+
+    <!-- Event Details Screen Text Style -->
+    <style name="textStyleBrownNormal_18">
+        <item name="android:textSize">@dimen/textSizeDimenTitle</item>
+        <item name="android:textColor">@color/lightBrownColor</item>
+        <item name="android:textStyle">normal</item>
+    </style>
+
+    <style name="textStyleBrownNormal_16">
+        <item name="android:textSize">@dimen/textSizeDimen</item>
+        <item name="android:textColor">@color/lightBrownColor</item>
+        <item name="android:textStyle">normal</item>
+    </style>
+
+    <style name="textStyleWhiteNormal_14">
+        <item name="android:textSize">@dimen/textSizeDimen14</item>
+        <item name="android:textColor">@color/whiteColor</item>
+        <item name="android:textStyle">normal</item>
+    </style>
+
+    <!-- My Profile Text Style -->
+    <style name="textStyleMyProfileTitle">
+        <item name="android:textSize">@dimen/textSizeDimen</item>
+        <item name="android:textColor">@color/my_profile_caption_grey_color</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+    
+    <style name="textStyleMyProfileTitle_whiteColor">
+        <item name="android:textSize">@dimen/textSizeDimen</item>
+        <item name="android:textColor">@color/whiteColor</item>
+        <item name="android:textStyle">normal</item>
+    </style>
+
+    <style name="ChromeStylePopup" parent="android:Widget.TextView">
+        <item name="android:gravity">center</item>
+        <item name="android:minHeight">50dp</item>
+        <item name="android:minWidth">75dp</item>
+        <item name="android:maxWidth">150dp</item>
+        <item name="android:padding">6dp</item>
+        <item name="android:textColor">@color/whiteColor</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textAppearance">?android:attr/textAppearanceMedium</item>
+    </style>
+
+    <style name="Animations" />
+
+    <!-- PopDownMenu -->
+    <style name="Animations.PopDownMenu" />
+
+    <style name="Animations.PopDownMenu.Center">
+        <item name="@android:windowEnterAnimation">@anim/grow_from_top</item>
+        <item name="@android:windowExitAnimation">@anim/shrink_from_bottom</item>
+    </style>
+
+    <style name="Animations.PopDownMenu.Left">
+        <item name="@android:windowEnterAnimation">@anim/grow_from_topleft_to_bottomright</item>
+        <item name="@android:windowExitAnimation">@anim/shrink_from_bottomright_to_topleft</item>
+    </style>
+
+    <style name="Animations.PopDownMenu.Right">
+        <item name="@android:windowEnterAnimation">@anim/grow_from_topright_to_bottomleft</item>
+        <item name="@android:windowExitAnimation">@anim/shrink_from_bottomleft_to_topright</item>
+    </style>
+
+    <style name="Animations.PopDownMenu.Reflect">
+        <item name="@android:windowEnterAnimation">@anim/pump_top</item>
+        <item name="@android:windowExitAnimation">@anim/disappear</item>
+    </style>
+
+    <!-- PopUpMenu -->
+    <style name="Animations.PopUpMenu" />
+
+    <style name="Animations.PopUpMenu.Center">
+        <item name="@android:windowEnterAnimation">@anim/grow_from_bottom</item>
+        <item name="@android:windowExitAnimation">@anim/shrink_from_top</item>
+    </style>
+
+    <style name="Animations.PopUpMenu.Left">
+        <item name="@android:windowEnterAnimation">@anim/grow_from_bottomleft_to_topright</item>
+        <item name="@android:windowExitAnimation">@anim/shrink_from_topright_to_bottomleft</item>
+    </style>
+
+    <style name="Animations.PopUpMenu.Right">
+        <item name="@android:windowEnterAnimation">@anim/grow_from_bottomright_to_topleft</item>
+        <item name="@android:windowExitAnimation">@anim/shrink_from_topleft_to_bottomright</item>
+    </style>
+
+    <style name="Animations.PopUpMenu.Reflect">
+        <item name="@android:windowEnterAnimation">@anim/pump_bottom</item>
+        <item name="@android:windowExitAnimation">@anim/disappear</item>
+    </style>
+
+    <!-- EditText Style -->
+    <style name="edittext_style_birthday">
+        <item name="android:background">@color/whiteColor</item>
+        <item name="android:ems">10</item>
+        <item name="android:textColorHint">@color/greyColor</item>
+        <item name="android:textColor">@color/greyColor</item>
+        <item name="android:textSize">@dimen/textSizeDimen14</item>
+        <item name="android:paddingLeft">8dp</item>
+        <item name="android:paddingRight">8dp</item>
+        <item name="android:singleLine">true</item>
+    </style>
+
+    <style name="textStyle_16_bold">
+        <item name="android:textSize">@dimen/textSizeDimen</item>
+        <item name="android:textColor">@color/whiteColor</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="textStyle_16">
+        <item name="android:textSize">@dimen/textSizeDimen</item>
+        <item name="android:textColor">@color/whiteColor</item>
+    </style>
+
+    <style name="textStyle_16_bold_lightBrownColor">
+        <item name="android:textSize">@dimen/textSizeDimen</item>
+        <item name="android:textColor">@color/lightBrownColor</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <!-- Full Mug Bar Screen - No Data Found -->
+    <style name="textStyle_no_data_found">
+        <item name="android:textSize">@dimen/textSizeDimen</item>
+        <item name="android:textColor">@color/whiteColor</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:paddingTop">10dp</item>
+    </style>
+
+    <!-- Rating Bar Style -->
+    <style name="ratingBarStyle" parent="@android:style/Widget.RatingBar">
+        <item name="android:progressDrawable">@drawable/selector_rating_bar</item>
+        <item name="android:minHeight">25dp</item>
+        <item name="android:maxHeight">25dp</item>
+    </style>
+
+    <style name="textStyleReply">
+        <item name="android:textSize">@dimen/textSizeDimen</item>
+        <item name="android:textColor">@drawable/text_selector_lightbrown_white</item>
+    </style>
+
+    <!-- Bar Trivia Game -->
+    <style name="button_style_answer">
+        <item name="android:textSize">@dimen/textSizeDimen</item>
+        <item name="android:textColor">@color/whiteColor</item>
+        <item name="android:background">@drawable/textview_selector</item>
+        <item name="android:gravity">left|center</item>
+        <item name="android:singleLine">true</item>
+    </style>
+
+    <style name="textStyle_20_whiteColor">
+        <item name="android:textSize">@dimen/textSizeDimen</item>
+        <item name="android:textColor">@color/whiteColor</item>
+    </style>
+
+    <style name="textStyle_20_whiteColor_bold">
+        <item name="android:textSize">@dimen/textSize_20</item>
+        <item name="android:textColor">@color/whiteColor</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="textStyle_23_lightBrownColor">
+        <item name="android:textSize">@dimen/textSize_23</item>
+        <item name="android:textColor">@color/lightBrownColor</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="textStyle_23_whiteColor">
+        <item name="android:textSize">@dimen/textSize_20</item>
+        <item name="android:textColor">@color/whiteColor</item>
+    </style>
+
+	<!-- For the Special Bar Hours -->
+    <style name="textStyle_14_bold_lightBrownColor_all">
+        <item name="android:textSize">@dimen/textSize_14_all</item>
+        <item name="android:textColor">@color/lightBrownColor</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+    
+    <style name="textStyle_14_bold_whiteColor_all">
+        <item name="android:textSize">@dimen/textSize_14_all</item>
+        <item name="android:textColor">@color/whiteColor</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+    
+    <style name="textStyle_13_whiteColor">
+        <item name="android:textSize">@dimen/textSize_13_all</item>
+        <item name="android:textColor">@color/whiteColor</item>
+    </style>
+    
+    <style name="textStyle_13_lightBrownColor">
+        <item name="android:textSize">@dimen/textSize_13_all</item>
+        <item name="android:textColor">@color/lightBrownColor</item>
+    </style>
+
+</resources>

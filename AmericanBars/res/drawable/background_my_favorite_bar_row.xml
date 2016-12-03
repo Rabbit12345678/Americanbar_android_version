@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item android:state_pressed="true">
+        <shape android:shape="rectangle">
+            <solid android:color="@color/bar_search_divider_color" />
+            <stroke android:width="1px" android:color="@color/darkBrownColor" />
+        </shape>
+    </item>
+    <item android:state_focused="true">
+        <shape android:shape="rectangle">
+            <solid android:color="@color/bar_search_divider_color" />
+            <stroke android:width="1px" android:color="@color/darkBrownColor" />
+        </shape>
+    </item>
+    <item>
+        <shape android:shape="rectangle">
+            <solid android:color="@color/backgroundColor" />
+            <stroke android:width="1px" android:color="@color/lightBrownColor" />
+        </shape>
+    </item>
+
+</selector>

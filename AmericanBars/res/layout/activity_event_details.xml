@@ -1,0 +1,308 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Event Details Screen -->
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/scrollView"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/backgroundColor"
+    android:fillViewport="true"
+    android:scrollbars="vertical" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/backgroundColor"
+        android:padding="20dp" >
+
+        <ImageView
+            android:id="@+id/ivGallerySelectedImage"
+            android:layout_width="300dp"
+            android:layout_height="300dp"
+            android:layout_centerHorizontal="true"
+            android:scaleType="fitXY"
+            android:src="@drawable/gallery_big_place_holder" />
+
+        <RelativeLayout
+            android:id="@+id/relativeLayoutGallery"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/ivGallerySelectedImage"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="10dp"
+            android:orientation="horizontal" >
+
+            <ImageView
+                android:id="@+id/ivGalleryLeftArrow"
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:layout_centerVertical="true"
+                android:src="@drawable/arrow_left"
+                android:visibility="gone" />
+
+            <Gallery
+                android:id="@+id/gallery"
+                android:layout_width="300dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_toLeftOf="@+id/ivGalleryRightArrow"
+                android:layout_toRightOf="@+id/ivGalleryLeftArrow"
+                android:spacing="10dp" />
+
+            <ImageView
+                android:id="@+id/ivGalleryRightArrow"
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:src="@drawable/arrow_right"
+                android:visibility="gone" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/relativeLayoutEventName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/relativeLayoutGallery"
+            android:layout_marginTop="15dp" >
+
+            <TextView
+                android:id="@+id/tvEventNameTitle"
+                style="@style/textStyleBrownNormal_18"
+                android:layout_width="98dp"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentTop="true"
+                android:text="Event Name" />
+
+            <TextView
+                android:id="@+id/tvEventNameColon"
+                style="@style/textStyleRememberMe"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="10dp"
+                android:layout_toRightOf="@+id/tvEventNameTitle"
+                android:text=":" />
+
+            <TextView
+                android:id="@+id/tvEventName"
+                style="@style/textStyleAutoSearch"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_toRightOf="@+id/tvEventNameColon"
+                tools:text="Event Name djklsdjfl jdfkljsdklfjsldkfjlaskdjfkldsjfkljdklfjdklfjdlskfjdklsfjklsdjfldjsklfjsdlkfjklsdfjklsdfjlksdjklsjlk" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/relativeLayoutOrganizedBy"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/relativeLayoutEventName"
+            android:layout_marginTop="10dp" >
+
+            <TextView
+                android:id="@+id/tvOrganizedByTitle"
+                style="@style/textStyleBrownNormal_16"
+                android:layout_width="98dp"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentTop="true"
+                android:text="Organized By" />
+
+            <TextView
+                android:id="@+id/tvOrganizedByColon"
+                style="@style/textStyleRememberMe"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="10dp"
+                android:layout_toRightOf="@+id/tvOrganizedByTitle"
+                android:text=":" />
+
+            <TextView
+                android:id="@+id/tvOrganizedBy"
+                style="@style/textStyleAutoSearch"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_toRightOf="@+id/tvOrganizedByColon"
+                tools:text="Organized By dsfj;kldjfklsjdflkjdklfjsdlkfjkldjlk" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/relativeLayoutAddress"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/relativeLayoutOrganizedBy"
+            android:layout_marginTop="10dp" >
+
+            <TextView
+                android:id="@+id/tvAddressTitle"
+                style="@style/textStyleBrownNormal_16"
+                android:layout_width="98dp"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentTop="true"
+                android:text="Address" />
+
+            <TextView
+                android:id="@+id/tvAddressColon"
+                style="@style/textStyleRememberMe"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="10dp"
+                android:layout_toRightOf="@+id/tvAddressTitle"
+                android:text=":" />
+
+            <TextView
+                android:id="@+id/tvAddress"
+                style="@style/textStyleAutoSearch"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_toRightOf="@+id/tvAddressColon"
+                tools:text="Address dsfj;kldjfklsjdflkjdklfjsdlkfjkldjlk" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/relativeLayoutEventDate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/relativeLayoutAddress"
+            android:layout_marginTop="10dp" >
+
+            <TextView
+                android:id="@+id/tvEventDateTitle"
+                style="@style/textStyleBrownNormal_16"
+                android:layout_width="98dp"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentTop="true"
+                android:text="Event Date" />
+
+            <TextView
+                android:id="@+id/tvEventDateColon"
+                style="@style/textStyleRememberMe"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="10dp"
+                android:layout_toRightOf="@+id/tvEventDateTitle"
+                android:text=":" />
+
+            <LinearLayout
+                android:id="@+id/hiddenLinearLayoutEventDate"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_toRightOf="@+id/tvEventDateColon"
+                android:orientation="vertical"
+                android:visibility="gone" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/relativeLayoutEventCategory"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/relativeLayoutEventDate"
+            android:layout_marginTop="10dp" >
+
+            <TextView
+                android:id="@+id/tvEventCategoryTitle"
+                style="@style/textStyleBrownNormal_16"
+                android:layout_width="98dp"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentTop="true"
+                android:text="Event Category" />
+
+            <TextView
+                android:id="@+id/tvEventCategoryColon"
+                style="@style/textStyleRememberMe"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="10dp"
+                android:layout_toRightOf="@+id/tvEventCategoryTitle"
+                android:text=":" />
+
+            <TextView
+                android:id="@+id/tvEventCategory"
+                style="@style/textStyleAutoSearch"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_toRightOf="@+id/tvEventCategoryColon"
+                tools:text="EventCategory dsfj;kldjfklsjdflkjdklfjsdlkfjkldjlk" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/relativeLayoutDescription"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/relativeLayoutEventCategory"
+            android:layout_marginTop="10dp" >
+
+            <TextView
+                android:id="@+id/tvDescriptionTitle"
+                style="@style/textStyleBrownNormal_16"
+                android:layout_width="98dp"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentTop="true"
+                android:text="Description" />
+
+            <TextView
+                android:id="@+id/tvDescriptionColon"
+                style="@style/textStyleRememberMe"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="10dp"
+                android:layout_toRightOf="@+id/tvDescriptionTitle"
+                android:text=":" />
+
+            <TextView
+                android:id="@+id/tvDescription"
+                style="@style/textStyleAutoSearch"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_toRightOf="@+id/tvDescriptionColon"
+                tools:text="Description dsfj;kldjfklsjdflkjdklfjsdlkfjkldjlk" />
+        </RelativeLayout>
+
+        <fragment
+            android:id="@+id/map"
+            android:name="com.google.android.gms.maps.MapFragment"
+            android:layout_width="500dp"
+            android:layout_height="350dp"
+            android:layout_below="@+id/relativeLayoutDescription"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="20dp"
+            android:background="@color/greyColor" />
+
+        <Button
+            android:id="@+id/btnGetDirections"
+            style="@style/button_style_gradient"
+            android:layout_width="150dp"
+            android:layout_height="50dp"
+            android:layout_alignRight="@+id/map"
+            android:layout_below="@+id/map"
+            android:layout_marginTop="10dp"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:text="@string/btn_get_directions" />
+    </RelativeLayout>
+
+</ScrollView>

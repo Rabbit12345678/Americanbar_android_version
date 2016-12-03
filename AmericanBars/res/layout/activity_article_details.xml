@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Article Details Screen Layout -->
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/linearLayoutArticleDetails"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/backgroundColor"
+    android:orientation="vertical" >
+
+    <TextView
+        android:id="@+id/tvArticleTitle"
+        style="@style/textStyleBrownNormal_18"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:padding="7dp"
+        tools:text="Article Title" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="2px"
+        android:background="@color/spinner_border_color" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp" >
+
+        <RatingBar
+            android:id="@+id/ratingBarArticle"
+            style="@style/ratingBarStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="10dp"
+            android:layout_toRightOf="@+id/tvArticleDate"
+            android:drawablePadding="3dp"
+            android:stepSize="1.0" />
+
+        <ImageView
+            android:id="@+id/ivShare"
+            android:layout_width="@dimen/share_icon_width_height"
+            android:layout_height="@dimen/share_icon_width_height"
+            android:layout_toRightOf="@+id/ratingBarArticle"
+            android:src="@drawable/share" />
+
+        <Spinner
+            android:id="@+id/spinnerShare"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:background="@drawable/edittext_selector"
+            android:prompt="@string/txt_spinner_share_title"
+            android:spinnerMode="dialog"
+            android:visibility="invisible" />
+
+        <TextView
+            android:id="@+id/tvArticleDate"
+            style="@style/textStyleAutoSearch"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="10dp"
+            android:drawableLeft="@drawable/article_watch"
+            android:drawablePadding="5dp"
+            android:gravity="center"
+            tools:text="02-22-2016" />
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="2px"
+        android:layout_marginBottom="10dp"
+        android:background="@color/spinner_border_color" />
+
+    <ImageView
+        android:id="@+id/ivArticleImage"
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:layout_marginBottom="10dp"
+        android:src="@drawable/no_article"
+        android:visibility="gone" />
+
+    <ProgressBar
+        android:id="@+id/progressBar"
+        android:layout_width="25dp"
+        android:layout_height="25dp"
+        android:layout_gravity="center"
+        android:layout_marginBottom="10dp"
+        android:visibility="visible" />
+
+    <WebView
+        android:id="@+id/webView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+</LinearLayout>

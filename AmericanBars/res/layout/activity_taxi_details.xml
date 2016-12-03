@@ -1,0 +1,203 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Taxi Details Screen -->
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/scrollView"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/backgroundColor"
+    android:fillViewport="true"
+    android:scrollbars="vertical" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/bar_list_item_selector"
+        android:orientation="vertical" >
+
+        <RelativeLayout
+            android:id="@+id/relativeLayoutHeader"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:paddingTop="10dp" >
+
+            <!-- Taxi Logo -->
+
+            <ImageView
+                android:id="@+id/ivTaxiLogo"
+                android:layout_width="120dp"
+                android:layout_height="120dp"
+                android:layout_alignParentLeft="true"
+                android:layout_alignTop="@+id/tvCompanyName"
+                android:layout_centerInParent="true"
+                android:layout_marginRight="10dp"
+                android:clickable="true"
+                android:scaleType="fitXY"
+                android:src="@drawable/no_image_taxi" />
+
+            <!-- Taxi  Company Name -->
+
+            <TextView
+                android:id="@+id/tvCompanyName"
+                style="@style/textStyleBarTitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toLeftOf="@+id/ivFullHalfMug"
+                android:layout_toRightOf="@+id/ivTaxiLogo"
+                tools:text="Company Name Company Name Company Name Company Name Company Name Company Name Company Name Company Name Company Name Company Name Company Name Company Name Company Name Company Name " />
+
+            <!-- Company Address Title -->
+
+            <TextView
+                android:id="@+id/tvCompanyAddressTitle"
+                style="@style/textStyleBarTitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tvCompanyName"
+                android:layout_marginTop="5dp"
+                android:layout_toRightOf="@+id/ivTaxiLogo"
+                android:text="Company Address : " />
+
+            <!-- Company Address Content -->
+
+            <TextView
+                android:id="@+id/tvCompanyAddress"
+                style="@style/textStyleBrownNormal_16"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tvCompanyAddressTitle"
+                android:layout_marginTop="2dp"
+                android:layout_toRightOf="@+id/ivTaxiLogo"
+                tools:text="Company Address Content Company Address Content Company Address Content Company Address Content Company Address Content Company Address Content Company Address Content Company Address Content Company Address Content " />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/relativeLayoutHeader1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/relativeLayoutHeader"
+            android:layout_below="@+id/relativeLayoutHeader"
+            android:padding="10dp"
+            >
+
+            <!-- Company Website Address Title -->
+
+            <TextView
+                android:id="@+id/tvCompanyWebsiteAddressTitle"
+                style="@style/textStyleBarTitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="3dp"
+                android:text="Company Website Address :" />
+
+            <!-- Company Website Address Content -->
+
+            <TextView
+                android:id="@+id/tvCompanyWebsiteAddress"
+                style="@style/textStyleWebsite"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tvCompanyWebsiteAddressTitle"
+                android:layout_marginTop="2dp"
+                android:autoLink="web"
+                android:focusable="false"
+                android:focusableInTouchMode="false"
+                tools:text="Company Website Address Content Company Website Address Content Company Website Address Content Company Website Address Content Company Website Address Content " />
+
+            <!-- Company Mobile Number Title -->
+
+            <TextView
+                android:id="@+id/tvCompanyMobileNumberTitle"
+                style="@style/textStyleBarTitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_below="@+id/tvCompanyWebsiteAddress"
+                android:layout_marginTop="5dp"
+                android:text="Company Mobile Number :" />
+
+            <!-- Company Mobile Number Content -->
+
+            <TextView
+                android:id="@+id/tvCompanyMobileNumber"
+                style="@style/textStyleBrownNormal_16"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tvCompanyMobileNumberTitle"
+                android:layout_marginTop="2dp"
+                tools:text="Company Mobile Number Content kdlfjlsdjflkdjlkfjlksdjflkjsdlfjlasdkjfklsdjklfjdklsjfkljdfklsjkl" />
+
+            <!-- Owner Name Title -->
+
+            <TextView
+                android:id="@+id/tvOwnerNameTitle"
+                style="@style/textStyleBarTitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_below="@+id/tvCompanyMobileNumber"
+                android:layout_marginTop="5dp"
+                android:text="Owner Name :" />
+
+            <!-- Owner Name Content -->
+
+            <TextView
+                android:id="@+id/tvOwnerName"
+                style="@style/textStyleAutoSearch"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tvOwnerNameTitle"
+                android:layout_marginTop="2dp"
+                tools:text="Owner Name Content kdlfjlsdjflkdjlkfjlksdjflkjsdlfjlasdkjfklsdjklfjdklsjfkljdfklsjkl" />
+
+            <!-- Owner Mobile Number Title -->
+
+            <TextView
+                android:id="@+id/tvOwnerMobileNumberTitle"
+                style="@style/textStyleBarTitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_below="@+id/tvOwnerName"
+                android:layout_marginTop="5dp"
+                android:text="Owner Mobile Number :" />
+
+            <!-- Owner Mobile Number Content -->
+
+            <TextView
+                android:id="@+id/tvOwnerMobileNumber"
+                style="@style/textStyleBrownNormal_16"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tvOwnerMobileNumberTitle"
+                android:layout_marginTop="2dp"
+                tools:text="Owner Mobile Number Content kdlfjlsdjflkdjlkfjlksdjflkjsdlfjlasdkjfklsdjklfjdklsjfkljdfklsjkl" />
+
+            <!-- About Company Title -->
+
+            <TextView
+                android:id="@+id/tvAboutCompanyTitle"
+                style="@style/textStyleBarTitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_below="@+id/tvOwnerMobileNumber"
+                android:layout_marginTop="5dp"
+                android:text="About Company :" />
+
+            <!-- About Company Content -->
+
+            <TextView
+                android:id="@+id/tvAboutCompany"
+                style="@style/textStyleAutoSearch"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tvAboutCompanyTitle"
+                android:layout_marginTop="2dp"
+                tools:text="About Company Content kdlfjlsdjflkdjlkfjlksdjflkjsdlfjlasdkjfklsdjklfjdklsjfkljdfklsjkl" />
+        </RelativeLayout>
+    </RelativeLayout>
+
+</ScrollView>

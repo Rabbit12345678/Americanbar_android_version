@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Photo Gallery Screen Row Layout -->
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/relativeLayoutGalleryImage"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_below="@+id/tvBarGallery"
+    android:layout_marginTop="15dp" >
+
+    <RelativeLayout
+        android:layout_width="@dimen/grid_view_image_width"
+        android:layout_height="@dimen/grid_view_image_height"
+        android:layout_centerHorizontal="true" >
+
+        <ImageView
+            android:id="@+id/ivGalleryImage"
+            android:layout_width="@dimen/grid_view_image_width"
+            android:layout_height="@dimen/grid_view_image_height"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentRight="true"
+            android:scaleType="fitXY"
+            android:src="@drawable/gallery_big_place_holder" />
+
+        <TextView
+            android:id="@+id/tvGalleryName"
+            style="@style/textStyleBarTitle"
+            android:layout_width="@dimen/grid_view_image_width"
+            android:layout_height="50dp"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:alpha="0.5"
+            android:background="@color/blackColor"
+            android:gravity="center"
+            android:visibility="visible"
+            tools:text="Gallery Name" />
+    </RelativeLayout>
+
+</RelativeLayout>

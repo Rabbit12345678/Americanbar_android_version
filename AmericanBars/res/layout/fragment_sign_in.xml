@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Login Screen -->
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/scrollView"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg_login"
+    android:fillViewport="true"
+    android:scrollbars="vertical" >
+
+    <RelativeLayout
+        android:id="@+id/relativeLayoutSignIn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:orientation="vertical" >
+
+        <!-- Image Application Logo -->
+
+        <ImageView
+            android:id="@+id/ivLogo"
+            android:layout_width="match_parent"
+            android:layout_height="70dp"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="35dp"
+            android:contentDescription="@string/image_logo"
+            android:src="@drawable/logo_image" />
+
+        <!-- EditText Email -->
+
+        <EditText
+            android:id="@+id/etEmail"
+            style="@style/edittext_style"
+            android:layout_width="@dimen/editTextWidth"
+            android:layout_height="@dimen/editTextHeightLogin"
+            android:layout_below="@+id/ivLogo"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="30dp"
+            android:drawableLeft="@drawable/email"
+            android:drawablePadding="@dimen/drawblePaddingDimen"
+            android:hint="@string/txt_email"
+            android:nextFocusLeft="@id/etEmail"
+            android:nextFocusUp="@id/etEmail" />
+
+        <!-- View Line -->
+
+        <View
+            android:id="@+id/viewLine"
+            android:layout_width="@dimen/editTextWidth"
+            android:layout_height="1px"
+            android:layout_below="@+id/etEmail"
+            android:layout_centerHorizontal="true"
+            android:background="@color/greyColor" />
+
+        <!-- EditText Password -->
+
+        <EditText
+            android:id="@+id/etPassword"
+            style="@style/edittext_style"
+            android:layout_width="@dimen/editTextWidth"
+            android:layout_height="@dimen/editTextHeightLogin"
+            android:layout_below="@+id/viewLine"
+            android:layout_centerHorizontal="true"
+            android:drawableLeft="@drawable/password"
+            android:drawablePadding="@dimen/drawblePaddingDimen"
+            android:hint="@string/txt_password"
+            android:inputType="textPassword"
+            android:nextFocusLeft="@id/etPassword"
+            android:nextFocusUp="@id/etPassword" />
+
+        <!-- Button Sign In -->
+
+        <Button
+            android:id="@+id/btnSignIn"
+            style="@style/button_style"
+            android:layout_width="@dimen/editTextWidth"
+            android:layout_height="50dp"
+            android:layout_below="@+id/etPassword"
+            android:layout_centerHorizontal="true"
+            android:text="@string/btn_sign_in" />
+
+        <!-- CheckBox Remember Me -->
+
+        <CheckBox
+            android:id="@+id/checkBoxRememberMe"
+            style="@style/textStyleRememberMe"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/btnSignIn"
+            android:layout_below="@+id/btnSignIn"
+            android:layout_marginTop="12dp"
+            android:button="@drawable/checkbox_bg_selector_grey_color"
+            android:clickable="true"
+            android:focusable="false"
+            android:paddingLeft="10dp"
+            android:text="@string/txt_remember_me" />
+
+        <!-- Forgot Password -->
+
+        <!-- Facebook Login Button -->
+
+        <Button
+            android:id="@+id/buttonFacebook"
+            style="@style/button_style_facebook"
+            android:layout_width="@dimen/editTextWidth"
+            android:layout_height="50dp"
+            android:layout_below="@+id/tvForgotPwd"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="30dp"
+            android:background="@drawable/fb"
+            android:text="@string/btn_login_with_facebook" />
+
+        <com.facebook.login.widget.LoginButton
+            xmlns:fb="http://schemas.android.com/apk/res-auto"
+            android:id="@+id/buttonFacebookAuth"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_below="@+id/tvForgotPwd"
+            android:layout_centerHorizontal="true"
+            android:layout_gravity="center_horizontal"
+            android:scaleType="centerInside" />
+
+        <!-- Button Create Account -->
+
+        <Button
+            android:id="@+id/buttonCreateAccount"
+            style="@style/button_style"
+            android:layout_width="@dimen/editTextWidth"
+            android:layout_height="50dp"
+            android:layout_below="@+id/buttonFacebook"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="35dp"
+            android:layout_marginTop="30dp"
+            android:text="@string/btn_create_account" />
+
+        <TextView
+            android:id="@+id/tvForgotPwd"
+            style="@style/textStyleForgotPassword"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/checkBoxRememberMe"
+            android:layout_alignBottom="@+id/checkBoxRememberMe"
+            android:layout_alignRight="@+id/buttonFacebook"
+            android:clickable="true"
+            android:text="@string/txt_forgotpwd" />
+
+    </RelativeLayout>
+
+</ScrollView>
